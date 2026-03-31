@@ -27,6 +27,7 @@ export default defineConfig(({ mode }) => {
             build: {
                 outDir: 'dist',
                 emptyOutDir: false,
+                target: 'chrome100',
                 lib: {
                     entry: resolve(__dirname, 'src/background/index.ts'),
                     name: 'Background',
@@ -40,13 +41,11 @@ export default defineConfig(({ mode }) => {
     // Content script build
     if (buildTarget === 'content') {
         return {
-            plugins: [react(), copyContentCss()],
-            define: {
-                'process.env.NODE_ENV': JSON.stringify('production'),
-            },
+            plugins: [copyContentCss()],
             build: {
                 outDir: 'dist',
                 emptyOutDir: false,
+                target: 'chrome100',
                 cssCodeSplit: false,
                 lib: {
                     entry: resolve(__dirname, 'src/content/index.ts'),

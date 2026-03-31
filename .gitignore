@@ -17,6 +17,7 @@ dist-firefox/
 *.njsproj
 *.sln
 *.sw?
+.agent
 
 # OS
 .DS_Store

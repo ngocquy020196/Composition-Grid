@@ -214,6 +214,29 @@ body {
   gap: 8px;
 }
 
+.grid-reset-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.grid-reset-btn:hover {
+  opacity: 1;
+  color: var(--accent-solid);
+  background: var(--bg-hover);
+}
+
 .grid-type-selector {
   display: grid;
   grid-template-columns: 1fr 1fr;

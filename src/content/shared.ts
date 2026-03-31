@@ -1,9 +1,7 @@
 // ─── Shared utilities for image and video grid injection ─────────────────────
 // Centralizes state, constants, and reusable functions.
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import GridOverlay from '../components/GridOverlay';
+import { renderGrid } from './grid-renderer';
 import { Settings, DEFAULT_SETTINGS } from '../types';
 import { getSettings, onSettingsChanged } from '../utils/storage';
 import { MSG } from '../constants/messages';
@@ -21,13 +19,13 @@ export function getState() {
 }
 
 
-// ─── DOM Helpers ─────────────────────────────────────────────────────────────
-export function isVisibleInDOM(el: HTMLElement): boolean {
+// ─── DOM Helpers ─────────────────────────────────────────────────────────────────
+export function isVisibleInDOM(el: HTMLElement, style?: CSSStyleDeclaration): boolean {
     if (typeof el.checkVisibility === 'function') {
         return el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true });
     }
-    const style = window.getComputedStyle(el);
-    return style.display !== 'none' && style.visibility !== 'hidden' && parseFloat(style.opacity) !== 0;
+    const s = style || window.getComputedStyle(el);
+    return s.display !== 'none' && s.visibility !== 'hidden' && parseFloat(s.opacity) !== 0;
 }
 
 // ─── Object-fit Bounds Calculation ───────────────────────────────────────────
@@ -79,19 +77,18 @@ export function calcObjectFitBounds(
 }
 
 // ─── Overlay Rendering ──────────────────────────────────────────────────────
-export function renderGridElement(root: ReactDOM.Root, settings: Settings) {
-    root.render(
-        React.createElement(GridOverlay, {
-            gridTypes: settings.gridTypes,
-            lineColor: settings.lineColor,
-            dotColor: settings.dotColor,
-            showDots: settings.showDots,
-            dotSize: settings.dotSize,
-            lineSize: settings.lineSize,
-            lineStyle: settings.lineStyle,
-            spiralOrientation: settings.spiralOrientation,
-        })
-    );
+export function renderGridElement(container: HTMLElement, settings: Settings) {
+    renderGrid(container, settings);
+}
+
+// Position overlay to exactly match element's visible area (accounting for object-fit)
+export function syncOverlayPosition(el: HTMLElement, overlayDiv: HTMLDivElement, natW: number, natH: number) {
+    const bounds = calcObjectFitBounds(el, natW, natH);
+    if (bounds.width <= 0 || bounds.height <= 0) return;
+    overlayDiv.style.left = `${bounds.left}px`;
+    overlayDiv.style.top = `${bounds.top}px`;
+    overlayDiv.style.width = `${bounds.width}px`;
+    overlayDiv.style.height = `${bounds.height}px`;
 }
 
 // ─── Overlay Injection Helpers ───────────────────────────────────────────────
@@ -140,9 +137,11 @@ export function createVideoOverlay(el: HTMLElement): HTMLDivElement | null {
 
 // ─── Centralized Event System ────────────────────────────────────────────────
 type Callback = () => void;
+type MutationCb = (mutations: MutationRecord[]) => void;
 const renderCallbacks: Callback[] = [];
 const navigateCallbacks: Callback[] = [];
 const interactionCallbacks: Callback[] = [];
+const mutationCallbacks: MutationCb[] = [];
 
 export function onRenderAll(callback: Callback) {
     renderCallbacks.push(callback);
@@ -156,20 +155,26 @@ export function onInteraction(callback: Callback) {
     interactionCallbacks.push(callback);
 }
 
+export function onMutation(callback: MutationCb) {
+    mutationCallbacks.push(callback);
+}
+
 function renderAll() {
     renderCallbacks.forEach((cb) => cb());
 }
 
-// ─── User Interaction Detection ─────────────────────────────────────────────
-let interactionTimer: ReturnType<typeof setTimeout>;
+// ─── User Interaction Detection ─────────────────────────────────────────
+let interactionPending = false;
 const handleInteraction = () => {
-    clearTimeout(interactionTimer);
-    interactionTimer = setTimeout(() => {
+    if (interactionPending) return;
+    interactionPending = true;
+    setTimeout(() => {
+        interactionPending = false;
         interactionCallbacks.forEach((cb) => cb());
     }, 500);
 };
-window.addEventListener('mousemove', handleInteraction, { passive: true });
 window.addEventListener('scroll', handleInteraction, { passive: true });
+window.addEventListener('click', handleInteraction, { passive: true });
 
 // ─── SPA Navigation Detection ───────────────────────────────────────────────
 // Intercept pushState/replaceState and popstate for SPA route changes
@@ -260,6 +265,17 @@ export async function initShared(): Promise<boolean> {
             chrome.storage.sync.set({ lineColor: newColor, dotColor: newColor });
             return;
         }
+    });
+
+    // Start centralized MutationObserver for all modules
+    const mutationObserver = new MutationObserver((mutations) => {
+        mutationCallbacks.forEach((cb) => cb(mutations));
+    });
+    mutationObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['src', 'srcset', 'data-src', 'data-lazy-src', 'data-original', 'class', 'poster'],
     });
 
     resolveReady(true);

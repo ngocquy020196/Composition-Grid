@@ -1,9 +1,9 @@
-import ReactDOM from 'react-dom/client';
+
 import {
     ATTR, PENDING,
-    getState, isVisibleInDOM, calcObjectFitBounds,
-    renderGridElement, createImageOverlay,
-    onRenderAll, onNavigate, onInteraction, initShared,
+    getState, isVisibleInDOM,
+    renderGridElement, createImageOverlay, syncOverlayPosition,
+    onRenderAll, onNavigate, onInteraction, onMutation, initShared,
 } from './shared';
 import { MSG } from '../constants/messages';
 import './video'; // Video grid support (self-contained)
@@ -16,7 +16,6 @@ const SKIP_PATTERNS = /avatar|icon|thumb|logo|badge|emoji|profile[-_]?(?:pic|img
 interface InjectedEntry {
     img: HTMLImageElement;
     container: HTMLElement;
-    root: ReactDOM.Root;
     overlayDiv: HTMLDivElement;
     resizeObserver?: ResizeObserver;
     originalParentStyles?: { position: string; isolation: string };
@@ -37,7 +36,7 @@ function renderOverlay(entry: InjectedEntry) {
     }
     entry.overlayDiv.style.display = '';
     entry.resizeObserver?.observe(entry.img);
-    renderGridElement(entry.root, settings);
+    renderGridElement(entry.overlayDiv, settings);
 }
 
 let prevEnabled = false; // tracks previous enabled state for OFF→ON detection
@@ -81,7 +80,7 @@ function cleanupImage(img: HTMLImageElement) {
     if (!entry) return;
     try {
         entry.resizeObserver?.disconnect();
-        entry.root.unmount();
+        entry.overlayDiv.textContent = '';
         entry.overlayDiv.remove();
         img.removeAttribute(ATTR);
         // Restore parent's original styles
@@ -106,13 +105,15 @@ function shouldInject(img: HTMLImageElement): boolean {
     // Cheap size check first — filters out most images before expensive calls
     if (img.width < minSize || img.height < minSize) return false;
 
+    // Single getComputedStyle call for all style-dependent checks
+    const style = window.getComputedStyle(img);
+
     // Skip hidden images (display:none, visibility:hidden, opacity:0)
-    if (!isVisibleInDOM(img)) return false;
+    if (!isVisibleInDOM(img, style)) return false;
 
     // Size checks — skip small natural dimensions
     // Some sites use spacer.gif with background-image for the real photo.
     // Only filter by natural dimensions if there's no background-image.
-    const style = window.getComputedStyle(img);
     const hasBgImage = style.backgroundImage !== 'none';
     if (!hasBgImage) {
         if (img.naturalWidth > 0 && img.naturalWidth < minSize) return false;
@@ -137,16 +138,6 @@ function shouldInject(img: HTMLImageElement): boolean {
     return true;
 }
 
-// Position the overlay to exactly match the image's visible area
-function syncOverlayPosition(img: HTMLImageElement, overlayDiv: HTMLDivElement) {
-    const bounds = calcObjectFitBounds(img, img.naturalWidth, img.naturalHeight);
-    if (bounds.width <= 0 || bounds.height <= 0) return;
-    overlayDiv.style.left = `${bounds.left}px`;
-    overlayDiv.style.top = `${bounds.top}px`;
-    overlayDiv.style.width = `${bounds.width}px`;
-    overlayDiv.style.height = `${bounds.height}px`;
-}
-
 function injectGrid(img: HTMLImageElement, force = false) {
     const { tabActive } = getState();
     if (!tabActive) return;
@@ -166,18 +157,18 @@ function injectGrid(img: HTMLImageElement, force = false) {
     img.setAttribute(ATTR, 'true');
 
     // Position overlay to match image bounds (not parent bounds)
-    syncOverlayPosition(img, overlayDiv);
+    syncOverlayPosition(img, overlayDiv, img.naturalWidth, img.naturalHeight);
 
     // Keep overlay aligned when image resizes — debounced to avoid jank during animations
     let rafId = 0;
     const resizeObserver = new ResizeObserver(() => {
+        if (!img.isConnected) { resizeObserver.disconnect(); return; }
         cancelAnimationFrame(rafId);
-        rafId = requestAnimationFrame(() => syncOverlayPosition(img, overlayDiv));
+        rafId = requestAnimationFrame(() => syncOverlayPosition(img, overlayDiv, img.naturalWidth, img.naturalHeight));
     });
     resizeObserver.observe(img);
 
-    const root = ReactDOM.createRoot(overlayDiv);
-    const entry: InjectedEntry = { img, container: img.parentElement!, root, overlayDiv, resizeObserver, originalParentStyles };
+    const entry: InjectedEntry = { img, container: img.parentElement!, overlayDiv, resizeObserver, originalParentStyles };
 
     injectedMap.set(img, entry);
     renderOverlay(entry);
@@ -243,8 +234,8 @@ function observeImage(img: HTMLImageElement) {
     intersectionObserver.observe(img);
 }
 
-// ─── MutationObserver ────────────────────────────────────────────────────────
-const mutationObserver = new MutationObserver((mutations) => {
+// ─── MutationObserver Callback ───────────────────────────────────────────────
+onMutation((mutations) => {
     for (const mutation of mutations) {
         // Handle lazy-load attribute changes (src, srcset, data-src, class)
         if (mutation.type === 'attributes') {
@@ -341,15 +332,6 @@ async function init() {
     // Process existing images via IntersectionObserver
     const existingImages = document.querySelectorAll<HTMLImageElement>('img');
     existingImages.forEach(observeImage);
-
-    // Watch for new images and lazy-load attribute changes
-    mutationObserver.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        attributeFilter: ['src', 'srcset', 'data-src', 'data-lazy-src', 'data-original', 'class'],
-    });
-
 }
 
 // Start

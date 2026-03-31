@@ -1,4 +1,4 @@
-export type GridType = 'thirds' | 'golden' | 'fibonacci' | 'triangle';
+export type GridType = 'thirds' | 'golden' | 'fibonacci' | 'triangle' | 'fifths' | 'center';
 export type Language = 'en' | 'vi';
 export type SpiralOrientation = 0 | 1 | 2 | 3;
 export type LineStyle = 'solid' | 'dashed';
@@ -21,6 +21,7 @@ export interface Settings {
     allowList: string[];
     language: Language;
     spiralOrientation: SpiralOrientation;
+    opacity: number;
     theme: Theme;
     toggleColorA: string;
     toggleColorB: string;
@@ -42,6 +43,7 @@ export const DEFAULT_SETTINGS: Settings = {
     allowList: [],
     language: 'en',
     spiralOrientation: 0,
+    opacity: 0.75,
     theme: 'dark',
     toggleColorA: '#ffffff',
     toggleColorB: '#000000',

@@ -2,11 +2,11 @@
 
 **Composition Grid: Rule of Thirds, Golden Ratio & More**
 
-*Last updated: March 30, 2026*
+*Last updated: March 31, 2026*
 
 ## Overview
 
-Composition Grid is a browser extension for Chrome and Microsoft Edge that overlays composition grids (Rule of Thirds, Golden Ratio, Fibonacci Spiral, and Golden Triangle) on images and video across the web. We are committed to protecting your privacy.
+Composition Grid is a browser extension for Chrome, Microsoft Edge, and Firefox that overlays composition grids (Rule of Thirds, Golden Ratio, Fibonacci Spiral, Golden Triangle, Fifths, and Center Crosshair) on images and video across the web. We are committed to protecting your privacy.
 
 ## Data Collection
 

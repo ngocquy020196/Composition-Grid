@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Composition Grid: Rule of Thirds, Golden Ratio & More",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Overlay composition grids on any image & video: Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle guides.",
     "permissions": [
         "storage",
