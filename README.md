@@ -5,7 +5,7 @@
 <h1 align="center">Composition Grid</h1>
 
 <p align="center">
-  <strong>Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle guides for any image on the web</strong>
+  <strong>Rule of Thirds, Golden Ratio, Fibonacci Spiral, Triangle, Fifths & Center guides for any image on the web</strong>
 </p>
 
 <p align="center">
@@ -23,12 +23,13 @@
 
 ---
 
-A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**, **Golden Ratio**, **Fibonacci Spiral**, and **Golden Triangle** composition grids directly onto images and video on any website. Perfect for photographers, designers, and visual artists who want to analyze compositional balance without leaving the browser.
+A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**, **Golden Ratio**, **Fibonacci Spiral**, **Golden Triangle**, **Fifths**, and **Center Crosshair** composition grids directly onto images and video on any website. Perfect for photographers, designers, and visual artists who want to analyze compositional balance without leaving the browser.
 
 ## Features
 
-- **Four Grid Types** — Rule of Thirds, Golden Ratio, Fibonacci Spiral & Golden Triangle
+- **Six Grid Types** — Rule of Thirds, Golden Ratio, Fibonacci Spiral, Golden Triangle, Fifths & Center Crosshair
 - **Video Overlay** — Composition grid on `<video>` elements (independent toggle)
+- **Opacity Control** — Adjustable grid transparency (10%–100%)
 - **Intersection Dots** — Highlight power points with toggleable dots
 - **Custom Colors** — Pick any color for grid lines and dots
 - **Keyboard Shortcuts** — `Alt+I` image overlay, `Alt+V` video overlay, `Alt+L` line style, `Alt+C` quick color
@@ -53,7 +54,7 @@ A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**,
 5. Customize settings in the popup:
    - Toggle grid on/off
    - Toggle intersection dots
-   - Choose grid types (Rule of Thirds, Golden Ratio, Fibonacci Spiral, Triangle)
+   - Choose grid types (Rule of Thirds, Golden Ratio, Fibonacci Spiral, Triangle, Fifths, Center)
    - Set spiral orientation for Fibonacci Spiral
    - Customize line and dot colors & sizes
    - Switch language (EN / VI)
@@ -77,18 +78,11 @@ composition-grid/
 ├── src/
 │   ├── background/
 │   │   └── index.ts            # Service worker (context menu & keyboard shortcuts)
-│   ├── components/
-│   │   ├── GridOverlay.tsx     # SVG grid + intersection dots component
-│   │   └── grids/
-│   │       ├── index.ts        # Grid exports
-│   │       ├── StandardGrid.tsx # Rule of Thirds & Golden Ratio grid
-│   │       ├── FibonacciSpiral.tsx # Fibonacci spiral overlay
-│   │       ├── GoldenTriangle.tsx  # Golden triangle/diagonal lines
-│   │       └── IntersectionDot.tsx # Intersection dot component
 │   ├── content/
 │   │   ├── index.ts            # Content script (image detection & injection)
 │   │   ├── video.ts            # Video overlay (detection & injection)
 │   │   ├── shared.ts           # Shared state, utilities & event system
+│   │   ├── grid-renderer.ts    # Vanilla DOM/SVG grid renderer (6 types)
 │   │   └── content.css         # Overlay positioning styles
 │   ├── constants/
 │   │   ├── messages.ts         # Message type constants
@@ -114,6 +108,7 @@ composition-grid/
 ├── scripts/
 │   └── build-firefox.js        # Firefox manifest generator (dist → dist-firefox)
 ├── vite.config.ts              # Vite config (popup + content + background builds)
+├── vitest.config.ts            # Vitest test config (jsdom)
 ├── tsconfig.json
 └── package.json
 ```
@@ -179,6 +174,10 @@ npm run build:content
 # Build Firefox version
 npm run build:firefox
 
+# Run tests
+npm test               # Run once
+npm run test:watch     # Watch mode
+
 # Create distribution zip files
 npm run zip            # Chrome/Edge zip
 npm run zip:firefox    # Firefox zip
@@ -191,13 +190,14 @@ npm run zip:firefox    # Firefox zip
 | Image Overlay | Toggle image grid on/off | On |
 | Video Overlay | Toggle video grid on/off | Off |
 | Show Dots | Toggle intersection point dots | On |
-| Grid Type | Rule of Thirds, Golden Ratio, Fibonacci Spiral, Triangle (multi-select) | Rule of Thirds, Triangle |
+| Grid Type | Rule of Thirds, Golden Ratio, Fibonacci Spiral, Triangle, Fifths, Center (multi-select) | Rule of Thirds, Triangle |
 | Spiral Direction | Fibonacci spiral orientation | Top-Left |
 | Line Color | Color of grid lines | `#ffffff` |
 | Dot Color | Color of intersection dots | `#ffffff` |
 | Dot Size | Size of intersection dots (2–20px) | `8px` |
 | Line Width | Thickness of grid lines (0.5–5px) | `1px` |
 | Line Style | Solid or Dashed | Solid |
+| Opacity | Grid transparency (10%–100%) | `75%` |
 | Skip Small Images | Minimum image size to show grid (50–500px) | `200px` |
 | Site Mode | All Sites / Block List / Allow List | All Sites |
 | Theme | Dark or Light interface | Dark |

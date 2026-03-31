@@ -2,6 +2,13 @@
 
 ## v1.0.8 — 2026-03-31
 
+### New Features
+
+- **Fifths Grid (Rule of Fifths)** — 5x5 grid overlay (lines at 20/40/60/80%) commonly used in cinematography. Includes 4 power point dots at corner intersections.
+- **Center Grid (Crosshair)** — Center crosshair overlay with quarter guidelines (25/75%) at reduced opacity. Ideal for symmetry-focused composition (architecture, portraits, product photography).
+- **Opacity Slider** — Adjustable grid opacity (10%–100%, default 75%). Applies to both lines and dots.
+- **Grid Type Reset Button** — Reset icon next to "Grid Type" label that restores default grid selection. Only appears when selection differs from default.
+
 ### Performance
 
 - **Content script size reduced by 93%** — Replaced React-based grid rendering with a vanilla DOM/SVG renderer. `content.js` dropped from 204 KB to 14.5 KB.
@@ -16,6 +23,12 @@
 
 - **DRY `syncOverlayPosition`** — Consolidated duplicate overlay positioning logic (image + video) into a single shared function in `shared.ts`.
 - **Centralized event system** — Added `onMutation()` callback registration alongside existing `onRenderAll`, `onNavigate`, and `onInteraction` hooks.
+- **Dead code removal** — Removed unused `src/components/` folder (5 React grid component files) replaced by the vanilla DOM renderer.
+
+### Testing
+
+- **Vitest test suite** — Added 33 unit tests covering types/defaults validation, i18n translations, and all 6 grid renderers.
+- **CI integration** — Added `npm test` step to GitHub Actions pipeline (runs before build).
 
 ### Landing Page
 

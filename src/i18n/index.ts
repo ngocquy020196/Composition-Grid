@@ -41,6 +41,14 @@ const translations = {
         en: 'Triangle',
         vi: 'Tam Giác',
     },
+    fifths: {
+        en: 'Fifths',
+        vi: 'Quy Tắc 1/5',
+    },
+    center: {
+        en: 'Center',
+        vi: 'Tâm Đối Xứng',
+    },
     spiralOrientation: {
         en: 'Spiral Direction',
         vi: 'Hướng Xoắn Ốc',
@@ -69,6 +77,10 @@ const translations = {
         en: 'Line Style',
         vi: 'Kiểu Nét',
     },
+    opacity: {
+        en: 'Opacity',
+        vi: 'Độ Mờ',
+    },
     solid: {
         en: 'Solid',
         vi: 'Nét Liền',
@@ -84,6 +96,10 @@ const translations = {
     resetSettings: {
         en: 'Reset to Defaults',
         vi: 'Khôi Phục Mặc Định',
+    },
+    resetGridType: {
+        en: 'Reset grid type',
+        vi: 'Đặt lại lưới mặc định',
     },
     tabSiteRules: {
         en: 'Allowed Sites',

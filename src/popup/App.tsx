@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { GridType, LineStyle, SpiralOrientation, Theme } from '../types';
+import { GridType, LineStyle, SpiralOrientation, Theme, DEFAULT_SETTINGS } from '../types';
 import { useSettings } from '../hooks/useSettings';
 import { t } from '../i18n';
 
@@ -118,9 +118,20 @@ const App: React.FC = () => {
 
             {/* Grid type (multi-select) */}
             <div className="setting-row setting-row-grid">
-                <span className="setting-label">{t('gridType', lang)}</span>
+                <div className="setting-label-group">
+                    <span className="setting-label">{t('gridType', lang)}</span>
+                    {!(settings.gridTypes.length === DEFAULT_SETTINGS.gridTypes.length && DEFAULT_SETTINGS.gridTypes.every((g) => settings.gridTypes.includes(g))) && (
+                        <button
+                            className="grid-reset-btn"
+                            onClick={() => update('gridTypes', DEFAULT_SETTINGS.gridTypes)}
+                            title={t('resetGridType', lang)}
+                        >
+                            ↺
+                        </button>
+                    )}
+                </div>
                 <div className="grid-type-selector">
-                    {(['thirds', 'golden', 'fibonacci', 'triangle'] as GridType[]).map((type) => (
+                    {(['thirds', 'golden', 'fibonacci', 'triangle', 'fifths', 'center'] as GridType[]).map((type) => (
                         <button
                             key={type}
                             className={settings.gridTypes.includes(type) ? 'seg-active' : ''}
@@ -245,6 +256,22 @@ const App: React.FC = () => {
                             {t(style, lang)}
                         </button>
                     ))}
+                </div>
+            </div>
+
+            {/* Opacity */}
+            <div className="setting-row">
+                <span className="setting-label">{t('opacity', lang)}</span>
+                <div className="slider-wrapper">
+                    <input
+                        type="range"
+                        min={0.1}
+                        max={1}
+                        step={0.05}
+                        value={settings.opacity}
+                        onChange={(e) => update('opacity', Number(e.target.value))}
+                    />
+                    <span className="slider-value">{Math.round(settings.opacity * 100)}%</span>
                 </div>
             </div>
 

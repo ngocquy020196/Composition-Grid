@@ -204,15 +204,66 @@ function buildGoldenTriangle(
     return frag;
 }
 
+
+function buildFifthsGrid(
+    lineColor: string, lineSize: number, dashArray?: string,
+    showDots?: boolean, dotColor?: string, dotSize?: number,
+): DocumentFragment {
+    const frag = document.createDocumentFragment();
+    const svg = createSVG('0 0 100 100');
+    const positions = [20, 40, 60, 80];
+
+    for (const p of positions) {
+        addLine(svg, p, 0, p, 100, lineColor, lineSize, dashArray);
+        addLine(svg, 0, p, 100, p, lineColor, lineSize, dashArray);
+    }
+    frag.appendChild(svg);
+
+    if (showDots && dotColor && dotSize) {
+        for (const [cx, cy] of [[20, 20], [20, 80], [80, 20], [80, 80]]) {
+            frag.appendChild(createDot(cx, cy, dotColor, dotSize));
+        }
+    }
+
+    return frag;
+}
+
+function buildCenterGrid(
+    lineColor: string, lineSize: number, dashArray?: string,
+    showDots?: boolean, dotColor?: string, dotSize?: number,
+): DocumentFragment {
+    const frag = document.createDocumentFragment();
+    const svg = createSVG('0 0 100 100');
+
+    // Center crosshair
+    addLine(svg, 50, 0, 50, 100, lineColor, lineSize, dashArray);
+    addLine(svg, 0, 50, 100, 50, lineColor, lineSize, dashArray);
+
+    // Quarter guidelines (lighter)
+    const sw = lineSize * 0.5;
+    addLine(svg, 25, 0, 25, 100, lineColor, sw, dashArray, 0.25);
+    addLine(svg, 75, 0, 75, 100, lineColor, sw, dashArray, 0.25);
+    addLine(svg, 0, 25, 100, 25, lineColor, sw, dashArray, 0.25);
+    addLine(svg, 0, 75, 100, 75, lineColor, sw, dashArray, 0.25);
+
+    frag.appendChild(svg);
+
+    if (showDots && dotColor && dotSize) {
+        frag.appendChild(createDot(50, 50, dotColor, dotSize));
+    }
+
+    return frag;
+}
+
 // ─── Main Render Function ────────────────────────────────────────────────────
 
 export function renderGrid(container: HTMLElement, settings: Settings): void {
     container.textContent = ''; // Fast clear
 
-    const { gridTypes, lineColor, lineSize, lineStyle, dotColor, showDots, dotSize, spiralOrientation } = settings;
+    const { gridTypes, lineColor, lineSize, lineStyle, dotColor, showDots, dotSize, spiralOrientation, opacity } = settings;
     const dashArray = lineStyle === 'dashed' ? '6 4' : undefined;
 
-    container.style.opacity = '0.75';
+    container.style.opacity = String(opacity);
 
     for (const type of gridTypes) {
         switch (type) {
@@ -232,6 +283,17 @@ export function renderGrid(container: HTMLElement, settings: Settings): void {
                     buildGoldenTriangle(lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
                 );
                 break;
+            case 'fifths':
+                container.appendChild(
+                    buildFifthsGrid(lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
+                );
+                break;
+            case 'center':
+                container.appendChild(
+                    buildCenterGrid(lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
+                );
+                break;
         }
     }
 }
+

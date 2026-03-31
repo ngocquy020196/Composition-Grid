@@ -10,7 +10,9 @@
     "build:content": "BUILD_TARGET=content vite build",
     "build:firefox": "npm run build && node scripts/build-firefox.js",
     "zip:firefox": "npm run build:firefox && cd dist-firefox && zip -r ../composition-grid-firefox-v$npm_package_version.zip . && cd .. && echo 'Created Firefox zip'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -22,13 +24,16 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.1",
+    "@testing-library/jest-dom": "^6.9.1",
     "@types/chrome": "^0.1.37",
     "@types/node": "^25.3.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.4",
+    "jsdom": "^29.0.1",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "vitest": "^4.1.2"
   }
 }
