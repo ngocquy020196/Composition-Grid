@@ -2,19 +2,17 @@
 // Self-contained module for <video> grid overlay.
 // Uses shared utilities from shared.ts — no duplicate state or event handlers.
 
-import ReactDOM from 'react-dom/client';
 import {
     ATTR, PENDING,
-    getState, isVisibleInDOM, calcObjectFitBounds,
-    renderGridElement, createVideoOverlay,
-    onRenderAll, onNavigate, onInteraction, ready,
+    getState, isVisibleInDOM,
+    renderGridElement, createVideoOverlay, syncOverlayPosition,
+    onRenderAll, onNavigate, onInteraction, onMutation, ready,
 } from './shared';
 
 // ─── State ───────────────────────────────────────────────────────────────────
 interface VideoEntry {
     video: HTMLVideoElement;
     container: HTMLElement;
-    root: ReactDOM.Root;
     overlayDiv: HTMLDivElement;
     resizeObserver?: ResizeObserver;
     originalParentPosition?: string;
@@ -32,7 +30,7 @@ function renderOverlay(entry: VideoEntry) {
     }
     entry.overlayDiv.style.display = '';
     entry.resizeObserver?.observe(entry.video);
-    renderGridElement(entry.root, settings);
+    renderGridElement(entry.overlayDiv, settings);
 }
 
 function renderAllOverlays() {
@@ -63,7 +61,7 @@ function cleanupVideo(video: HTMLVideoElement) {
     if (!entry) return;
     try {
         entry.resizeObserver?.disconnect();
-        entry.root.unmount();
+        entry.overlayDiv.textContent = '';
         entry.overlayDiv.remove();
         video.removeAttribute(ATTR);
         // Restore parent's original position
@@ -89,14 +87,7 @@ function shouldInject(video: HTMLVideoElement): boolean {
     return true;
 }
 
-function syncOverlayPosition(video: HTMLVideoElement, overlayDiv: HTMLDivElement) {
-    const bounds = calcObjectFitBounds(video, video.videoWidth, video.videoHeight);
-    if (bounds.width <= 0 || bounds.height <= 0) return;
-    overlayDiv.style.left = `${bounds.left}px`;
-    overlayDiv.style.top = `${bounds.top}px`;
-    overlayDiv.style.width = `${bounds.width}px`;
-    overlayDiv.style.height = `${bounds.height}px`;
-}
+
 
 function injectGrid(video: HTMLVideoElement) {
     const { tabActive } = getState();
@@ -112,17 +103,17 @@ function injectGrid(video: HTMLVideoElement) {
 
     video.setAttribute(ATTR, 'true');
 
-    syncOverlayPosition(video, overlayDiv);
+    syncOverlayPosition(video, overlayDiv, video.videoWidth, video.videoHeight);
 
     let rafId = 0;
     const resizeObserver = new ResizeObserver(() => {
+        if (!video.isConnected) { resizeObserver.disconnect(); return; }
         cancelAnimationFrame(rafId);
-        rafId = requestAnimationFrame(() => syncOverlayPosition(video, overlayDiv));
+        rafId = requestAnimationFrame(() => syncOverlayPosition(video, overlayDiv, video.videoWidth, video.videoHeight));
     });
     resizeObserver.observe(video);
 
-    const root = ReactDOM.createRoot(overlayDiv);
-    const entry: VideoEntry = { video, container: video.parentElement!, root, overlayDiv, resizeObserver, originalParentPosition };
+    const entry: VideoEntry = { video, container: video.parentElement!, overlayDiv, resizeObserver, originalParentPosition };
 
     videoMap.set(video, entry);
     renderOverlay(entry);
@@ -198,7 +189,7 @@ function observeVideo(video: HTMLVideoElement) {
     intersectionObserver.observe(video);
 }
 
-const mutationObserver = new MutationObserver((mutations) => {
+onMutation((mutations) => {
     let hasChildChanges = false;
 
     for (const mutation of mutations) {
@@ -253,15 +244,6 @@ async function init() {
 
     // Process existing videos
     document.querySelectorAll<HTMLVideoElement>('video').forEach(observeVideo);
-
-    // Watch for new videos and attribute changes
-    mutationObserver.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        attributeFilter: ['src', 'class', 'poster'],
-    });
-
 }
 
 init();

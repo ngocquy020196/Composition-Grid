@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.0.8 — 2026-03-31
+
+### Performance
+
+- **Content script size reduced by 93%** — Replaced React-based grid rendering with a vanilla DOM/SVG renderer. `content.js` dropped from 204 KB to 14.5 KB.
+- **Single MutationObserver** — Merged two separate MutationObservers (image + video) into one centralized observer in `shared.ts`, halving DOM mutation callback overhead.
+- **Throttled interaction detection** — Replaced `mousemove` debounce (fires hundreds of times/sec) with `click` + `scroll` listeners using a throttle flag. Eliminates unnecessary `clearTimeout`/`setTimeout` churn.
+- **Single `getComputedStyle` per image** — `shouldInject()` now computes styles once and passes them to `isVisibleInDOM()`, avoiding a redundant second call.
+- **`ResizeObserver` disconnect on detach** — Added `isConnected` guard so observers auto-disconnect when elements are removed from the DOM.
+- **Build target `chrome100`** — Vite now targets Chrome 100+ for content and background builds, eliminating unnecessary compatibility transforms.
+- **TypeScript strict mode** — Enabled `noUnusedLocals` and `noUnusedParameters` to catch dead code at compile time.
+
+### Improvements
+
+- **DRY `syncOverlayPosition`** — Consolidated duplicate overlay positioning logic (image + video) into a single shared function in `shared.ts`.
+- **Centralized event system** — Added `onMutation()` callback registration alongside existing `onRenderAll`, `onNavigate`, and `onInteraction` hooks.
+
+### Landing Page
+
+- **Non-blocking Google Fonts** — Fonts now load asynchronously via `preload` + `media="print"` trick, improving LCP.
+- **Reduced font weights** — Trimmed from 6 weights (400–900) to 4 (400, 600, 700, 800), saving ~30–40 KB of font download.
+- **Parallel GitHub API calls** — Star count and version tag fetches now run via `Promise.all` instead of sequentially.
+
+---
+
 ## v1.0.7 — 2026-03-30
 
 ### New Features
