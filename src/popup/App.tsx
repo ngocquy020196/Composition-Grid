@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { GridType, LineStyle, SpiralOrientation, Theme, DEFAULT_SETTINGS } from '../types';
+import { GridType, LineStyle, SpiralOrientation, Theme, DEFAULT_SETTINGS, GRID } from '../types';
 import { useSettings } from '../hooks/useSettings';
 import { t } from '../i18n';
 
@@ -131,7 +131,7 @@ const App: React.FC = () => {
                     )}
                 </div>
                 <div className="grid-type-selector">
-                    {(['thirds', 'golden', 'fibonacci', 'triangle', 'fifths', 'center'] as GridType[]).map((type) => (
+                    {(Object.values(GRID) as GridType[]).map((type) => (
                         <button
                             key={type}
                             className={settings.gridTypes.includes(type) ? 'seg-active' : ''}
@@ -153,7 +153,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Spiral orientation (only when fibonacci is selected) */}
-            {settings.gridTypes.includes('fibonacci') && (
+            {settings.gridTypes.includes(GRID.FIBONACCI) && (
                 <div className="setting-row">
                     <span className="setting-label">{t('spiralOrientation', lang)}</span>
                     <div className="segmented-control">

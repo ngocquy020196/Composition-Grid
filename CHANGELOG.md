@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.0.9 — 2026-04-05
+
+### Improvements
+
+- **Dot coordinate constants** — Extracted all hardcoded dot positions into named constants (`FIFTHS_DOTS`, `CENTER_DOT`), eliminating magic numbers across grid builders.
+- **Shared `CENTER_DOT`** — Golden Triangle and Center Grid now share a single `CENTER_DOT` constant instead of duplicating `[50, 50]` inline.
+- **Removed Fibonacci dots** — Fibonacci Spiral no longer renders intersection dots (cleaner spiral-only overlay). Removed unused `GOLDEN_DOTS` constant.
+- **`GRID` enum constant** — Added `GRID` const object (`GRID.THIRDS`, `GRID.GOLDEN`, etc.) in `types.ts` with `as const` literal types. Replaced all hardcoded grid type strings across `grid-renderer.ts`, `App.tsx`, `DEFAULT_SETTINGS`, and test files.
+
+### Testing
+
+- **Test suite rewrite** — Rewrote `grid-renderer.test.ts` from 22 to 44 tests. Added coverage for all 4 Fibonacci orientations, no-dots behavior, line color/width/vector-effect, quarter guidelines, total multi-grid dot count, and SVG attributes. All tests use `GRID.*` constants.
+
+---
+
 ## v1.0.8 — 2026-03-31
 
 ### New Features

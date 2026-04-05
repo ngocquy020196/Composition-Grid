@@ -3,14 +3,15 @@
 // Renders grids using pure DOM manipulation — no React dependency.
 
 import type { Settings, SpiralOrientation } from '../types';
+import { GRID } from '../types';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const SVG_STYLE = 'position:absolute;top:0;left:0;width:100%;height:100%';
 
-const GRID_POSITIONS: Record<'thirds' | 'golden', [number, number]> = {
-    thirds: [33.333, 66.667],
-    golden: [38.197, 61.803],
-};
+const GRID_POSITIONS = {
+    [GRID.THIRDS]: [33.333, 66.667],
+    [GRID.GOLDEN]: [38.197, 61.803],
+} satisfies Record<'thirds' | 'golden', [number, number]>;
 
 const SPIRAL_TRANSFORMS: Record<SpiralOrientation, string> = {
     0: 'none',
@@ -19,9 +20,11 @@ const SPIRAL_TRANSFORMS: Record<SpiralOrientation, string> = {
     3: 'scaleY(-1)',
 };
 
-const GOLDEN_DOTS: [number, number][] = [
-    [38.2, 38.2], [38.2, 61.8], [61.8, 38.2], [61.8, 61.8],
+const FIFTHS_DOTS: [number, number][] = [
+    [20, 20], [20, 80], [80, 20], [80, 80],
 ];
+
+const CENTER_DOT: [number, number][] = [[50, 50]];
 
 // Pre-compute Fibonacci spiral geometry (fixed viewBox 161.8 × 100)
 const FIBONACCI = (() => {
@@ -138,11 +141,10 @@ function buildStandardGrid(
 function buildFibonacciSpiral(
     lineColor: string, lineSize: number, dashArray: string | undefined,
     orientation: SpiralOrientation,
-    showDots?: boolean, dotColor?: string, dotSize?: number,
 ): DocumentFragment {
     const frag = document.createDocumentFragment();
 
-    // Wrapper for orientation transform (dots inside so they flip too)
+    // Wrapper for orientation transform
     const wrapper = document.createElement('div');
     const xform = SPIRAL_TRANSFORMS[orientation];
     wrapper.style.cssText = `width:100%;height:100%;transform:${xform}`;
@@ -165,14 +167,6 @@ function buildFibonacciSpiral(
     svg.appendChild(path);
 
     wrapper.appendChild(svg);
-
-    // Dots inside wrapper (affected by transform — matches React behavior)
-    if (showDots && dotColor && dotSize) {
-        for (const [cx, cy] of GOLDEN_DOTS) {
-            wrapper.appendChild(createDot(cx, cy, dotColor, dotSize));
-        }
-    }
-
     frag.appendChild(wrapper);
     return frag;
 }
@@ -198,12 +192,13 @@ function buildGoldenTriangle(
     frag.appendChild(svg);
 
     if (showDots && dotColor && dotSize) {
-        frag.appendChild(createDot(50, 50, dotColor, dotSize));
+        for (const [cx, cy] of CENTER_DOT) {
+            frag.appendChild(createDot(cx, cy, dotColor, dotSize));
+        }
     }
 
     return frag;
 }
-
 
 function buildFifthsGrid(
     lineColor: string, lineSize: number, dashArray?: string,
@@ -220,7 +215,7 @@ function buildFifthsGrid(
     frag.appendChild(svg);
 
     if (showDots && dotColor && dotSize) {
-        for (const [cx, cy] of [[20, 20], [20, 80], [80, 20], [80, 80]]) {
+        for (const [cx, cy] of FIFTHS_DOTS) {
             frag.appendChild(createDot(cx, cy, dotColor, dotSize));
         }
     }
@@ -249,7 +244,9 @@ function buildCenterGrid(
     frag.appendChild(svg);
 
     if (showDots && dotColor && dotSize) {
-        frag.appendChild(createDot(50, 50, dotColor, dotSize));
+        for (const [cx, cy] of CENTER_DOT) {
+            frag.appendChild(createDot(cx, cy, dotColor, dotSize));
+        }
     }
 
     return frag;
@@ -267,28 +264,28 @@ export function renderGrid(container: HTMLElement, settings: Settings): void {
 
     for (const type of gridTypes) {
         switch (type) {
-            case 'thirds':
-            case 'golden':
+            case GRID.THIRDS:
+            case GRID.GOLDEN:
                 container.appendChild(
                     buildStandardGrid(type, lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
                 );
                 break;
-            case 'fibonacci':
+            case GRID.FIBONACCI:
                 container.appendChild(
-                    buildFibonacciSpiral(lineColor, lineSize, dashArray, spiralOrientation, showDots, dotColor, dotSize),
+                    buildFibonacciSpiral(lineColor, lineSize, dashArray, spiralOrientation),
                 );
                 break;
-            case 'triangle':
+            case GRID.TRIANGLE:
                 container.appendChild(
                     buildGoldenTriangle(lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
                 );
                 break;
-            case 'fifths':
+            case GRID.FIFTHS:
                 container.appendChild(
                     buildFifthsGrid(lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
                 );
                 break;
-            case 'center':
+            case GRID.CENTER:
                 container.appendChild(
                     buildCenterGrid(lineColor, lineSize, dashArray, showDots, dotColor, dotSize),
                 );

@@ -1,4 +1,13 @@
 export type GridType = 'thirds' | 'golden' | 'fibonacci' | 'triangle' | 'fifths' | 'center';
+
+export const GRID = {
+    THIRDS: 'thirds',
+    GOLDEN: 'golden',
+    FIBONACCI: 'fibonacci',
+    TRIANGLE: 'triangle',
+    FIFTHS: 'fifths',
+    CENTER: 'center',
+} as const;
 export type Language = 'en' | 'vi';
 export type SpiralOrientation = 0 | 1 | 2 | 3;
 export type LineStyle = 'solid' | 'dashed';
@@ -30,7 +39,7 @@ export interface Settings {
 export const DEFAULT_SETTINGS: Settings = {
     enabled: true,
     videoEnabled: false,
-    gridTypes: ['thirds', 'triangle'],
+    gridTypes: [GRID.THIRDS, GRID.TRIANGLE],
     lineColor: '#ffffff',
     dotColor: '#ffffff',
     showDots: true,
