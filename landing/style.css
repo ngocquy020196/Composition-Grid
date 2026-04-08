@@ -705,6 +705,11 @@ body {
         flex-direction: column;
         gap: 16px;
     }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
