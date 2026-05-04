@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Composition Grid</title>
+    <meta name="description" content="Privacy Policy for Composition Grid browser extension." />
+    <link rel="icon" type="image/png" href="images/icon128.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* ===== Privacy Specific ===== */
+        .privacy-page {
+            padding: 120px 0 80px;
+            min-height: 100vh;
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .privacy-header h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .privacy-header p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .privacy-content h2 {
+            color: var(--text);
+            font-size: 24px;
+            font-weight: 700;
+            margin: 32px 0 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .privacy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .privacy-content p {
+            margin-bottom: 16px;
+        }
+
+        .privacy-content ul {
+            margin: 0 0 24px 0;
+            padding-left: 24px;
+        }
+
+        .privacy-content li {
+            margin-bottom: 8px;
+        }
+
+        .privacy-content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .privacy-content em {
+            font-style: italic;
+            opacity: 0.8;
+        }
+        
+        .privacy-content code {
+            font-size: 13px;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-purple);
+        }
+
+        .privacy-content a {
+            color: var(--accent-purple);
+            text-decoration: none;
+        }
+
+        .privacy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .privacy-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+
+        .privacy-content th, .privacy-content td {
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .privacy-content th {
+            background: rgba(255, 255, 255, 0.02);
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        @media (max-width: 640px) {
+            .privacy-content {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="images/icon128.png" alt="Composition Grid" width="32" height="32" />
+                <span>Composition Grid</span>
+            </a>
+            <div class="nav-links">
+                <a href="/#features">Features</a>
+                <a href="/#screenshots">Screenshots</a>
+                <a href="/changelog.html">Changelog</a>
+                <a href="https://github.com/ngocquy020196/Composition-Grid" target="_blank" rel="noopener"
+                    class="nav-github">
+                    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                    <span id="navStarCount">–</span>
+                </a>
+                <a href="/#install" class="nav-cta">Install Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Privacy Policy -->
+    <section class="privacy-page">
+        <div class="container">
+            <div class="privacy-header">
+                <h1>Privacy Policy</h1>
+                <p><strong>Composition Grid: Rule of Thirds, Golden Ratio & More</strong></p>
+                <p><em>Last updated: March 31, 2026</em></p>
+            </div>
+
+            <div class="privacy-content">
+                <h2>Overview</h2>
+                <p>Composition Grid is a browser extension for Chrome, Microsoft Edge, and Firefox that overlays composition grids (Rule of Thirds, Golden Ratio, Fibonacci Spiral, Golden Triangle, Fifths, and Center Crosshair) on images and video across the web. We are committed to protecting your privacy.</p>
+
+                <h2>Data Collection</h2>
+                <p><strong>We do not collect, store, or transmit any personal data.</strong></p>
+                <p>This extension:</p>
+                <ul>
+                    <li>Stores your settings (grid types, colors, sizes, language, site filter lists) locally using the browser's <code>storage.sync</code> API</li>
+                    <li>Reads the active tab's URL <strong>locally</strong> to show/hide the context menu based on your site filter settings</li>
+                    <li>Runs entirely on your device</li>
+                    <li>Does <strong>not</strong> collect browsing history</li>
+                    <li>Does <strong>not</strong> collect personal information</li>
+                    <li>Does <strong>not</strong> track user behavior</li>
+                    <li>Does <strong>not</strong> send data to any external servers</li>
+                    <li>Does <strong>not</strong> use cookies or analytics</li>
+                </ul>
+
+                <h2>Permissions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>storage</code></td>
+                            <td>Save your grid settings and site filter lists locally</td>
+                        </tr>
+                        <tr>
+                            <td><code>contextMenus</code></td>
+                            <td>Add a right-click menu option to toggle the grid on images</td>
+                        </tr>
+                        <tr>
+                            <td><code>tabs</code></td>
+                            <td>Read the active tab's URL to hide the context menu on sites you have blocked or not allowed</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;all_urls&gt;</code> (content script)</td>
+                            <td>Overlay grids on images across all websites</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Third-Party Services</h2>
+                <p>This extension does <strong>not</strong> use any third-party services, APIs, or analytics tools.</p>
+
+                <h2>Changes to This Policy</h2>
+                <p>If we update this privacy policy, the changes will be posted in this document with an updated date.</p>
+
+                <h2>Contact</h2>
+                <p>If you have any questions about this privacy policy, please contact:</p>
+                <ul>
+                    <li>Website: <a href="https://ngocquy.dev" target="_blank" rel="noopener">ngocquy.dev</a></li>
+                    <li>Email: <a href="mailto:contact@ngocquy.dev">contact@ngocquy.dev</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/icon128.png" alt="Composition Grid" width="28" height="28" />
+                    <span>Composition Grid</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/ngocquy020196/composition-grid" target="_blank" rel="noopener">GitHub</a>
+                    <a href="/privacy.html" style="color: var(--accent-purple);">Privacy</a>
+                    <a href="/changelog.html">Changelog</a>
+                    <a href="https://ngocquy.dev" target="_blank" rel="noopener">Author</a>
+                    <a href="mailto:contact@ngocquy.dev">Contact</a>
+                    <a href="https://buymeacoffee.com/ngocquy.dev" target="_blank" rel="noopener">Buy Me a Coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Powered by <a href="https://ngocquy.dev" target="_blank" rel="noopener">Quy Nguyen</a>. Version <span id="appVersion">x.x.x</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Nav scroll effect
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 50);
+        });
+
+        // Fetch GitHub star count
+        fetch('https://api.github.com/repos/ngocquy020196/Composition-Grid')
+            .then(r => r.json())
+            .then(data => {
+                if (data.stargazers_count !== undefined) {
+                    document.getElementById('navStarCount').textContent = data.stargazers_count;
+                }
+            })
+            .catch(() => { });
+
+        // Fetch latest version
+        fetch('https://api.github.com/repos/ngocquy020196/Composition-Grid/tags?per_page=1')
+            .then(r => r.json())
+            .then(tags => {
+                if (tags.length && tags[0].name) {
+                    document.getElementById('appVersion').textContent = tags[0].name.replace('v', '');
+                }
+            })
+            .catch(() => { });
+    </script>
+</body>
+
+</html>
