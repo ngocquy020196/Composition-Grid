@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1 — 2026-05-11
+
+### New Features
+
+- **Auto-open Options on Install** — Options page now opens automatically when the extension is first installed, helping new users discover settings and configure the extension right away. Does not trigger on extension updates.
+
+---
+
 ## v1.1.0 — 2026-04-06
 
 ### Improvements

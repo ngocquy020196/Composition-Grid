@@ -37,7 +37,7 @@ async function updateMenuVisibility(tab?: chrome.tabs.Tab) {
     }
 }
 
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onInstalled.addListener((details) => {
     // Create context menu with default English title
     chrome.contextMenus.create({
         id: MENU_ID,
@@ -49,6 +49,11 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.storage.sync.get({ language: 'en' }, (result) => {
         updateMenuTitle(result.language as Language);
     });
+
+    // Auto-open options page on first install
+    if (details.reason === 'install') {
+        chrome.runtime.openOptionsPage();
+    }
 });
 
 // Listen for language setting changes + site list changes
