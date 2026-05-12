@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.1.3 — 2026-05-12
+
+### New Features
+
+- **Interactive Tooltip Tour** — Step-by-step guided tour that highlights each popup control for new users
+  - Auto-triggers on first install (stored in `chrome.storage.local`)
+  - 8-step walkthrough covering: Image/Video Overlay, Grid Type, Line Color, Line Width, Opacity, Quick Color, and Site Rules
+  - Smooth slide transitions between steps with animated highlight cutout
+  - Progress bar and keyboard navigation (Arrow keys, Enter, Escape)
+  - Replay anytime via "Guide" button below Language setting
+  - Full i18n support (EN/VI)
+  - Zero external dependencies — custom lightweight implementation
+
+### Technical
+
+- **Box-shadow cutout technique** — Uses `box-shadow: 0 0 0 9999px` for backdrop dimming with element highlight, avoiding clip-path limitations
+- **Scroll-aware positioning** — Tooltip and highlight recalculate on scroll/resize via debounced RAF
+- **Batched state updates** — Single `setLayout()` call for highlight + tooltip positions to minimize re-renders
+- **Auto-detect tooltip direction** — Tooltip automatically positions above or below target based on available viewport space
+- **Design system consistency** — Tour buttons reuse existing `reset-btn`, `--btn-bg`, `--border` design tokens
+
+---
+
 ## v1.1.2 — 2026-05-11
 
 ### New Features

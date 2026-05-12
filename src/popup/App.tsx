@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { GridType, LineStyle, SpiralOrientation, Theme, DEFAULT_SETTINGS, GRID } from '../types';
 import { useSettings } from '../hooks/useSettings';
 import { t } from '../i18n';
+import Tour from '../components/Tour/Tour';
 
 const App: React.FC = () => {
     const { settings, loaded, update, reset } = useSettings();
     const lang = settings.language;
     const [fileAccessWarning, setFileAccessWarning] = useState(false);
     const [showDonate, setShowDonate] = useState(false);
+    const [showTour, setShowTour] = useState(false);
 
     // Apply theme to document root
     useEffect(() => {
@@ -35,6 +37,24 @@ const App: React.FC = () => {
         });
     }, []);
 
+    // Auto-show tour on first install
+    useEffect(() => {
+        chrome.storage.local.get('tourCompleted', (result) => {
+            if (!result.tourCompleted) {
+                setShowTour(true);
+            }
+        });
+    }, []);
+
+    const completeTour = () => {
+        setShowTour(false);
+        chrome.storage.local.set({ tourCompleted: true });
+    };
+
+    const replayTour = () => {
+        setShowTour(true);
+    };
+
     if (!loaded) return null;
 
     return (
@@ -61,7 +81,7 @@ const App: React.FC = () => {
             )}
 
             {/* Image Overlay toggle */}
-            <div className="setting-row toggle-row">
+            <div className="setting-row toggle-row" data-tour="image-overlay">
                 <div className="setting-label-group">
                     <span className="setting-label">{t('enableGrid', lang)}</span>
                     <span className="shortcut-hint">
@@ -81,7 +101,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Video Overlay toggle */}
-            <div className="setting-row toggle-row">
+            <div className="setting-row toggle-row" data-tour="video-overlay">
                 <div className="setting-label-group">
                     <span className="setting-label">{t('videoEnabled', lang)}</span>
                     <span className="shortcut-hint">
@@ -117,7 +137,7 @@ const App: React.FC = () => {
             <div className="divider" />
 
             {/* Grid type (multi-select) */}
-            <div className="setting-row setting-row-grid">
+            <div className="setting-row setting-row-grid" data-tour="grid-type">
                 <div className="setting-label-group">
                     <span className="setting-label">{t('gridType', lang)}</span>
                     {!(settings.gridTypes.length === DEFAULT_SETTINGS.gridTypes.length && DEFAULT_SETTINGS.gridTypes.every((g) => settings.gridTypes.includes(g))) && (
@@ -172,7 +192,7 @@ const App: React.FC = () => {
             )}
 
             {/* Line color */}
-            <div className="setting-row">
+            <div className="setting-row" data-tour="line-color">
                 <span className="setting-label">{t('lineColor', lang)}</span>
                 <div className="color-picker-wrapper">
                     <div
@@ -223,7 +243,7 @@ const App: React.FC = () => {
             )}
 
             {/* Line size */}
-            <div className="setting-row">
+            <div className="setting-row" data-tour="line-size">
                 <span className="setting-label">{t('lineSize', lang)}</span>
                 <div className="slider-wrapper">
                     <input
@@ -260,7 +280,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Opacity */}
-            <div className="setting-row">
+            <div className="setting-row" data-tour="opacity">
                 <span className="setting-label">{t('opacity', lang)}</span>
                 <div className="slider-wrapper">
                     <input
@@ -276,7 +296,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Quick Colors (Alt+C) */}
-            <div className="setting-row setting-row-quickcolor">
+            <div className="setting-row setting-row-quickcolor" data-tour="quick-color">
                 <div className="setting-row-top">
                     <div className="setting-label-group">
                         <span className="setting-label">{t('quickColor', lang)}</span>
@@ -330,7 +350,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Action buttons — Site Rules left, Reset right */}
-            <div className="setting-row">
+            <div className="setting-row" data-tour="site-rules">
                 <button
                     className="reset-btn active-btn"
                     onClick={async () => {
@@ -388,6 +408,14 @@ const App: React.FC = () => {
                 </div>
             </div>
 
+            {/* Guide replay */}
+            <div className="setting-row">
+                <span className="setting-label">{t('tourReplay', lang)}</span>
+                <button className="reset-btn" onClick={replayTour}>
+                    {t('tourReplay', lang)}
+                </button>
+            </div>
+
             {/* Donate notice — dismissable for 24h */}
             {showDonate && (
                 <div className="donate-notice">
@@ -411,6 +439,9 @@ const App: React.FC = () => {
                     Powered by <a href={t('authorWebsite', lang)} target="_blank" rel="noopener noreferrer">{t('authorName', lang)}</a>
                 </span>
             </footer>
+
+            {/* Interactive Tour */}
+            {showTour && <Tour lang={lang} onComplete={completeTour} />}
         </div>
     );
 };

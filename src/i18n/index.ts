@@ -209,6 +209,99 @@ const translations = {
         en: 'Enjoying this extension? Support its development!',
         vi: 'Thích extension này? Hãy ủng hộ tác giả!',
     },
+    // Tour - Navigation
+    tourSkip: {
+        en: 'Skip',
+        vi: 'Bỏ Qua',
+    },
+    tourPrev: {
+        en: 'Back',
+        vi: 'Trước',
+    },
+    tourNext: {
+        en: 'Next',
+        vi: 'Tiếp',
+    },
+    tourFinish: {
+        en: 'Got it!',
+        vi: 'Đã Hiểu!',
+    },
+    tourReplay: {
+        en: 'Guide',
+        vi: 'Hướng Dẫn',
+    },
+    // Tour - Step 1: Image Overlay
+    tourStep1Title: {
+        en: 'Image Overlay',
+        vi: 'Lưới Phủ Ảnh',
+    },
+    tourStep1Desc: {
+        en: 'Toggle grid overlay for all images on the page. Use Alt+I for quick toggle.',
+        vi: 'Bật/tắt lưới grid cho tất cả ảnh trên trang. Dùng Alt+I để bật/tắt nhanh.',
+    },
+    // Tour - Step 2: Video Overlay
+    tourStep2Title: {
+        en: 'Video Overlay',
+        vi: 'Lưới Phủ Video',
+    },
+    tourStep2Desc: {
+        en: 'Enable grid overlay on videos too. Press Alt+V to toggle.',
+        vi: 'Bật lưới grid cho cả video. Nhấn Alt+V để bật/tắt.',
+    },
+    // Tour - Step 3: Grid Type
+    tourStep3Title: {
+        en: 'Choose Your Grid',
+        vi: 'Chọn Loại Lưới',
+    },
+    tourStep3Desc: {
+        en: 'Pick one or more composition guides: Rule of Thirds, Golden Ratio, Fibonacci Spiral, and more!',
+        vi: 'Chọn một hoặc nhiều lưới bố cục: Quy tắc 1/3, Tỷ lệ vàng, Xoắn ốc Fibonacci và nhiều hơn!',
+    },
+    // Tour - Step 4: Line Color
+    tourStep4Title: {
+        en: 'Line Color',
+        vi: 'Màu Đường Kẻ',
+    },
+    tourStep4Desc: {
+        en: 'Customize the grid line color to suit your image background.',
+        vi: 'Tùy chỉnh màu đường kẻ để phù hợp với nền ảnh.',
+    },
+    // Tour - Step 5: Line Size & Style
+    tourStep5Title: {
+        en: 'Line Width',
+        vi: 'Độ Dày Đường Kẻ',
+    },
+    tourStep5Desc: {
+        en: 'Adjust line thickness. Use Alt+L to switch between solid and dashed styles.',
+        vi: 'Điều chỉnh độ dày đường kẻ. Dùng Alt+L để chuyển đổi kiểu nét liền/nét đứt.',
+    },
+    // Tour - Step 6: Opacity
+    tourStep6Title: {
+        en: 'Opacity',
+        vi: 'Độ Trong Suốt',
+    },
+    tourStep6Desc: {
+        en: 'Control how transparent the grid overlay appears over your images.',
+        vi: 'Điều chỉnh độ trong suốt của lưới phủ trên ảnh.',
+    },
+    // Tour - Step 7: Quick Color
+    tourStep7Title: {
+        en: 'Quick Color Switch',
+        vi: 'Đổi Màu Nhanh',
+    },
+    tourStep7Desc: {
+        en: 'Set two colors and press Alt+C to instantly swap between them. Great for dark/light images!',
+        vi: 'Đặt 2 màu rồi nhấn Alt+C để chuyển đổi tức thì. Rất tiện cho ảnh tối/sáng!',
+    },
+    // Tour - Step 8: Site Rules
+    tourStep8Title: {
+        en: 'Site Rules',
+        vi: 'Quy Tắc Website',
+    },
+    tourStep8Desc: {
+        en: 'Control which websites show the grid. Block or allow specific sites.',
+        vi: 'Kiểm soát website nào hiển thị lưới. Chặn hoặc cho phép từng website.',
+    },
 } as const satisfies Record<string, Record<Language, string>>;
 
 export type TranslationKey = keyof typeof translations;

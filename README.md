@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/manifest-v3-blue" alt="Manifest V3" />
-  <img src="https://img.shields.io/badge/version-1.1.0-green" alt="Version" />
+  <img src="https://img.shields.io/badge/version-1.1.3-green" alt="Version" />
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="License" />
   <img src="https://img.shields.io/badge/lang-EN%20%7C%20VI-blueviolet" alt="Languages" />
   <a href="https://app.netlify.com/projects/verdant-dolphin-649972/deploys"><img src="https://api.netlify.com/api/v1/badges/8b28cbe6-2074-485d-ab8a-dc2d6e9a527a/deploy-status" alt="Netlify Status" /></a>
@@ -38,6 +38,7 @@ A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**,
 - **Context Menu** — Right-click any image to toggle the grid overlay
 - **Site Mode** — All Sites / Block List / Allow List — control where the grid appears
 - **Dark / Light Theme** — Switch between dark and light interface
+- **Interactive Tooltip Tour** — Step-by-step guided tour for new users with highlighted controls
 - **Options Page** — Dedicated settings page with site management
 - **Bilingual** — English & Vietnamese (Tiếng Việt)
 - **High Performance** — Uses IntersectionObserver & MutationObserver for efficient image detection
@@ -59,6 +60,7 @@ A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**,
    - Set spiral orientation for Fibonacci Spiral
    - Customize line and dot colors & sizes
    - Switch language (EN / VI)
+6. First-time users see an **interactive guided tour** highlighting each control
 
 ## Tech Stack
 
@@ -100,6 +102,10 @@ composition-grid/
 │   │   ├── App.tsx             # Settings popup UI
 │   │   ├── main.tsx            # Popup entry point
 │   │   └── popup.css           # Popup styles
+│   ├── components/
+│   │   └── Tour/
+│   │       ├── Tour.tsx        # Interactive tooltip tour component
+│   │       └── tourSteps.ts    # Tour step definitions
 │   ├── utils/
 │   │   └── storage.ts          # Chrome storage API wrapper
 │   └── types.ts                # TypeScript types & default settings
