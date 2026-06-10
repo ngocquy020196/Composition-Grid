@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QS0Z1NVHKL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-QS0Z1NVHKL');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Composition Grid — Rule of Thirds, Golden Ratio & More | Chrome, Edge & Firefox Extension</title>
+    <meta name="description"
+        content="Overlay Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle composition grids on any image. Free Chrome, Edge & Firefox extension for photographers, designers and artists." />
+    <meta name="keywords"
+        content="composition grid, rule of thirds, golden ratio, fibonacci spiral, golden triangle, chrome extension, edge extension, firefox extension, photography, design, image overlay, composition tool" />
+    <meta name="author" content="Quy Nguyen" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09090b" />
+    <link rel="canonical" href="https://composition-grid.ngocquy.dev/" />
+    <!--HREFLANG-->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Composition Grid — Photo Composition Guides for Chrome, Edge & Firefox" />
+    <meta property="og:description"
+        content="Overlay Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle grids on any image. Free browser extension for Chrome, Edge & Firefox." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://composition-grid.ngocquy.dev/" />
+    <meta property="og:image" content="https://composition-grid.ngocquy.dev/images/popup-screenshot.png" />
+    <meta property="og:image:alt" content="Composition Grid extension popup interface" />
+    <meta property="og:site_name" content="Composition Grid" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Composition Grid — Photo Composition Guides" />
+    <meta name="twitter:description"
+        content="Overlay composition grids on any image right in your browser. Free for Chrome, Edge & Firefox." />
+    <meta name="twitter:image" content="https://composition-grid.ngocquy.dev/images/popup-screenshot.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="128x128" href="images/icon128.png" />
+    <link rel="apple-touch-icon" href="images/icon128.png" />
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+    </noscript>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Composition Grid",
+        "description": "Overlay Rule of Thirds, Golden Ratio, Fibonacci Spiral & Golden Triangle composition grids on any image. Free Chrome, Edge & Firefox extension for photographers, designers and artists.",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome, Edge, Firefox, Brave, Vivaldi",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Quy Nguyen",
+            "url": "https://ngocquy.dev"
+        },
+        "softwareVersion": "1.1.4",
+        "url": "https://composition-grid.ngocquy.dev/",
+        "downloadUrl": "https://chromewebstore.google.com/detail/composition-grid-rule-of/jogbipaobeabiebmceafacioemlincdl",
+        "screenshot": "https://composition-grid.ngocquy.dev/images/popup-screenshot.png",
+        "featureList": "Rule of Thirds, Golden Ratio, Fibonacci Spiral, Golden Triangle, Fifths, Center Crosshair, Video Overlay, Keyboard Shortcut, Context Menu, Custom Colors, Quick Color Toggle",
+        "inLanguage": "en"
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/icon128.png" alt="Composition Grid" width="32" height="32" />
+                <span>Composition Grid</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" data-i18n="navFeatures">Features</a>
+                <a href="#screenshots" data-i18n="navScreenshots">Screenshots</a>
+                <a href="/changelog.html" data-i18n="navChangelog">Changelog</a>
+                <a href="https://github.com/ngocquy020196/Composition-Grid" target="_blank" rel="noopener"
+                    class="nav-github">
+                    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                    <span id="navStarCount">–</span>
+                </a>
+                <a href="#install" class="nav-cta" data-i18n="navInstall">Install Free</a>
+                <div class="lang-switcher" id="langSwitcher" aria-label="Language"><!--LANG_SWITCHER--></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-grid-lines"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badges">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span data-i18n="heroBadgeFree">Free &amp; Open Source</span>
+                </div>
+                <a href="https://github.com/ngocquy020196/Composition-Grid" target="_blank" rel="noopener"
+                    class="hero-badge hero-github-link">
+                    <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                    <span data-i18n="heroViewGithub">View on GitHub</span>
+                </a>
+            </div>
+            <h1 data-i18n="heroTitle">
+                Composition Guides<br />
+                <span class="gradient-text">for Every Shot</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
+                Overlay <strong>Rule of Thirds</strong>, <strong>Golden Ratio</strong>,
+                <strong>Fibonacci Spiral</strong> & <strong>Golden Triangle</strong> grids
+                on any image & video — right in your browser.
+            </p>
+            <div class="hero-actions">
+                <a href="https://chromewebstore.google.com/detail/composition-grid-rule-of/jogbipaobeabiebmceafacioemlincdl"
+                    target="_blank" rel="noopener" class="btn btn-chrome">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <circle cx="12" cy="12" r="4" fill="currentColor" />
+                        <path d="M12 8L20.5 8" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M8 14L3.5 5" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M16 14L12 22" stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    <span data-i18n="heroInstallChrome">Install for Chrome</span>
+                </a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/keaefbocibpijkfgjlbcdlgahplmekof"
+                    target="_blank" rel="noopener" class="btn btn-edge">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path
+                            d="M21.86 17.86q.14 0 .25.12.1.13.1.25t-.11.33l-.32.46q-.43.58-1.15 1.13-.71.55-1.73 1.01-1.03.47-2.37.76-1.34.28-2.95.28-2.03 0-3.81-.65-1.78-.65-3.12-1.87-1.33-1.21-2.11-2.94-.78-1.72-.78-3.87 0-1.88.58-3.56.58-1.68 1.63-2.96Q7.01 5.08 8.35 4.2q1.34-.89 2.85-1.34 1.5-.45 3.01-.45 1.22 0 2.15.31.93.31 1.58.77.65.47 1.05.97.4.51.57.88l.13.27q.05.12.05.2 0 .1-.06.17-.07.08-.17.08h-7.46q-.2 0-.47.05-.28.06-.52.2-.25.15-.43.44-.18.3-.18.77 0 .66.35 1.14.34.49.87.81.52.32 1.15.5.62.17 1.16.17h7.08q.16 0 .28-.01.12-.02.24-.02z" />
+                    </svg>
+                    <span data-i18n="heroInstallEdge">Install for Edge</span>
+                </a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/composition-grid-rule-of-third/" target="_blank"
+                    rel="noopener" class="btn btn-firefox">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path
+                            d="M20.452 3.445a11.002 11.002 0 0 0-4.1-2.868 10.602 10.602 0 0 0-2.497-.727l-.009-.002A10.998 10.998 0 0 0 1.545 8.347a11 11 0 0 0 9.453 12.609 10.959 10.959 0 0 0 7.702-2.2 10.997 10.997 0 0 0 1.752-16.311zM16.96 17.2a5.2 5.2 0 0 1-2.069 1.248 7.094 7.094 0 0 1-2.436.465 6.28 6.28 0 0 1-4.56-1.724 7.3 7.3 0 0 1-1.202-1.64.443.443 0 0 1 .148-.57c.012-.007.182-.098.361-.025a5.055 5.055 0 0 0 1.842.405 2.52 2.52 0 0 0 1.453-.409 1.199 1.199 0 0 0 .478-.87 1.052 1.052 0 0 0-.473-.885 5.73 5.73 0 0 0-1.69-.765 6.164 6.164 0 0 1-2.509-1.474 3.316 3.316 0 0 1-.833-2.36A3.87 3.87 0 0 1 6.803 6.8a5.107 5.107 0 0 1 2.373-1.718 3.256 3.256 0 0 0-.452.8 4.404 4.404 0 0 0-.208 1.997 3.6 3.6 0 0 0 .718 1.578c.504-.123 1.027-.178 1.522-.29a7.053 7.053 0 0 0 2.002-.81 3.524 3.524 0 0 0 1.396-1.4 3.126 3.126 0 0 0 .3-1.882 5.107 5.107 0 0 0-.833-2.028 4.382 4.382 0 0 1 1.56.822 7.678 7.678 0 0 1 2.199 3.09 2.508 2.508 0 0 0 1.092-.465c.086-.067.274-.222.372-.215a.202.202 0 0 1 .164.149 7.027 7.027 0 0 1 .112 2.255 7.717 7.717 0 0 1-.79 2.735A7.684 7.684 0 0 1 16.96 17.2z" />
+                    </svg>
+                    <span data-i18n="heroInstallFirefox">Install for Firefox</span>
+                </a>
+            </div>
+            <p class="hero-note" data-i18n="heroNote">Works on Chrome, Edge, Firefox, Brave, Vivaldi & all Chromium browsers</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="featuresTitle">Everything you need for<br /><span class="gradient-text">perfect
+                    composition</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round">
+                            <rect x="2" y="2" width="20" height="20" rx="2" />
+                            <line x1="8.67" y1="2" x2="8.67" y2="22" />
+                            <line x1="15.33" y1="2" x2="15.33" y2="22" />
+                            <line x1="2" y1="8.67" x2="22" y2="8.67" />
+                            <line x1="2" y1="15.33" x2="22" y2="15.33" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="f1Title">6 Grid Types</h3>
+                    <p data-i18n="f1Desc">Rule of Thirds, Golden Ratio, Fibonacci Spiral, Golden Triangle, Fifths & Center Crosshair — all in one extension.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2" />
+                            <rect x="5" y="9" width="4" height="3" rx="0.5" />
+                            <line x1="12" y1="9" x2="12" y2="12" />
+                            <line x1="15" y1="9" x2="15" y2="12" />
+                            <line x1="18" y1="9" x2="18" y2="12" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="f2Title">Keyboard Shortcuts</h3>
+                    <p data-i18n="f2Desc">Press <kbd>Alt</kbd>+<kbd>I</kbd> for image overlay, <kbd>Alt</kbd>+<kbd>V</kbd> for video
+                        overlay,
+                        <kbd>Alt</kbd>+<kbd>L</kbd> for line style, <kbd>Alt</kbd>+<kbd>C</kbd> for quick color.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="f3Title">Video Overlay</h3>
+                    <p data-i18n="f3Desc">Composition grid on &lt;video&gt; elements too — with an independent toggle and shortcut.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9" />
+                            <path d="M15 3.5A7 7 0 0 1 20.5 9" />
+                            <circle cx="12" cy="12" r="1" fill="currentColor" />
+                            <line x1="12" y1="12" x2="18" y2="6" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="f4Title">Context Menu</h3>
+                    <p data-i18n="f4Desc">Right-click any image to toggle the grid overlay on that specific image.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M12 2v4m0 12v4M2 12h4m12 0h4" />
+                            <path
+                                d="M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="f5Title">Fully Customizable</h3>
+                    <p data-i18n="f5Desc">Pick custom colors, adjust line width, dot size, and toggle intersection dots.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="f6Title">Site Control</h3>
+                    <p data-i18n="f6Desc">Choose where the grid appears: All Sites, Block List, or Allow List — managed via Options page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <h2 class="section-title" data-i18n="shotsTitle">Designed to be<br /><span class="gradient-text">simple & powerful</span></h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <div class="screenshot-label" data-i18n="shot1Label">Extension Popup</div>
+                    <img src="images/popup-screenshot.png"
+                        alt="Composition Grid popup interface showing grid type selector, color picker, and toggle controls"
+                        loading="lazy" width="600" height="530" />
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-label" data-i18n="shot2Label">Right-Click Context Menu</div>
+                    <img src="images/context-menu-screenshot.png"
+                        alt="Right-click context menu showing Toggle Composition Grid option on a photo" loading="lazy"
+                        width="600" height="400" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid Types Section -->
+    <section class="grid-types">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gridsTitle">Choose your<br /><span class="gradient-text">composition guide</span></h2>
+            <div class="grid-types-list">
+                <div class="grid-type-card">
+                    <div class="grid-type-preview">
+                        <svg viewBox="0 0 300 200" role="img" aria-label="Rule of Thirds grid preview">
+                            <line x1="100" y1="0" x2="100" y2="200" stroke="rgba(167,139,250,0.6)" stroke-width="1.5" />
+                            <line x1="200" y1="0" x2="200" y2="200" stroke="rgba(167,139,250,0.6)" stroke-width="1.5" />
+                            <line x1="0" y1="66.7" x2="300" y2="66.7" stroke="rgba(167,139,250,0.6)"
+                                stroke-width="1.5" />
+                            <line x1="0" y1="133.3" x2="300" y2="133.3" stroke="rgba(167,139,250,0.6)"
+                                stroke-width="1.5" />
+                            <circle cx="100" cy="66.7" r="4" fill="#a78bfa" />
+                            <circle cx="200" cy="66.7" r="4" fill="#a78bfa" />
+                            <circle cx="100" cy="133.3" r="4" fill="#a78bfa" />
+                            <circle cx="200" cy="133.3" r="4" fill="#a78bfa" />
+                        </svg>
+                    </div>
+                    <h4 data-i18n="g1Title">Rule of Thirds</h4>
+                    <p data-i18n="g1Desc">The classic composition guide dividing the frame into 9 equal parts.</p>
+                </div>
+                <div class="grid-type-card">
+                    <div class="grid-type-preview">
+                        <svg viewBox="0 0 300 200" role="img" aria-label="Golden Ratio grid preview">
+                            <line x1="114.6" y1="0" x2="114.6" y2="200" stroke="rgba(236,72,153,0.6)"
+                                stroke-width="1.5" />
+                            <line x1="185.4" y1="0" x2="185.4" y2="200" stroke="rgba(236,72,153,0.6)"
+                                stroke-width="1.5" />
+                            <line x1="0" y1="76.4" x2="300" y2="76.4" stroke="rgba(236,72,153,0.6)"
+                                stroke-width="1.5" />
+                            <line x1="0" y1="123.6" x2="300" y2="123.6" stroke="rgba(236,72,153,0.6)"
+                                stroke-width="1.5" />
+                            <circle cx="114.6" cy="76.4" r="4" fill="#ec4899" />
+                            <circle cx="185.4" cy="76.4" r="4" fill="#ec4899" />
+                            <circle cx="114.6" cy="123.6" r="4" fill="#ec4899" />
+                            <circle cx="185.4" cy="123.6" r="4" fill="#ec4899" />
+                        </svg>
+                    </div>
+                    <h4 data-i18n="g2Title">Golden Ratio</h4>
+                    <p data-i18n="g2Desc">Based on the divine proportion (φ ≈ 1.618) for natural, pleasing balance.</p>
+                </div>
+                <div class="grid-type-card">
+                    <div class="grid-type-preview">
+                        <svg viewBox="0 0 161.8 100" role="img" aria-label="Fibonacci Spiral preview">
+                            <line x1="100" y1="0" x2="100" y2="100" stroke="rgba(251,191,36,0.3)" stroke-width="0.8" />
+                            <line x1="100" y1="61.8" x2="161.8" y2="61.8" stroke="rgba(251,191,36,0.3)"
+                                stroke-width="0.8" />
+                            <line x1="123.6" y1="61.8" x2="123.6" y2="100" stroke="rgba(251,191,36,0.25)"
+                                stroke-width="0.8" />
+                            <line x1="100" y1="76.4" x2="123.6" y2="76.4" stroke="rgba(251,191,36,0.2)"
+                                stroke-width="0.8" />
+                            <path
+                                d="M 0 100 A 100 100 0 0 1 100 0 A 61.8 61.8 0 0 1 161.8 61.8 A 38.2 38.2 0 0 1 123.6 100 A 23.6 23.6 0 0 1 100 76.4 A 14.6 14.6 0 0 1 114.6 61.8"
+                                fill="none" stroke="#fbbf24" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h4 data-i18n="g3Title">Fibonacci Spiral</h4>
+                    <p data-i18n="g3Desc">The golden spiral guides the eye naturally through the composition.</p>
+                </div>
+                <div class="grid-type-card">
+                    <div class="grid-type-preview">
+                        <svg viewBox="0 0 300 200" role="img" aria-label="Golden Triangle preview">
+                            <line x1="0" y1="200" x2="300" y2="0" stroke="rgba(52,211,153,0.6)" stroke-width="1.5" />
+                            <line x1="0" y1="0" x2="300" y2="200" stroke="rgba(52,211,153,0.4)" stroke-width="1.5" />
+                            <line x1="0" y1="0" x2="150" y2="100" stroke="rgba(52,211,153,0.5)" stroke-width="1.2" />
+                            <line x1="300" y1="0" x2="150" y2="100" stroke="rgba(52,211,153,0.45)" stroke-width="1.2" />
+                            <line x1="300" y1="200" x2="150" y2="100" stroke="rgba(52,211,153,0.5)"
+                                stroke-width="1.2" />
+                            <line x1="0" y1="200" x2="150" y2="100" stroke="rgba(52,211,153,0.45)" stroke-width="1.2" />
+                            <circle cx="150" cy="100" r="4" fill="#34d399" />
+                        </svg>
+                    </div>
+                    <h4 data-i18n="g4Title">Golden Triangle</h4>
+                    <p data-i18n="g4Desc">Diagonal guides perfect for dynamic compositions with strong lines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="install">
+        <div class="container">
+            <div class="cta-card">
+                <h2 data-i18n="ctaTitle">Ready to improve your compositions?</h2>
+                <p data-i18n="ctaDesc">Install Composition Grid for free and start analyzing any image & video on the web.</p>
+                <div class="hero-actions">
+                    <a href="https://chromewebstore.google.com/detail/composition-grid-rule-of/jogbipaobeabiebmceafacioemlincdl"
+                        target="_blank" rel="noopener" class="btn btn-chrome">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                            <circle cx="12" cy="12" r="4" fill="currentColor" />
+                            <path d="M12 8L20.5 8" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M8 14L3.5 5" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M16 14L12 22" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                        <span data-i18n="ctaChrome">Chrome Web Store</span>
+                    </a>
+                    <a href="https://microsoftedge.microsoft.com/addons/detail/keaefbocibpijkfgjlbcdlgahplmekof"
+                        target="_blank" rel="noopener" class="btn btn-edge">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M21.86 17.86q.14 0 .25.12.1.13.1.25t-.11.33l-.32.46q-.43.58-1.15 1.13-.71.55-1.73 1.01-1.03.47-2.37.76-1.34.28-2.95.28-2.03 0-3.81-.65-1.78-.65-3.12-1.87-1.33-1.21-2.11-2.94-.78-1.72-.78-3.87 0-1.88.58-3.56.58-1.68 1.63-2.96Q7.01 5.08 8.35 4.2q1.34-.89 2.85-1.34 1.5-.45 3.01-.45 1.22 0 2.15.31.93.31 1.58.77.65.47 1.05.97.4.51.57.88l.13.27q.05.12.05.2 0 .1-.06.17-.07.08-.17.08h-7.46q-.2 0-.47.05-.28.06-.52.2-.25.15-.43.44-.18.3-.18.77 0 .66.35 1.14.34.49.87.81.52.32 1.15.5.62.17 1.16.17h7.08q.16 0 .28-.01.12-.02.24-.02z" />
+                        </svg>
+                        <span data-i18n="ctaEdge">Edge Add-ons</span>
+                    </a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/composition-grid-rule-of-third/"
+                        target="_blank" rel="noopener" class="btn btn-firefox">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M20.452 3.445a11.002 11.002 0 0 0-4.1-2.868 10.602 10.602 0 0 0-2.497-.727l-.009-.002A10.998 10.998 0 0 0 1.545 8.347a11 11 0 0 0 9.453 12.609 10.959 10.959 0 0 0 7.702-2.2 10.997 10.997 0 0 0 1.752-16.311zM16.96 17.2a5.2 5.2 0 0 1-2.069 1.248 7.094 7.094 0 0 1-2.436.465 6.28 6.28 0 0 1-4.56-1.724 7.3 7.3 0 0 1-1.202-1.64.443.443 0 0 1 .148-.57c.012-.007.182-.098.361-.025a5.055 5.055 0 0 0 1.842.405 2.52 2.52 0 0 0 1.453-.409 1.199 1.199 0 0 0 .478-.87 1.052 1.052 0 0 0-.473-.885 5.73 5.73 0 0 0-1.69-.765 6.164 6.164 0 0 1-2.509-1.474 3.316 3.316 0 0 1-.833-2.36A3.87 3.87 0 0 1 6.803 6.8a5.107 5.107 0 0 1 2.373-1.718 3.256 3.256 0 0 0-.452.8 4.404 4.404 0 0 0-.208 1.997 3.6 3.6 0 0 0 .718 1.578c.504-.123 1.027-.178 1.522-.29a7.053 7.053 0 0 0 2.002-.81 3.524 3.524 0 0 0 1.396-1.4 3.126 3.126 0 0 0 .3-1.882 5.107 5.107 0 0 0-.833-2.028 4.382 4.382 0 0 1 1.56.822 7.678 7.678 0 0 1 2.199 3.09 2.508 2.508 0 0 0 1.092-.465c.086-.067.274-.222.372-.215a.202.202 0 0 1 .164.149 7.027 7.027 0 0 1 .112 2.255 7.717 7.717 0 0 1-.79 2.735A7.684 7.684 0 0 1 16.96 17.2z" />
+                        </svg>
+                        <span data-i18n="ctaFirefox">Firefox Add-ons</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/icon128.png" alt="Composition Grid" width="28" height="28" />
+                    <span>Composition Grid</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/ngocquy020196/composition-grid" target="_blank"
+                        rel="noopener">GitHub</a>
+                    <a href="/privacy.html" rel="noopener" data-i18n="footPrivacy">Privacy</a>
+                    <a href="/changelog.html" data-i18n="footChangelog">Changelog</a>
+                    <a href="https://ngocquy.dev" target="_blank" rel="noopener">Author</a>
+                    <a href="mailto:contact@ngocquy.dev" data-i18n="footContact">Contact</a>
+                    <a href="https://buymeacoffee.com/ngocquy.dev" target="_blank" rel="noopener" data-i18n="footCoffee">Buy Me a Coffee</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <span data-i18n="footPoweredBy">Powered by</span> <a href="https://ngocquy.dev" target="_blank" rel="noopener">Quy Nguyen</a>.
+                    <span data-i18n="footVersion">Version</span> <span id="appVersion">x.x.x</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Browser detection — highlight matching install button
+        (function () {
+            const ua = navigator.userAgent;
+            let activeClass = 'btn-chrome';
+            if (ua.includes('Firefox/')) activeClass = 'btn-firefox';
+            else if (ua.includes('Edg/')) activeClass = 'btn-edge';
+            document.querySelectorAll('.btn-chrome, .btn-edge, .btn-firefox').forEach(btn => {
+                if (btn.classList.contains(activeClass)) {
+                    btn.classList.add('btn-active');
+                }
+            });
+        })();
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Nav background on scroll
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 50);
+        });
+
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .screenshot-card, .grid-type-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Fetch GitHub star count and latest version in parallel
+        Promise.all([
+            fetch('https://api.github.com/repos/ngocquy020196/Composition-Grid').then(r => r.json()),
+            fetch('https://api.github.com/repos/ngocquy020196/Composition-Grid/tags?per_page=1').then(r => r.json()),
+        ]).then(([repo, tags]) => {
+            if (repo.stargazers_count !== undefined) {
+                document.getElementById('navStarCount').textContent = repo.stargazers_count;
+            }
+            if (tags.length && tags[0].name) {
+                document.getElementById('appVersion').textContent = tags[0].name.replace('v', '');
+            }
+        }).catch(() => { });
+    </script>
+</body>
+
+</html>

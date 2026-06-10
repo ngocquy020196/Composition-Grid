@@ -73,10 +73,12 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-shrink: 0;
     text-decoration: none;
     color: var(--text);
     font-weight: 700;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .nav-logo img {
@@ -86,7 +88,8 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 28px;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -94,6 +97,7 @@ body {
     color: var(--text-muted);
     font-size: 14px;
     font-weight: 500;
+    white-space: nowrap;
     transition: color 0.2s;
 }
 
@@ -664,6 +668,17 @@ body {
 }
 
 /* ===== Responsive ===== */
+/* Tablet: hide the secondary text links, keep GitHub + CTA + language switcher */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a:not(.nav-cta):not(.nav-github):not(.lang-link) {
+        display: none !important;
+    }
+}
+
 @media (max-width: 768px) {
     .features-grid {
         grid-template-columns: 1fr;
@@ -692,8 +707,50 @@ body {
         justify-content: center;
     }
 
-    .nav-links a:not(.nav-cta) {
+    .nav-links a:not(.nav-cta):not(.lang-link) {
         display: none !important;
+    }
+
+    /* Compact language switcher on mobile: flag + caret only */
+    .nav-container {
+        padding: 0 14px;
+    }
+
+    .nav-logo {
+        font-size: 15px;
+        min-width: 0;
+    }
+
+    .nav-logo span {
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    /* The hero section already has install buttons, so drop the nav CTA on
+       mobile — leaves logo + language switcher with plenty of room. */
+    .nav-cta {
+        display: none !important;
+    }
+
+    .lang-dd summary {
+        height: 38px;
+        box-sizing: border-box;
+        padding: 0 11px;
+        gap: 4px;
+    }
+
+    .lang-dd .lang-name {
+        display: none;
+    }
+
+    .lang-menu {
+        position: fixed;
+        right: 12px;
+        left: auto;
+        top: 60px;
     }
 
     .hero-badges {
@@ -710,6 +767,103 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+
+/* Language switcher (dropdown) */
+.lang-switcher {
+    display: inline-flex;
+    align-items: center;
+}
+
+.lang-dd {
+    position: relative;
+}
+
+.lang-dd summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.lang-dd summary::-webkit-details-marker,
+.lang-dd summary::marker {
+    display: none;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.lang-caret {
+    opacity: 0.6;
+    transition: transform 0.15s;
+}
+
+.lang-dd[open] .lang-caret {
+    transform: rotate(180deg);
+}
+
+.lang-dd summary:hover,
+.lang-dd[open] summary {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.32);
+}
+
+.lang-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 6px;
+    background: #18181b;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    min-width: 190px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.lang-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.lang-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.lang-link.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
 }
 
 @media (max-width: 480px) {

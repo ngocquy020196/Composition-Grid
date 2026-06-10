@@ -1,21 +1,886 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://composition-grid.ngocquy.dev/</loc>
-        <lastmod>2026-05-04</lastmod>
+        <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/vi/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/es/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/pt-br/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/fr/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/de/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ru/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ja/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ko/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/zh-cn/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/zh-tw/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/hi/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/id/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ar/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/" />
     </url>
     <url>
         <loc>https://composition-grid.ngocquy.dev/changelog.html</loc>
-        <lastmod>2026-05-04</lastmod>
+        <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/vi/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/es/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/pt-br/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/fr/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/de/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ru/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ja/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ko/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/zh-cn/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/zh-tw/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/hi/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/id/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ar/changelog.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/changelog.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/changelog.html" />
     </url>
     <url>
         <loc>https://composition-grid.ngocquy.dev/privacy.html</loc>
-        <lastmod>2026-05-04</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/vi/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/es/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/pt-br/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/fr/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/de/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ru/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ja/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ko/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/zh-cn/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/zh-tw/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/hi/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/id/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
+    </url>
+    <url>
+        <loc>https://composition-grid.ngocquy.dev/ar/privacy.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://composition-grid.ngocquy.dev/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="vi" href="https://composition-grid.ngocquy.dev/vi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://composition-grid.ngocquy.dev/es/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://composition-grid.ngocquy.dev/pt-br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://composition-grid.ngocquy.dev/fr/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://composition-grid.ngocquy.dev/de/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://composition-grid.ngocquy.dev/ru/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="https://composition-grid.ngocquy.dev/ja/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ko" href="https://composition-grid.ngocquy.dev/ko/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://composition-grid.ngocquy.dev/zh-cn/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://composition-grid.ngocquy.dev/zh-tw/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="hi" href="https://composition-grid.ngocquy.dev/hi/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="id" href="https://composition-grid.ngocquy.dev/id/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://composition-grid.ngocquy.dev/ar/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://composition-grid.ngocquy.dev/privacy.html" />
     </url>
 </urlset>
