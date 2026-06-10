@@ -8,7 +8,6 @@ export const GRID = {
     FIFTHS: 'fifths',
     CENTER: 'center',
 } as const;
-export type Language = 'en' | 'vi';
 export type SpiralOrientation = 0 | 1 | 2 | 3;
 export type LineStyle = 'solid' | 'dashed';
 export type SiteMode = 'all' | 'block' | 'allow';
@@ -28,7 +27,7 @@ export interface Settings {
     siteMode: SiteMode;
     blockList: string[];
     allowList: string[];
-    language: Language;
+    forceEnglish: boolean;
     spiralOrientation: SpiralOrientation;
     opacity: number;
     theme: Theme;
@@ -50,7 +49,7 @@ export const DEFAULT_SETTINGS: Settings = {
     siteMode: 'all',
     blockList: [],
     allowList: [],
-    language: 'en',
+    forceEnglish: false,
     spiralOrientation: 0,
     opacity: 0.75,
     theme: 'dark',

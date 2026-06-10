@@ -13,7 +13,7 @@ const Options: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'settings' | 'sites'>(initialTab);
     const { settings, loaded, update } = useSettings();
     const [newSite, setNewSite] = useState('');
-    const lang = settings.language;
+    const lang: 'auto' | 'en' = settings.forceEnglish ? 'en' : 'auto';
 
     if (!loaded) return null;
 
@@ -102,7 +102,7 @@ const Options: React.FC = () => {
                                             <button
                                                 className="site-remove-btn"
                                                 onClick={() => removeSite(site)}
-                                                title="Remove"
+                                                title={t('remove', lang)}
                                             >
                                                 ×
                                             </button>

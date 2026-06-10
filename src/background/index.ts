@@ -2,15 +2,12 @@
 // Handles right-click context menu on images with i18n support
 
 import { t } from '../i18n';
-import { Language } from '../types';
 import { MSG } from '../constants/messages';
 
 const MENU_ID = 'toggle-grid';
 
-function updateMenuTitle(lang: Language) {
-    chrome.contextMenus.update(MENU_ID, {
-        title: t('toggleGrid', lang),
-    });
+function applyMenuTitle(forceEnglish: boolean) {
+    chrome.contextMenus.update(MENU_ID, { title: t('toggleGrid', forceEnglish ? 'en' : 'auto') });
 }
 
 // Check if a site is blocked based on site mode settings
@@ -38,16 +35,17 @@ async function updateMenuVisibility(tab?: chrome.tabs.Tab) {
 }
 
 chrome.runtime.onInstalled.addListener((details) => {
-    // Create context menu with default English title
+    // Create context menu. Title is localized by Chrome's native i18n (chrome.i18n),
+    // which follows the browser UI language.
     chrome.contextMenus.create({
         id: MENU_ID,
-        title: t('toggleGrid', 'en'),
+        title: t('toggleGrid', 'auto'),
         contexts: ['image'],
     });
 
-    // Read saved language and update title
-    chrome.storage.sync.get({ language: 'en' }, (result) => {
-        updateMenuTitle(result.language as Language);
+    // Apply saved English override (if any) to the menu title
+    chrome.storage.sync.get({ forceEnglish: false }, (result) => {
+        applyMenuTitle(result.forceEnglish as boolean);
     });
 
     // Auto-open options page on first install
@@ -56,12 +54,12 @@ chrome.runtime.onInstalled.addListener((details) => {
     }
 });
 
-// Listen for language setting changes + site list changes
+// React to relevant setting changes
 chrome.storage.onChanged.addListener((changes) => {
-    if (changes.language) {
-        updateMenuTitle(changes.language.newValue as Language);
+    // Keep menu title in sync with the in-app English override
+    if (changes.forceEnglish) {
+        applyMenuTitle(changes.forceEnglish.newValue as boolean);
     }
-    // Re-check visibility when site mode/lists change
     if (changes.siteMode || changes.blockList || changes.allowList) {
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             if (tabs[0]) updateMenuVisibility(tabs[0]);

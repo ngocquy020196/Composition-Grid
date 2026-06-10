@@ -10,9 +10,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/manifest-v3-blue" alt="Manifest V3" />
-  <img src="https://img.shields.io/badge/version-1.1.3-green" alt="Version" />
+  <img src="https://img.shields.io/badge/version-1.1.4-green" alt="Version" />
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="License" />
-  <img src="https://img.shields.io/badge/lang-EN%20%7C%20VI-blueviolet" alt="Languages" />
+  <img src="https://img.shields.io/badge/lang-14%20languages-blueviolet" alt="Languages" />
   <a href="https://app.netlify.com/projects/verdant-dolphin-649972/deploys"><img src="https://api.netlify.com/api/v1/badges/8b28cbe6-2074-485d-ab8a-dc2d6e9a527a/deploy-status" alt="Netlify Status" /></a>
 </p>
 
@@ -40,7 +40,7 @@ A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**,
 - **Dark / Light Theme** — Switch between dark and light interface
 - **Interactive Tooltip Tour** — Step-by-step guided tour for new users with highlighted controls
 - **Options Page** — Dedicated settings page with site management
-- **Bilingual** — English & Vietnamese (Tiếng Việt)
+- **14 Languages** — UI automatically follows the browser language (English, Tiếng Việt, Español, Português-BR, Français, Deutsch, Русский, 日本語, 한국어, 简体中文, 繁體中文, हिन्दी, Indonesia, العربية), with a one-tap "switch to English" toggle
 - **High Performance** — Uses IntersectionObserver & MutationObserver for efficient image detection
 - **Manifest V3** — Built with the latest Chrome, Edge & Firefox extension standard
 
@@ -59,7 +59,7 @@ A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**,
    - Choose grid types (Rule of Thirds, Golden Ratio, Fibonacci Spiral, Triangle, Fifths, Center)
    - Set spiral orientation for Fibonacci Spiral
    - Customize line and dot colors & sizes
-   - Switch language (EN / VI)
+   - The UI follows your browser language automatically; switch to English in one tap when your browser is set to another language
 6. First-time users see an **interactive guided tour** highlighting each control
 
 ## Tech Stack
@@ -76,6 +76,7 @@ A lightweight Chrome, Edge & Firefox extension that overlays **Rule of Thirds**,
 ```
 composition-grid/
 ├── public/
+│   ├── _locales/               # Chrome i18n translations (14 languages, one messages.json each)
 │   ├── icons/                  # Extension icons (16, 48, 128px)
 │   └── manifest.json           # Extension manifest (Chrome & Edge — Firefox generated at build)
 ├── src/
@@ -93,7 +94,7 @@ composition-grid/
 │   ├── hooks/
 │   │   └── useSettings.ts     # Shared settings hook (debounced saves)
 │   ├── i18n/
-│   │   └── index.ts            # Internationalization (EN/VI)
+│   │   └── index.ts            # i18n helpers over Chrome native i18n (reads public/_locales)
 │   ├── options/
 │   │   ├── Options.tsx         # Options page (settings + site management)
 │   │   ├── main.tsx            # Options entry point
@@ -209,7 +210,7 @@ npm run zip:firefox    # Firefox zip
 | Site Mode | All Sites / Block List / Allow List | All Sites |
 | Theme | Dark or Light interface | Dark |
 | Quick Color | Two preset colors for quick toggle (`Alt+C`) | `#ffffff` / `#000000` |
-| Language | English or Vietnamese | English |
+| Language | Follows the browser language (14 supported) + quick switch to English | Browser language |
 
 ## Keyboard Shortcuts
 

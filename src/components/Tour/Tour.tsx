@@ -1,10 +1,9 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { Language } from '../../types';
 import { t } from '../../i18n';
 import { TOUR_STEPS } from './tourSteps';
 
 interface TourProps {
-    lang: Language;
+    lang: 'auto' | 'en';
     onComplete: () => void;
 }
 

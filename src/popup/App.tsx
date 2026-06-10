@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { GridType, LineStyle, SpiralOrientation, Theme, DEFAULT_SETTINGS, GRID } from '../types';
 import { useSettings } from '../hooks/useSettings';
-import { t } from '../i18n';
+import { t, getBrowserLang, isBrowserNonEnglish } from '../i18n';
 import Tour from '../components/Tour/Tour';
+
+// Browser UI language is fixed for the popup's lifetime — resolve once at load,
+// not on every render.
+const browserLang = getBrowserLang();
+const showLangSwitch = isBrowserNonEnglish();
 
 const App: React.FC = () => {
     const { settings, loaded, update, reset } = useSettings();
-    const lang = settings.language;
+    const lang: 'auto' | 'en' = settings.forceEnglish ? 'en' : 'auto';
     const [fileAccessWarning, setFileAccessWarning] = useState(false);
     const [showDonate, setShowDonate] = useState(false);
     const [showTour, setShowTour] = useState(false);
@@ -91,7 +96,7 @@ const App: React.FC = () => {
                 <button
                     className={`toggle-btn ${settings.enabled ? 'active' : ''}`}
                     onClick={() => update('enabled', !settings.enabled)}
-                    aria-label="Toggle image overlay"
+                    aria-label={t('ariaToggleImage', lang)}
                 >
                     <span className="toggle-knob" />
                     <span className="toggle-text">
@@ -111,7 +116,7 @@ const App: React.FC = () => {
                 <button
                     className={`toggle-btn ${settings.videoEnabled ? 'active' : ''}`}
                     onClick={() => update('videoEnabled', !settings.videoEnabled)}
-                    aria-label="Toggle video overlay"
+                    aria-label={t('ariaToggleVideo', lang)}
                 >
                     <span className="toggle-knob" />
                     <span className="toggle-text">
@@ -126,7 +131,7 @@ const App: React.FC = () => {
                 <button
                     className={`toggle-btn ${settings.showDots ? 'active' : ''}`}
                     onClick={() => update('showDots', !settings.showDots)}
-                    aria-label="Toggle dots"
+                    aria-label={t('ariaToggleDots', lang)}
                 >
                     <span className="toggle-knob" />
                     <span className="toggle-text">
@@ -182,7 +187,7 @@ const App: React.FC = () => {
                                 key={orient}
                                 className={settings.spiralOrientation === orient ? 'seg-active' : ''}
                                 onClick={() => update('spiralOrientation', orient)}
-                                title={['↱ Top-Left', '↲ Top-Right', '↳ Bottom-Right', '↰ Bottom-Left'][orient]}
+                                title={`${['↱', '↲', '↳', '↰'][orient]} ${t((['spiralTopLeft', 'spiralTopRight', 'spiralBottomRight', 'spiralBottomLeft'] as const)[orient], lang)}`}
                             >
                                 {['↱', '↲', '↳', '↰'][orient]}
                             </button>
@@ -389,24 +394,25 @@ const App: React.FC = () => {
                 </div>
             </div>
 
-            {/* Language */}
-            <div className="setting-row">
-                <span className="setting-label">{t('language', lang)}</span>
-                <div className="segmented-control">
-                    <button
-                        className={settings.language === 'en' ? 'seg-active' : ''}
-                        onClick={() => update('language', 'en')}
-                    >
-                        EN
-                    </button>
-                    <button
-                        className={settings.language === 'vi' ? 'seg-active' : ''}
-                        onClick={() => update('language', 'vi')}
-                    >
-                        VI
-                    </button>
+            {showLangSwitch && (
+                <div className="setting-row">
+                    <span className="setting-label">{t('language', lang)}</span>
+                    <div className="segmented-control">
+                        <button
+                            className={!settings.forceEnglish ? 'seg-active' : ''}
+                            onClick={() => update('forceEnglish', false)}
+                        >
+                            {browserLang.toUpperCase()}
+                        </button>
+                        <button
+                            className={settings.forceEnglish ? 'seg-active' : ''}
+                            onClick={() => update('forceEnglish', true)}
+                        >
+                            EN
+                        </button>
+                    </div>
                 </div>
-            </div>
+            )}
 
             {/* Guide replay */}
             <div className="setting-row">
@@ -422,7 +428,7 @@ const App: React.FC = () => {
                     <button className="donate-close" onClick={() => {
                         setShowDonate(false);
                         chrome.storage.local.set({ donateDismissedAt: Date.now() });
-                    }} aria-label="Close">&times;</button>
+                    }} aria-label={t('close', lang)}>&times;</button>
                     <p>{t('donateMessage', lang)}</p>
                     <a href="https://buymeacoffee.com/ngocquy.dev" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -436,7 +442,7 @@ const App: React.FC = () => {
                 <span>{t('version', lang)} {chrome.runtime.getManifest().version}</span>
                 <br />
                 <span>
-                    Powered by <a href={t('authorWebsite', lang)} target="_blank" rel="noopener noreferrer">{t('authorName', lang)}</a>
+                    {t('poweredBy', lang)} <a href={t('authorWebsite', lang)} target="_blank" rel="noopener noreferrer">{t('authorName', lang)}</a>
                 </span>
             </footer>
 

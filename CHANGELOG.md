@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.1.4 — 2026-06-10
+
+### New Features
+
+- **14 Languages** — The interface now ships in 14 languages: English, Vietnamese, Spanish, Portuguese (Brazil), French, German, Russian, Japanese, Korean, Simplified Chinese, Traditional Chinese, Hindi, Indonesian, and Arabic.
+- **Follows the browser language** — The UI automatically matches the browser's language via Chrome's native i18n. No setup needed.
+- **Quick "switch to English"** — When the browser is set to a non-English language, the popup shows a one-tap toggle to read the UI in English without changing the browser language. Hidden when the browser is already English.
+
+### Changed
+
+- **Migrated to Chrome native i18n (`_locales`)** — Translations moved from a bundled TypeScript object to standard `_locales/<lang>/messages.json` files. The previous manual EN/VI in-app switcher was replaced by the browser-driven model above.
+- **Localized manifest command descriptions** — Keyboard-shortcut descriptions on `chrome://extensions/shortcuts` are now translated per language.
+- **Localized accessibility labels & tooltips** — `aria-label`s and the Fibonacci spiral-direction tooltips are now translated.
+
+### Technical
+
+- **Single source of content** — `public/_locales` is the only translation source; `src/i18n/index.ts` slimmed to ~40 lines and derives `TranslationKey` from the English file.
+- **Auto-discovering tests** — `locales.test.ts` discovers every `_locales/<lang>` folder and enforces key parity with English, so adding a language needs no test changes.
+- **Zero-maintenance language switch** — The popup detects a non-English browser locale by comparing `chrome.i18n` output to the bundled English, removing the hardcoded language list.
+
+---
+
 ## v1.1.3 — 2026-05-12
 
 ### New Features
