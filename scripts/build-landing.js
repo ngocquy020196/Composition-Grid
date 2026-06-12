@@ -18,6 +18,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const { load } = require('cheerio');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -25,6 +26,15 @@ const SRC = path.join(ROOT, 'landing-src');
 const OUT = path.join(ROOT, 'landing');
 const I18N = path.join(SRC, 'i18n');
 const SITE = 'https://composition-grid.ngocquy.dev';
+
+// Cache-busting: use git short hash as version query string
+const GIT_HASH = (() => {
+    try {
+        return execSync('git rev-parse --short HEAD', { cwd: ROOT, encoding: 'utf-8' }).trim();
+    } catch {
+        return Date.now().toString(36);
+    }
+})();
 
 // code = URL segment / json filename ; hreflang = BCP-47 ; ogLocale = OG format
 // cc = flag file /images/flags/<cc>.svg ; name = native language name shown to users
@@ -137,11 +147,16 @@ function buildPage(lang, page, template) {
     }
 
     // Relative asset paths -> absolute (so /<code>/ pages resolve them)
+    // Also append cache-busting query to style.css
     $('[src], [href]').each((_, el) => {
         for (const attr of ['src', 'href']) {
             const v = $(el).attr(attr);
             if (v && /^(images\/|style\.css)/.test(v)) $(el).attr(attr, `/${v}`);
         }
+    });
+    $('link[rel="stylesheet"][href*="style.css"]').each((_, el) => {
+        const href = $(el).attr('href');
+        if (href && !href.includes('?')) $(el).attr('href', `${href}?v=${GIT_HASH}`);
     });
 
     // Language-aware internal links (must run BEFORE injecting the switcher,
