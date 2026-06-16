@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "모든 촬영을 위한 구도 가이드" },
-    "enableGrid": { "message": "이미지 오버레이" },
-    "videoEnabled": { "message": "동영상 오버레이" },
-    "gridType": { "message": "격자 종류" },
-    "showDots": { "message": "점 표시" },
-    "thirds": { "message": "삼분할 법칙" },
-    "golden": { "message": "황금 비율" },
-    "fibonacci": { "message": "피보나치 나선" },
-    "triangle": { "message": "삼각형" },
-    "fifths": { "message": "오분할" },
-    "center": { "message": "중앙" },
-    "spiralOrientation": { "message": "나선 방향" },
-    "toggleGrid": { "message": "구도 격자 켜기/끄기" },
-    "lineColor": { "message": "선 색상" },
-    "dotColor": { "message": "점 색상" },
-    "dotSize": { "message": "점 크기" },
-    "lineSize": { "message": "선 두께" },
-    "lineStyle": { "message": "선 스타일" },
-    "opacity": { "message": "불투명도" },
-    "solid": { "message": "실선" },
-    "dashed": { "message": "점선" },
-    "minImageSize": { "message": "작은 이미지 건너뛰기" },
-    "resetSettings": { "message": "기본값으로 초기화" },
-    "resetGridType": { "message": "격자 종류 초기화" },
-    "tabSiteRules": { "message": "허용된 사이트" },
-    "siteMode": { "message": "모드" },
-    "siteModeAll": { "message": "모든 사이트" },
-    "siteModeBlock": { "message": "차단 목록" },
-    "siteModeAllow": { "message": "허용 목록" },
-    "siteModeAllDesc": { "message": "모든 웹사이트에 격자가 표시됩니다" },
-    "siteModeBlockDesc": { "message": "이 사이트를 제외한 모든 곳에 격자가 표시됩니다" },
-    "siteModeAllowDesc": { "message": "이 사이트에만 격자가 표시됩니다" },
-    "addSite": { "message": "추가" },
-    "siteInputPlaceholder": { "message": "예: facebook.com" },
-    "siteBlockedAlert": { "message": "이 웹사이트에서는 Composition Grid가 비활성화되어 있습니다." },
-    "noSites": { "message": "아직 추가된 사이트가 없습니다" },
-    "language": { "message": "언어" },
-    "enabled": { "message": "켜짐" },
-    "disabled": { "message": "꺼짐" },
-    "version": { "message": "버전" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "제공" },
-    "theme": { "message": "테마" },
-    "dark": { "message": "다크" },
-    "light": { "message": "라이트" },
-    "quickColor": { "message": "빠른 색상" },
-    "quickColorHint": { "message": "선과 점에 적용됨" },
-    "fileAccessNotice": { "message": "로컬 파일에서 사용하려면 확장 프로그램 설정에서 \"파일 URL에 대한 액세스 허용\"을 켜세요." },
-    "fileAccessAction": { "message": "설정 열기" },
-    "buyMeCoffee": { "message": "커피 한 잔 사주기" },
-    "donateMessage": { "message": "이 확장 프로그램이 마음에 드시나요? 개발을 응원해 주세요!" },
-    "ariaToggleImage": { "message": "이미지 오버레이 켜기/끄기" },
-    "ariaToggleVideo": { "message": "동영상 오버레이 켜기/끄기" },
-    "ariaToggleDots": { "message": "점 켜기/끄기" },
-    "close": { "message": "닫기" },
-    "remove": { "message": "삭제" },
-    "spiralTopLeft": { "message": "왼쪽 위" },
-    "spiralTopRight": { "message": "오른쪽 위" },
-    "spiralBottomRight": { "message": "오른쪽 아래" },
-    "spiralBottomLeft": { "message": "왼쪽 아래" },
-    "tourSkip": { "message": "건너뛰기" },
-    "tourPrev": { "message": "이전" },
-    "tourNext": { "message": "다음" },
-    "tourFinish": { "message": "확인!" },
-    "tourReplay": { "message": "가이드" },
-    "tourStep1Title": { "message": "이미지 오버레이" },
-    "tourStep1Desc": { "message": "페이지의 모든 이미지에 격자 오버레이를 켜고 끕니다. Alt+I로 빠르게 전환하세요." },
-    "tourStep2Title": { "message": "동영상 오버레이" },
-    "tourStep2Desc": { "message": "동영상에도 격자 오버레이를 켤 수 있습니다. Alt+V를 눌러 전환하세요." },
-    "tourStep3Title": { "message": "격자 선택" },
-    "tourStep3Desc": { "message": "삼분할 법칙, 황금 비율, 피보나치 나선 등 하나 이상의 구도 가이드를 선택하세요!" },
-    "tourStep4Title": { "message": "선 색상" },
-    "tourStep4Desc": { "message": "이미지 배경에 맞게 격자 선 색상을 변경하세요." },
-    "tourStep5Title": { "message": "선 두께" },
-    "tourStep5Desc": { "message": "선 두께를 조절하세요. Alt+L로 실선과 점선 스타일을 전환할 수 있습니다." },
-    "tourStep6Title": { "message": "불투명도" },
-    "tourStep6Desc": { "message": "이미지 위에 표시되는 격자 오버레이의 투명도를 조절하세요." },
-    "tourStep7Title": { "message": "빠른 색상 전환" },
-    "tourStep7Desc": { "message": "두 가지 색상을 설정하고 Alt+C를 눌러 즉시 전환하세요. 어두운/밝은 이미지에 안성맞춤입니다!" },
-    "tourStep8Title": { "message": "사이트 규칙" },
-    "tourStep8Desc": { "message": "어떤 웹사이트에 격자를 표시할지 제어하세요. 특정 사이트를 차단하거나 허용할 수 있습니다." },
-    "cmdToggleImage": { "message": "이미지 오버레이 켜기/끄기" },
-    "cmdToggleVideo": { "message": "동영상 오버레이 켜기/끄기" },
-    "cmdToggleLineStyle": { "message": "실선과 점선 전환" },
-    "cmdToggleColor": { "message": "두 빠른 색상 간 전환" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "모든 이미지와 동영상에 구도 그리드 오버레이: 삼분할 법칙, 황금비, 피보나치 나선 및 삼각형 가이드."
+    },
+    "appTagline": {
+        "message": "모든 촬영을 위한 구도 가이드"
+    },
+    "enableGrid": {
+        "message": "이미지 오버레이"
+    },
+    "videoEnabled": {
+        "message": "동영상 오버레이"
+    },
+    "gridType": {
+        "message": "격자 종류"
+    },
+    "showDots": {
+        "message": "점 표시"
+    },
+    "thirds": {
+        "message": "삼분할 법칙"
+    },
+    "golden": {
+        "message": "황금 비율"
+    },
+    "fibonacci": {
+        "message": "피보나치 나선"
+    },
+    "triangle": {
+        "message": "삼각형"
+    },
+    "fifths": {
+        "message": "오분할"
+    },
+    "center": {
+        "message": "중앙"
+    },
+    "spiralOrientation": {
+        "message": "나선 방향"
+    },
+    "toggleGrid": {
+        "message": "구도 격자 켜기/끄기"
+    },
+    "lineColor": {
+        "message": "선 색상"
+    },
+    "dotColor": {
+        "message": "점 색상"
+    },
+    "dotSize": {
+        "message": "점 크기"
+    },
+    "lineSize": {
+        "message": "선 두께"
+    },
+    "lineStyle": {
+        "message": "선 스타일"
+    },
+    "opacity": {
+        "message": "불투명도"
+    },
+    "solid": {
+        "message": "실선"
+    },
+    "dashed": {
+        "message": "점선"
+    },
+    "minImageSize": {
+        "message": "작은 이미지 건너뛰기"
+    },
+    "resetSettings": {
+        "message": "기본값으로 초기화"
+    },
+    "resetGridType": {
+        "message": "격자 종류 초기화"
+    },
+    "tabSiteRules": {
+        "message": "허용된 사이트"
+    },
+    "siteMode": {
+        "message": "모드"
+    },
+    "siteModeAll": {
+        "message": "모든 사이트"
+    },
+    "siteModeBlock": {
+        "message": "차단 목록"
+    },
+    "siteModeAllow": {
+        "message": "허용 목록"
+    },
+    "siteModeAllDesc": {
+        "message": "모든 웹사이트에 격자가 표시됩니다"
+    },
+    "siteModeBlockDesc": {
+        "message": "이 사이트를 제외한 모든 곳에 격자가 표시됩니다"
+    },
+    "siteModeAllowDesc": {
+        "message": "이 사이트에만 격자가 표시됩니다"
+    },
+    "addSite": {
+        "message": "추가"
+    },
+    "siteInputPlaceholder": {
+        "message": "예: facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "이 웹사이트에서는 Composition Grid가 비활성화되어 있습니다."
+    },
+    "noSites": {
+        "message": "아직 추가된 사이트가 없습니다"
+    },
+    "language": {
+        "message": "언어"
+    },
+    "enabled": {
+        "message": "켜짐"
+    },
+    "disabled": {
+        "message": "꺼짐"
+    },
+    "version": {
+        "message": "버전"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "제공"
+    },
+    "theme": {
+        "message": "테마"
+    },
+    "dark": {
+        "message": "다크"
+    },
+    "light": {
+        "message": "라이트"
+    },
+    "quickColor": {
+        "message": "빠른 색상"
+    },
+    "quickColorHint": {
+        "message": "선과 점에 적용됨"
+    },
+    "fileAccessNotice": {
+        "message": "로컬 파일에서 사용하려면 확장 프로그램 설정에서 \"파일 URL에 대한 액세스 허용\"을 켜세요."
+    },
+    "fileAccessAction": {
+        "message": "설정 열기"
+    },
+    "buyMeCoffee": {
+        "message": "커피 한 잔 사주기"
+    },
+    "donateMessage": {
+        "message": "이 확장 프로그램이 마음에 드시나요? 개발을 응원해 주세요!"
+    },
+    "ariaToggleImage": {
+        "message": "이미지 오버레이 켜기/끄기"
+    },
+    "ariaToggleVideo": {
+        "message": "동영상 오버레이 켜기/끄기"
+    },
+    "ariaToggleDots": {
+        "message": "점 켜기/끄기"
+    },
+    "close": {
+        "message": "닫기"
+    },
+    "remove": {
+        "message": "삭제"
+    },
+    "spiralTopLeft": {
+        "message": "왼쪽 위"
+    },
+    "spiralTopRight": {
+        "message": "오른쪽 위"
+    },
+    "spiralBottomRight": {
+        "message": "오른쪽 아래"
+    },
+    "spiralBottomLeft": {
+        "message": "왼쪽 아래"
+    },
+    "tourSkip": {
+        "message": "건너뛰기"
+    },
+    "tourPrev": {
+        "message": "이전"
+    },
+    "tourNext": {
+        "message": "다음"
+    },
+    "tourFinish": {
+        "message": "확인!"
+    },
+    "tourReplay": {
+        "message": "가이드"
+    },
+    "tourStep1Title": {
+        "message": "이미지 오버레이"
+    },
+    "tourStep1Desc": {
+        "message": "페이지의 모든 이미지에 격자 오버레이를 켜고 끕니다. Alt+I로 빠르게 전환하세요."
+    },
+    "tourStep2Title": {
+        "message": "동영상 오버레이"
+    },
+    "tourStep2Desc": {
+        "message": "동영상에도 격자 오버레이를 켤 수 있습니다. Alt+V를 눌러 전환하세요."
+    },
+    "tourStep3Title": {
+        "message": "격자 선택"
+    },
+    "tourStep3Desc": {
+        "message": "삼분할 법칙, 황금 비율, 피보나치 나선 등 하나 이상의 구도 가이드를 선택하세요!"
+    },
+    "tourStep4Title": {
+        "message": "선 색상"
+    },
+    "tourStep4Desc": {
+        "message": "이미지 배경에 맞게 격자 선 색상을 변경하세요."
+    },
+    "tourStep5Title": {
+        "message": "선 두께"
+    },
+    "tourStep5Desc": {
+        "message": "선 두께를 조절하세요. Alt+L로 실선과 점선 스타일을 전환할 수 있습니다."
+    },
+    "tourStep6Title": {
+        "message": "불투명도"
+    },
+    "tourStep6Desc": {
+        "message": "이미지 위에 표시되는 격자 오버레이의 투명도를 조절하세요."
+    },
+    "tourStep7Title": {
+        "message": "빠른 색상 전환"
+    },
+    "tourStep7Desc": {
+        "message": "두 가지 색상을 설정하고 Alt+C를 눌러 즉시 전환하세요. 어두운/밝은 이미지에 안성맞춤입니다!"
+    },
+    "tourStep8Title": {
+        "message": "사이트 규칙"
+    },
+    "tourStep8Desc": {
+        "message": "어떤 웹사이트에 격자를 표시할지 제어하세요. 특정 사이트를 차단하거나 허용할 수 있습니다."
+    },
+    "cmdToggleImage": {
+        "message": "이미지 오버레이 켜기/끄기"
+    },
+    "cmdToggleVideo": {
+        "message": "동영상 오버레이 켜기/끄기"
+    },
+    "cmdToggleLineStyle": {
+        "message": "실선과 점선 전환"
+    },
+    "cmdToggleColor": {
+        "message": "두 빠른 색상 간 전환"
+    }
 }

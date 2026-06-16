@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "Guías de composición para cada toma" },
-    "enableGrid": { "message": "Superposición en imágenes" },
-    "videoEnabled": { "message": "Superposición en vídeos" },
-    "gridType": { "message": "Tipo de cuadrícula" },
-    "showDots": { "message": "Mostrar puntos" },
-    "thirds": { "message": "Regla de los tercios" },
-    "golden": { "message": "Proporción áurea" },
-    "fibonacci": { "message": "Espiral de Fibonacci" },
-    "triangle": { "message": "Triángulo" },
-    "fifths": { "message": "Quintos" },
-    "center": { "message": "Centro" },
-    "spiralOrientation": { "message": "Dirección de la espiral" },
-    "toggleGrid": { "message": "Alternar cuadrícula de composición" },
-    "lineColor": { "message": "Color de línea" },
-    "dotColor": { "message": "Color de punto" },
-    "dotSize": { "message": "Tamaño de punto" },
-    "lineSize": { "message": "Grosor de línea" },
-    "lineStyle": { "message": "Estilo de línea" },
-    "opacity": { "message": "Opacidad" },
-    "solid": { "message": "Sólida" },
-    "dashed": { "message": "Discontinua" },
-    "minImageSize": { "message": "Omitir imágenes pequeñas" },
-    "resetSettings": { "message": "Restablecer valores predeterminados" },
-    "resetGridType": { "message": "Restablecer tipo de cuadrícula" },
-    "tabSiteRules": { "message": "Sitios permitidos" },
-    "siteMode": { "message": "Modo" },
-    "siteModeAll": { "message": "Todos los sitios" },
-    "siteModeBlock": { "message": "Lista de bloqueo" },
-    "siteModeAllow": { "message": "Lista de permitidos" },
-    "siteModeAllDesc": { "message": "La cuadrícula aparece en todos los sitios web" },
-    "siteModeBlockDesc": { "message": "La cuadrícula aparece en todas partes excepto en estos sitios" },
-    "siteModeAllowDesc": { "message": "La cuadrícula solo aparece en estos sitios" },
-    "addSite": { "message": "Añadir" },
-    "siteInputPlaceholder": { "message": "p. ej. facebook.com" },
-    "siteBlockedAlert": { "message": "Composition Grid está desactivado en este sitio web." },
-    "noSites": { "message": "Aún no se han añadido sitios" },
-    "language": { "message": "Idioma" },
-    "enabled": { "message": "Activado" },
-    "disabled": { "message": "Desactivado" },
-    "version": { "message": "Versión" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "Con tecnología de" },
-    "theme": { "message": "Tema" },
-    "dark": { "message": "Oscuro" },
-    "light": { "message": "Claro" },
-    "quickColor": { "message": "Color rápido" },
-    "quickColorHint": { "message": "Aplicado a líneas y puntos" },
-    "fileAccessNotice": { "message": "Activa \"Permitir acceso a URL de archivos\" en los ajustes de la extensión para usarla en archivos locales." },
-    "fileAccessAction": { "message": "Abrir ajustes" },
-    "buyMeCoffee": { "message": "Invítame a un café" },
-    "donateMessage": { "message": "¿Te gusta esta extensión? ¡Apoya su desarrollo!" },
-    "ariaToggleImage": { "message": "Alternar superposición en imágenes" },
-    "ariaToggleVideo": { "message": "Alternar superposición en vídeos" },
-    "ariaToggleDots": { "message": "Alternar puntos" },
-    "close": { "message": "Cerrar" },
-    "remove": { "message": "Eliminar" },
-    "spiralTopLeft": { "message": "Arriba a la izquierda" },
-    "spiralTopRight": { "message": "Arriba a la derecha" },
-    "spiralBottomRight": { "message": "Abajo a la derecha" },
-    "spiralBottomLeft": { "message": "Abajo a la izquierda" },
-    "tourSkip": { "message": "Omitir" },
-    "tourPrev": { "message": "Atrás" },
-    "tourNext": { "message": "Siguiente" },
-    "tourFinish": { "message": "¡Entendido!" },
-    "tourReplay": { "message": "Guía" },
-    "tourStep1Title": { "message": "Superposición en imágenes" },
-    "tourStep1Desc": { "message": "Activa la cuadrícula superpuesta en todas las imágenes de la página. Usa Alt+I para alternarla rápidamente." },
-    "tourStep2Title": { "message": "Superposición en vídeos" },
-    "tourStep2Desc": { "message": "Activa también la cuadrícula superpuesta en los vídeos. Pulsa Alt+V para alternarla." },
-    "tourStep3Title": { "message": "Elige tu cuadrícula" },
-    "tourStep3Desc": { "message": "Elige una o varias guías de composición: regla de los tercios, proporción áurea, espiral de Fibonacci ¡y más!" },
-    "tourStep4Title": { "message": "Color de línea" },
-    "tourStep4Desc": { "message": "Personaliza el color de las líneas de la cuadrícula para adaptarlo al fondo de tu imagen." },
-    "tourStep5Title": { "message": "Grosor de línea" },
-    "tourStep5Desc": { "message": "Ajusta el grosor de las líneas. Usa Alt+L para cambiar entre estilos sólido y discontinuo." },
-    "tourStep6Title": { "message": "Opacidad" },
-    "tourStep6Desc": { "message": "Controla la transparencia de la cuadrícula superpuesta sobre tus imágenes." },
-    "tourStep7Title": { "message": "Cambio rápido de color" },
-    "tourStep7Desc": { "message": "Define dos colores y pulsa Alt+C para alternar al instante entre ellos. ¡Ideal para imágenes oscuras o claras!" },
-    "tourStep8Title": { "message": "Reglas de sitios" },
-    "tourStep8Desc": { "message": "Controla en qué sitios web se muestra la cuadrícula. Bloquea o permite sitios concretos." },
-    "cmdToggleImage": { "message": "Alternar superposición en imágenes" },
-    "cmdToggleVideo": { "message": "Alternar superposición en vídeos" },
-    "cmdToggleLineStyle": { "message": "Cambiar entre líneas sólidas y discontinuas" },
-    "cmdToggleColor": { "message": "Alternar entre tus dos colores rápidos" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "Superpón cuadrículas de composición en imágenes y videos: Regla de los tercios, Proporción áurea, Espiral de Fibonacci y Triángulo."
+    },
+    "appTagline": {
+        "message": "Guías de composición para cada toma"
+    },
+    "enableGrid": {
+        "message": "Superposición en imágenes"
+    },
+    "videoEnabled": {
+        "message": "Superposición en vídeos"
+    },
+    "gridType": {
+        "message": "Tipo de cuadrícula"
+    },
+    "showDots": {
+        "message": "Mostrar puntos"
+    },
+    "thirds": {
+        "message": "Regla de los tercios"
+    },
+    "golden": {
+        "message": "Proporción áurea"
+    },
+    "fibonacci": {
+        "message": "Espiral de Fibonacci"
+    },
+    "triangle": {
+        "message": "Triángulo"
+    },
+    "fifths": {
+        "message": "Quintos"
+    },
+    "center": {
+        "message": "Centro"
+    },
+    "spiralOrientation": {
+        "message": "Dirección de la espiral"
+    },
+    "toggleGrid": {
+        "message": "Alternar cuadrícula de composición"
+    },
+    "lineColor": {
+        "message": "Color de línea"
+    },
+    "dotColor": {
+        "message": "Color de punto"
+    },
+    "dotSize": {
+        "message": "Tamaño de punto"
+    },
+    "lineSize": {
+        "message": "Grosor de línea"
+    },
+    "lineStyle": {
+        "message": "Estilo de línea"
+    },
+    "opacity": {
+        "message": "Opacidad"
+    },
+    "solid": {
+        "message": "Sólida"
+    },
+    "dashed": {
+        "message": "Discontinua"
+    },
+    "minImageSize": {
+        "message": "Omitir imágenes pequeñas"
+    },
+    "resetSettings": {
+        "message": "Restablecer valores predeterminados"
+    },
+    "resetGridType": {
+        "message": "Restablecer tipo de cuadrícula"
+    },
+    "tabSiteRules": {
+        "message": "Sitios permitidos"
+    },
+    "siteMode": {
+        "message": "Modo"
+    },
+    "siteModeAll": {
+        "message": "Todos los sitios"
+    },
+    "siteModeBlock": {
+        "message": "Lista de bloqueo"
+    },
+    "siteModeAllow": {
+        "message": "Lista de permitidos"
+    },
+    "siteModeAllDesc": {
+        "message": "La cuadrícula aparece en todos los sitios web"
+    },
+    "siteModeBlockDesc": {
+        "message": "La cuadrícula aparece en todas partes excepto en estos sitios"
+    },
+    "siteModeAllowDesc": {
+        "message": "La cuadrícula solo aparece en estos sitios"
+    },
+    "addSite": {
+        "message": "Añadir"
+    },
+    "siteInputPlaceholder": {
+        "message": "p. ej. facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "Composition Grid está desactivado en este sitio web."
+    },
+    "noSites": {
+        "message": "Aún no se han añadido sitios"
+    },
+    "language": {
+        "message": "Idioma"
+    },
+    "enabled": {
+        "message": "Activado"
+    },
+    "disabled": {
+        "message": "Desactivado"
+    },
+    "version": {
+        "message": "Versión"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "Con tecnología de"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "dark": {
+        "message": "Oscuro"
+    },
+    "light": {
+        "message": "Claro"
+    },
+    "quickColor": {
+        "message": "Color rápido"
+    },
+    "quickColorHint": {
+        "message": "Aplicado a líneas y puntos"
+    },
+    "fileAccessNotice": {
+        "message": "Activa \"Permitir acceso a URL de archivos\" en los ajustes de la extensión para usarla en archivos locales."
+    },
+    "fileAccessAction": {
+        "message": "Abrir ajustes"
+    },
+    "buyMeCoffee": {
+        "message": "Invítame a un café"
+    },
+    "donateMessage": {
+        "message": "¿Te gusta esta extensión? ¡Apoya su desarrollo!"
+    },
+    "ariaToggleImage": {
+        "message": "Alternar superposición en imágenes"
+    },
+    "ariaToggleVideo": {
+        "message": "Alternar superposición en vídeos"
+    },
+    "ariaToggleDots": {
+        "message": "Alternar puntos"
+    },
+    "close": {
+        "message": "Cerrar"
+    },
+    "remove": {
+        "message": "Eliminar"
+    },
+    "spiralTopLeft": {
+        "message": "Arriba a la izquierda"
+    },
+    "spiralTopRight": {
+        "message": "Arriba a la derecha"
+    },
+    "spiralBottomRight": {
+        "message": "Abajo a la derecha"
+    },
+    "spiralBottomLeft": {
+        "message": "Abajo a la izquierda"
+    },
+    "tourSkip": {
+        "message": "Omitir"
+    },
+    "tourPrev": {
+        "message": "Atrás"
+    },
+    "tourNext": {
+        "message": "Siguiente"
+    },
+    "tourFinish": {
+        "message": "¡Entendido!"
+    },
+    "tourReplay": {
+        "message": "Guía"
+    },
+    "tourStep1Title": {
+        "message": "Superposición en imágenes"
+    },
+    "tourStep1Desc": {
+        "message": "Activa la cuadrícula superpuesta en todas las imágenes de la página. Usa Alt+I para alternarla rápidamente."
+    },
+    "tourStep2Title": {
+        "message": "Superposición en vídeos"
+    },
+    "tourStep2Desc": {
+        "message": "Activa también la cuadrícula superpuesta en los vídeos. Pulsa Alt+V para alternarla."
+    },
+    "tourStep3Title": {
+        "message": "Elige tu cuadrícula"
+    },
+    "tourStep3Desc": {
+        "message": "Elige una o varias guías de composición: regla de los tercios, proporción áurea, espiral de Fibonacci ¡y más!"
+    },
+    "tourStep4Title": {
+        "message": "Color de línea"
+    },
+    "tourStep4Desc": {
+        "message": "Personaliza el color de las líneas de la cuadrícula para adaptarlo al fondo de tu imagen."
+    },
+    "tourStep5Title": {
+        "message": "Grosor de línea"
+    },
+    "tourStep5Desc": {
+        "message": "Ajusta el grosor de las líneas. Usa Alt+L para cambiar entre estilos sólido y discontinuo."
+    },
+    "tourStep6Title": {
+        "message": "Opacidad"
+    },
+    "tourStep6Desc": {
+        "message": "Controla la transparencia de la cuadrícula superpuesta sobre tus imágenes."
+    },
+    "tourStep7Title": {
+        "message": "Cambio rápido de color"
+    },
+    "tourStep7Desc": {
+        "message": "Define dos colores y pulsa Alt+C para alternar al instante entre ellos. ¡Ideal para imágenes oscuras o claras!"
+    },
+    "tourStep8Title": {
+        "message": "Reglas de sitios"
+    },
+    "tourStep8Desc": {
+        "message": "Controla en qué sitios web se muestra la cuadrícula. Bloquea o permite sitios concretos."
+    },
+    "cmdToggleImage": {
+        "message": "Alternar superposición en imágenes"
+    },
+    "cmdToggleVideo": {
+        "message": "Alternar superposición en vídeos"
+    },
+    "cmdToggleLineStyle": {
+        "message": "Cambiar entre líneas sólidas y discontinuas"
+    },
+    "cmdToggleColor": {
+        "message": "Alternar entre tus dos colores rápidos"
+    }
 }

@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "Guias de composição para cada foto" },
-    "enableGrid": { "message": "Sobreposição em imagens" },
-    "videoEnabled": { "message": "Sobreposição em vídeos" },
-    "gridType": { "message": "Tipo de grade" },
-    "showDots": { "message": "Mostrar pontos" },
-    "thirds": { "message": "Regra dos terços" },
-    "golden": { "message": "Proporção áurea" },
-    "fibonacci": { "message": "Espiral de Fibonacci" },
-    "triangle": { "message": "Triângulo" },
-    "fifths": { "message": "Quintos" },
-    "center": { "message": "Centro" },
-    "spiralOrientation": { "message": "Direção da espiral" },
-    "toggleGrid": { "message": "Alternar grade de composição" },
-    "lineColor": { "message": "Cor da linha" },
-    "dotColor": { "message": "Cor do ponto" },
-    "dotSize": { "message": "Tamanho do ponto" },
-    "lineSize": { "message": "Espessura da linha" },
-    "lineStyle": { "message": "Estilo da linha" },
-    "opacity": { "message": "Opacidade" },
-    "solid": { "message": "Sólida" },
-    "dashed": { "message": "Tracejada" },
-    "minImageSize": { "message": "Ignorar imagens pequenas" },
-    "resetSettings": { "message": "Restaurar padrões" },
-    "resetGridType": { "message": "Redefinir tipo de grade" },
-    "tabSiteRules": { "message": "Sites permitidos" },
-    "siteMode": { "message": "Modo" },
-    "siteModeAll": { "message": "Todos os sites" },
-    "siteModeBlock": { "message": "Lista de bloqueio" },
-    "siteModeAllow": { "message": "Lista de permissão" },
-    "siteModeAllDesc": { "message": "A grade aparece em todos os sites" },
-    "siteModeBlockDesc": { "message": "A grade aparece em todos os sites, exceto nestes" },
-    "siteModeAllowDesc": { "message": "A grade aparece apenas nestes sites" },
-    "addSite": { "message": "Adicionar" },
-    "siteInputPlaceholder": { "message": "ex.: facebook.com" },
-    "siteBlockedAlert": { "message": "A Composition Grid está desativada neste site." },
-    "noSites": { "message": "Nenhum site adicionado ainda" },
-    "language": { "message": "Idioma" },
-    "enabled": { "message": "Ativado" },
-    "disabled": { "message": "Desativado" },
-    "version": { "message": "Versão" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "Desenvolvido por" },
-    "theme": { "message": "Tema" },
-    "dark": { "message": "Escuro" },
-    "light": { "message": "Claro" },
-    "quickColor": { "message": "Cor rápida" },
-    "quickColorHint": { "message": "Aplicada às linhas e aos pontos" },
-    "fileAccessNotice": { "message": "Ative \"Permitir acesso a URLs de arquivo\" nas configurações da extensão para usar em arquivos locais." },
-    "fileAccessAction": { "message": "Abrir configurações" },
-    "buyMeCoffee": { "message": "Pague-me um café" },
-    "donateMessage": { "message": "Está gostando desta extensão? Apoie o desenvolvimento!" },
-    "ariaToggleImage": { "message": "Alternar sobreposição em imagens" },
-    "ariaToggleVideo": { "message": "Alternar sobreposição em vídeos" },
-    "ariaToggleDots": { "message": "Alternar pontos" },
-    "close": { "message": "Fechar" },
-    "remove": { "message": "Remover" },
-    "spiralTopLeft": { "message": "Superior esquerdo" },
-    "spiralTopRight": { "message": "Superior direito" },
-    "spiralBottomRight": { "message": "Inferior direito" },
-    "spiralBottomLeft": { "message": "Inferior esquerdo" },
-    "tourSkip": { "message": "Pular" },
-    "tourPrev": { "message": "Voltar" },
-    "tourNext": { "message": "Avançar" },
-    "tourFinish": { "message": "Entendi!" },
-    "tourReplay": { "message": "Guia" },
-    "tourStep1Title": { "message": "Sobreposição em imagens" },
-    "tourStep1Desc": { "message": "Ative a sobreposição da grade em todas as imagens da página. Use Alt+I para alternar rapidamente." },
-    "tourStep2Title": { "message": "Sobreposição em vídeos" },
-    "tourStep2Desc": { "message": "Ative a sobreposição da grade também em vídeos. Pressione Alt+V para alternar." },
-    "tourStep3Title": { "message": "Escolha sua grade" },
-    "tourStep3Desc": { "message": "Escolha um ou mais guias de composição: Regra dos terços, Proporção áurea, Espiral de Fibonacci e muito mais!" },
-    "tourStep4Title": { "message": "Cor da linha" },
-    "tourStep4Desc": { "message": "Personalize a cor das linhas da grade para combinar com o fundo da sua imagem." },
-    "tourStep5Title": { "message": "Espessura da linha" },
-    "tourStep5Desc": { "message": "Ajuste a espessura da linha. Use Alt+L para alternar entre os estilos sólido e tracejado." },
-    "tourStep6Title": { "message": "Opacidade" },
-    "tourStep6Desc": { "message": "Controle a transparência da sobreposição da grade sobre suas imagens." },
-    "tourStep7Title": { "message": "Troca rápida de cor" },
-    "tourStep7Desc": { "message": "Defina duas cores e pressione Alt+C para alternar entre elas instantaneamente. Ótimo para imagens escuras ou claras!" },
-    "tourStep8Title": { "message": "Regras de sites" },
-    "tourStep8Desc": { "message": "Controle em quais sites a grade aparece. Bloqueie ou permita sites específicos." },
-    "cmdToggleImage": { "message": "Alternar sobreposição em imagens" },
-    "cmdToggleVideo": { "message": "Alternar sobreposição em vídeos" },
-    "cmdToggleLineStyle": { "message": "Alternar entre linhas sólidas e tracejadas" },
-    "cmdToggleColor": { "message": "Alternar entre suas duas cores rápidas" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "Sobreponha grades de composição em imagens e vídeos: Regra dos Terços, Proporção Áurea, Espiral de Fibonacci e Triângulo."
+    },
+    "appTagline": {
+        "message": "Guias de composição para cada foto"
+    },
+    "enableGrid": {
+        "message": "Sobreposição em imagens"
+    },
+    "videoEnabled": {
+        "message": "Sobreposição em vídeos"
+    },
+    "gridType": {
+        "message": "Tipo de grade"
+    },
+    "showDots": {
+        "message": "Mostrar pontos"
+    },
+    "thirds": {
+        "message": "Regra dos terços"
+    },
+    "golden": {
+        "message": "Proporção áurea"
+    },
+    "fibonacci": {
+        "message": "Espiral de Fibonacci"
+    },
+    "triangle": {
+        "message": "Triângulo"
+    },
+    "fifths": {
+        "message": "Quintos"
+    },
+    "center": {
+        "message": "Centro"
+    },
+    "spiralOrientation": {
+        "message": "Direção da espiral"
+    },
+    "toggleGrid": {
+        "message": "Alternar grade de composição"
+    },
+    "lineColor": {
+        "message": "Cor da linha"
+    },
+    "dotColor": {
+        "message": "Cor do ponto"
+    },
+    "dotSize": {
+        "message": "Tamanho do ponto"
+    },
+    "lineSize": {
+        "message": "Espessura da linha"
+    },
+    "lineStyle": {
+        "message": "Estilo da linha"
+    },
+    "opacity": {
+        "message": "Opacidade"
+    },
+    "solid": {
+        "message": "Sólida"
+    },
+    "dashed": {
+        "message": "Tracejada"
+    },
+    "minImageSize": {
+        "message": "Ignorar imagens pequenas"
+    },
+    "resetSettings": {
+        "message": "Restaurar padrões"
+    },
+    "resetGridType": {
+        "message": "Redefinir tipo de grade"
+    },
+    "tabSiteRules": {
+        "message": "Sites permitidos"
+    },
+    "siteMode": {
+        "message": "Modo"
+    },
+    "siteModeAll": {
+        "message": "Todos os sites"
+    },
+    "siteModeBlock": {
+        "message": "Lista de bloqueio"
+    },
+    "siteModeAllow": {
+        "message": "Lista de permissão"
+    },
+    "siteModeAllDesc": {
+        "message": "A grade aparece em todos os sites"
+    },
+    "siteModeBlockDesc": {
+        "message": "A grade aparece em todos os sites, exceto nestes"
+    },
+    "siteModeAllowDesc": {
+        "message": "A grade aparece apenas nestes sites"
+    },
+    "addSite": {
+        "message": "Adicionar"
+    },
+    "siteInputPlaceholder": {
+        "message": "ex.: facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "A Composition Grid está desativada neste site."
+    },
+    "noSites": {
+        "message": "Nenhum site adicionado ainda"
+    },
+    "language": {
+        "message": "Idioma"
+    },
+    "enabled": {
+        "message": "Ativado"
+    },
+    "disabled": {
+        "message": "Desativado"
+    },
+    "version": {
+        "message": "Versão"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "Desenvolvido por"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "dark": {
+        "message": "Escuro"
+    },
+    "light": {
+        "message": "Claro"
+    },
+    "quickColor": {
+        "message": "Cor rápida"
+    },
+    "quickColorHint": {
+        "message": "Aplicada às linhas e aos pontos"
+    },
+    "fileAccessNotice": {
+        "message": "Ative \"Permitir acesso a URLs de arquivo\" nas configurações da extensão para usar em arquivos locais."
+    },
+    "fileAccessAction": {
+        "message": "Abrir configurações"
+    },
+    "buyMeCoffee": {
+        "message": "Pague-me um café"
+    },
+    "donateMessage": {
+        "message": "Está gostando desta extensão? Apoie o desenvolvimento!"
+    },
+    "ariaToggleImage": {
+        "message": "Alternar sobreposição em imagens"
+    },
+    "ariaToggleVideo": {
+        "message": "Alternar sobreposição em vídeos"
+    },
+    "ariaToggleDots": {
+        "message": "Alternar pontos"
+    },
+    "close": {
+        "message": "Fechar"
+    },
+    "remove": {
+        "message": "Remover"
+    },
+    "spiralTopLeft": {
+        "message": "Superior esquerdo"
+    },
+    "spiralTopRight": {
+        "message": "Superior direito"
+    },
+    "spiralBottomRight": {
+        "message": "Inferior direito"
+    },
+    "spiralBottomLeft": {
+        "message": "Inferior esquerdo"
+    },
+    "tourSkip": {
+        "message": "Pular"
+    },
+    "tourPrev": {
+        "message": "Voltar"
+    },
+    "tourNext": {
+        "message": "Avançar"
+    },
+    "tourFinish": {
+        "message": "Entendi!"
+    },
+    "tourReplay": {
+        "message": "Guia"
+    },
+    "tourStep1Title": {
+        "message": "Sobreposição em imagens"
+    },
+    "tourStep1Desc": {
+        "message": "Ative a sobreposição da grade em todas as imagens da página. Use Alt+I para alternar rapidamente."
+    },
+    "tourStep2Title": {
+        "message": "Sobreposição em vídeos"
+    },
+    "tourStep2Desc": {
+        "message": "Ative a sobreposição da grade também em vídeos. Pressione Alt+V para alternar."
+    },
+    "tourStep3Title": {
+        "message": "Escolha sua grade"
+    },
+    "tourStep3Desc": {
+        "message": "Escolha um ou mais guias de composição: Regra dos terços, Proporção áurea, Espiral de Fibonacci e muito mais!"
+    },
+    "tourStep4Title": {
+        "message": "Cor da linha"
+    },
+    "tourStep4Desc": {
+        "message": "Personalize a cor das linhas da grade para combinar com o fundo da sua imagem."
+    },
+    "tourStep5Title": {
+        "message": "Espessura da linha"
+    },
+    "tourStep5Desc": {
+        "message": "Ajuste a espessura da linha. Use Alt+L para alternar entre os estilos sólido e tracejado."
+    },
+    "tourStep6Title": {
+        "message": "Opacidade"
+    },
+    "tourStep6Desc": {
+        "message": "Controle a transparência da sobreposição da grade sobre suas imagens."
+    },
+    "tourStep7Title": {
+        "message": "Troca rápida de cor"
+    },
+    "tourStep7Desc": {
+        "message": "Defina duas cores e pressione Alt+C para alternar entre elas instantaneamente. Ótimo para imagens escuras ou claras!"
+    },
+    "tourStep8Title": {
+        "message": "Regras de sites"
+    },
+    "tourStep8Desc": {
+        "message": "Controle em quais sites a grade aparece. Bloqueie ou permita sites específicos."
+    },
+    "cmdToggleImage": {
+        "message": "Alternar sobreposição em imagens"
+    },
+    "cmdToggleVideo": {
+        "message": "Alternar sobreposição em vídeos"
+    },
+    "cmdToggleLineStyle": {
+        "message": "Alternar entre linhas sólidas e tracejadas"
+    },
+    "cmdToggleColor": {
+        "message": "Alternar entre suas duas cores rápidas"
+    }
 }

@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "Kompositionshilfen für jede Aufnahme" },
-    "enableGrid": { "message": "Bild-Overlay" },
-    "videoEnabled": { "message": "Video-Overlay" },
-    "gridType": { "message": "Rastertyp" },
-    "showDots": { "message": "Punkte anzeigen" },
-    "thirds": { "message": "Drittelregel" },
-    "golden": { "message": "Goldener Schnitt" },
-    "fibonacci": { "message": "Fibonacci-Spirale" },
-    "triangle": { "message": "Dreieck" },
-    "fifths": { "message": "Fünftel" },
-    "center": { "message": "Mitte" },
-    "spiralOrientation": { "message": "Spiralrichtung" },
-    "toggleGrid": { "message": "Kompositionsraster umschalten" },
-    "lineColor": { "message": "Linienfarbe" },
-    "dotColor": { "message": "Punktfarbe" },
-    "dotSize": { "message": "Punktgröße" },
-    "lineSize": { "message": "Linienbreite" },
-    "lineStyle": { "message": "Linienstil" },
-    "opacity": { "message": "Deckkraft" },
-    "solid": { "message": "Durchgezogen" },
-    "dashed": { "message": "Gestrichelt" },
-    "minImageSize": { "message": "Kleine Bilder überspringen" },
-    "resetSettings": { "message": "Auf Standard zurücksetzen" },
-    "resetGridType": { "message": "Rastertyp zurücksetzen" },
-    "tabSiteRules": { "message": "Erlaubte Seiten" },
-    "siteMode": { "message": "Modus" },
-    "siteModeAll": { "message": "Alle Seiten" },
-    "siteModeBlock": { "message": "Sperrliste" },
-    "siteModeAllow": { "message": "Erlaubnisliste" },
-    "siteModeAllDesc": { "message": "Raster erscheint auf allen Websites" },
-    "siteModeBlockDesc": { "message": "Raster erscheint überall außer auf diesen Seiten" },
-    "siteModeAllowDesc": { "message": "Raster erscheint nur auf diesen Seiten" },
-    "addSite": { "message": "Hinzufügen" },
-    "siteInputPlaceholder": { "message": "z. B. facebook.com" },
-    "siteBlockedAlert": { "message": "Composition Grid ist auf dieser Website deaktiviert." },
-    "noSites": { "message": "Noch keine Seiten hinzugefügt" },
-    "language": { "message": "Sprache" },
-    "enabled": { "message": "Ein" },
-    "disabled": { "message": "Aus" },
-    "version": { "message": "Version" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "Bereitgestellt von" },
-    "theme": { "message": "Design" },
-    "dark": { "message": "Dunkel" },
-    "light": { "message": "Hell" },
-    "quickColor": { "message": "Schnellfarbe" },
-    "quickColorHint": { "message": "Gilt für Linien & Punkte" },
-    "fileAccessNotice": { "message": "Aktiviere \"Zugriff auf Datei-URLs zulassen\" in den Erweiterungseinstellungen, um lokale Dateien zu verwenden." },
-    "fileAccessAction": { "message": "Einstellungen öffnen" },
-    "buyMeCoffee": { "message": "Spendier mir einen Kaffee" },
-    "donateMessage": { "message": "Gefällt dir diese Erweiterung? Unterstütze ihre Entwicklung!" },
-    "ariaToggleImage": { "message": "Bild-Overlay umschalten" },
-    "ariaToggleVideo": { "message": "Video-Overlay umschalten" },
-    "ariaToggleDots": { "message": "Punkte umschalten" },
-    "close": { "message": "Schließen" },
-    "remove": { "message": "Entfernen" },
-    "spiralTopLeft": { "message": "Oben links" },
-    "spiralTopRight": { "message": "Oben rechts" },
-    "spiralBottomRight": { "message": "Unten rechts" },
-    "spiralBottomLeft": { "message": "Unten links" },
-    "tourSkip": { "message": "Überspringen" },
-    "tourPrev": { "message": "Zurück" },
-    "tourNext": { "message": "Weiter" },
-    "tourFinish": { "message": "Verstanden!" },
-    "tourReplay": { "message": "Anleitung" },
-    "tourStep1Title": { "message": "Bild-Overlay" },
-    "tourStep1Desc": { "message": "Raster-Overlay für alle Bilder auf der Seite umschalten. Mit Alt+I schnell umschalten." },
-    "tourStep2Title": { "message": "Video-Overlay" },
-    "tourStep2Desc": { "message": "Raster-Overlay auch auf Videos aktivieren. Mit Alt+V umschalten." },
-    "tourStep3Title": { "message": "Wähle dein Raster" },
-    "tourStep3Desc": { "message": "Wähle eine oder mehrere Kompositionshilfen: Drittelregel, Goldener Schnitt, Fibonacci-Spirale und mehr!" },
-    "tourStep4Title": { "message": "Linienfarbe" },
-    "tourStep4Desc": { "message": "Passe die Farbe der Rasterlinien an deinen Bildhintergrund an." },
-    "tourStep5Title": { "message": "Linienbreite" },
-    "tourStep5Desc": { "message": "Passe die Liniendicke an. Mit Alt+L zwischen durchgezogenem und gestricheltem Stil wechseln." },
-    "tourStep6Title": { "message": "Deckkraft" },
-    "tourStep6Desc": { "message": "Steuere, wie transparent das Raster-Overlay über deinen Bildern erscheint." },
-    "tourStep7Title": { "message": "Schneller Farbwechsel" },
-    "tourStep7Desc": { "message": "Lege zwei Farben fest und drücke Alt+C, um sofort zwischen ihnen zu wechseln. Ideal für dunkle/helle Bilder!" },
-    "tourStep8Title": { "message": "Seitenregeln" },
-    "tourStep8Desc": { "message": "Lege fest, welche Websites das Raster anzeigen. Bestimmte Seiten sperren oder erlauben." },
-    "cmdToggleImage": { "message": "Bild-Overlay umschalten" },
-    "cmdToggleVideo": { "message": "Video-Overlay umschalten" },
-    "cmdToggleLineStyle": { "message": "Zwischen durchgezogenen und gestrichelten Linien wechseln" },
-    "cmdToggleColor": { "message": "Zwischen deinen beiden Schnellfarben wechseln" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "Lege Kompositionsraster über jedes Bild und Video: Drittel-Regel, Goldener Schnitt, Fibonacci-Spirale und Dreieck-Hilfslinien."
+    },
+    "appTagline": {
+        "message": "Kompositionshilfen für jede Aufnahme"
+    },
+    "enableGrid": {
+        "message": "Bild-Overlay"
+    },
+    "videoEnabled": {
+        "message": "Video-Overlay"
+    },
+    "gridType": {
+        "message": "Rastertyp"
+    },
+    "showDots": {
+        "message": "Punkte anzeigen"
+    },
+    "thirds": {
+        "message": "Drittelregel"
+    },
+    "golden": {
+        "message": "Goldener Schnitt"
+    },
+    "fibonacci": {
+        "message": "Fibonacci-Spirale"
+    },
+    "triangle": {
+        "message": "Dreieck"
+    },
+    "fifths": {
+        "message": "Fünftel"
+    },
+    "center": {
+        "message": "Mitte"
+    },
+    "spiralOrientation": {
+        "message": "Spiralrichtung"
+    },
+    "toggleGrid": {
+        "message": "Kompositionsraster umschalten"
+    },
+    "lineColor": {
+        "message": "Linienfarbe"
+    },
+    "dotColor": {
+        "message": "Punktfarbe"
+    },
+    "dotSize": {
+        "message": "Punktgröße"
+    },
+    "lineSize": {
+        "message": "Linienbreite"
+    },
+    "lineStyle": {
+        "message": "Linienstil"
+    },
+    "opacity": {
+        "message": "Deckkraft"
+    },
+    "solid": {
+        "message": "Durchgezogen"
+    },
+    "dashed": {
+        "message": "Gestrichelt"
+    },
+    "minImageSize": {
+        "message": "Kleine Bilder überspringen"
+    },
+    "resetSettings": {
+        "message": "Auf Standard zurücksetzen"
+    },
+    "resetGridType": {
+        "message": "Rastertyp zurücksetzen"
+    },
+    "tabSiteRules": {
+        "message": "Erlaubte Seiten"
+    },
+    "siteMode": {
+        "message": "Modus"
+    },
+    "siteModeAll": {
+        "message": "Alle Seiten"
+    },
+    "siteModeBlock": {
+        "message": "Sperrliste"
+    },
+    "siteModeAllow": {
+        "message": "Erlaubnisliste"
+    },
+    "siteModeAllDesc": {
+        "message": "Raster erscheint auf allen Websites"
+    },
+    "siteModeBlockDesc": {
+        "message": "Raster erscheint überall außer auf diesen Seiten"
+    },
+    "siteModeAllowDesc": {
+        "message": "Raster erscheint nur auf diesen Seiten"
+    },
+    "addSite": {
+        "message": "Hinzufügen"
+    },
+    "siteInputPlaceholder": {
+        "message": "z. B. facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "Composition Grid ist auf dieser Website deaktiviert."
+    },
+    "noSites": {
+        "message": "Noch keine Seiten hinzugefügt"
+    },
+    "language": {
+        "message": "Sprache"
+    },
+    "enabled": {
+        "message": "Ein"
+    },
+    "disabled": {
+        "message": "Aus"
+    },
+    "version": {
+        "message": "Version"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "Bereitgestellt von"
+    },
+    "theme": {
+        "message": "Design"
+    },
+    "dark": {
+        "message": "Dunkel"
+    },
+    "light": {
+        "message": "Hell"
+    },
+    "quickColor": {
+        "message": "Schnellfarbe"
+    },
+    "quickColorHint": {
+        "message": "Gilt für Linien & Punkte"
+    },
+    "fileAccessNotice": {
+        "message": "Aktiviere \"Zugriff auf Datei-URLs zulassen\" in den Erweiterungseinstellungen, um lokale Dateien zu verwenden."
+    },
+    "fileAccessAction": {
+        "message": "Einstellungen öffnen"
+    },
+    "buyMeCoffee": {
+        "message": "Spendier mir einen Kaffee"
+    },
+    "donateMessage": {
+        "message": "Gefällt dir diese Erweiterung? Unterstütze ihre Entwicklung!"
+    },
+    "ariaToggleImage": {
+        "message": "Bild-Overlay umschalten"
+    },
+    "ariaToggleVideo": {
+        "message": "Video-Overlay umschalten"
+    },
+    "ariaToggleDots": {
+        "message": "Punkte umschalten"
+    },
+    "close": {
+        "message": "Schließen"
+    },
+    "remove": {
+        "message": "Entfernen"
+    },
+    "spiralTopLeft": {
+        "message": "Oben links"
+    },
+    "spiralTopRight": {
+        "message": "Oben rechts"
+    },
+    "spiralBottomRight": {
+        "message": "Unten rechts"
+    },
+    "spiralBottomLeft": {
+        "message": "Unten links"
+    },
+    "tourSkip": {
+        "message": "Überspringen"
+    },
+    "tourPrev": {
+        "message": "Zurück"
+    },
+    "tourNext": {
+        "message": "Weiter"
+    },
+    "tourFinish": {
+        "message": "Verstanden!"
+    },
+    "tourReplay": {
+        "message": "Anleitung"
+    },
+    "tourStep1Title": {
+        "message": "Bild-Overlay"
+    },
+    "tourStep1Desc": {
+        "message": "Raster-Overlay für alle Bilder auf der Seite umschalten. Mit Alt+I schnell umschalten."
+    },
+    "tourStep2Title": {
+        "message": "Video-Overlay"
+    },
+    "tourStep2Desc": {
+        "message": "Raster-Overlay auch auf Videos aktivieren. Mit Alt+V umschalten."
+    },
+    "tourStep3Title": {
+        "message": "Wähle dein Raster"
+    },
+    "tourStep3Desc": {
+        "message": "Wähle eine oder mehrere Kompositionshilfen: Drittelregel, Goldener Schnitt, Fibonacci-Spirale und mehr!"
+    },
+    "tourStep4Title": {
+        "message": "Linienfarbe"
+    },
+    "tourStep4Desc": {
+        "message": "Passe die Farbe der Rasterlinien an deinen Bildhintergrund an."
+    },
+    "tourStep5Title": {
+        "message": "Linienbreite"
+    },
+    "tourStep5Desc": {
+        "message": "Passe die Liniendicke an. Mit Alt+L zwischen durchgezogenem und gestricheltem Stil wechseln."
+    },
+    "tourStep6Title": {
+        "message": "Deckkraft"
+    },
+    "tourStep6Desc": {
+        "message": "Steuere, wie transparent das Raster-Overlay über deinen Bildern erscheint."
+    },
+    "tourStep7Title": {
+        "message": "Schneller Farbwechsel"
+    },
+    "tourStep7Desc": {
+        "message": "Lege zwei Farben fest und drücke Alt+C, um sofort zwischen ihnen zu wechseln. Ideal für dunkle/helle Bilder!"
+    },
+    "tourStep8Title": {
+        "message": "Seitenregeln"
+    },
+    "tourStep8Desc": {
+        "message": "Lege fest, welche Websites das Raster anzeigen. Bestimmte Seiten sperren oder erlauben."
+    },
+    "cmdToggleImage": {
+        "message": "Bild-Overlay umschalten"
+    },
+    "cmdToggleVideo": {
+        "message": "Video-Overlay umschalten"
+    },
+    "cmdToggleLineStyle": {
+        "message": "Zwischen durchgezogenen und gestrichelten Linien wechseln"
+    },
+    "cmdToggleColor": {
+        "message": "Zwischen deinen beiden Schnellfarben wechseln"
+    }
 }

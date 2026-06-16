@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "あらゆる撮影に構図ガイドを" },
-    "enableGrid": { "message": "画像オーバーレイ" },
-    "videoEnabled": { "message": "動画オーバーレイ" },
-    "gridType": { "message": "グリッドの種類" },
-    "showDots": { "message": "ドットを表示" },
-    "thirds": { "message": "三分割法" },
-    "golden": { "message": "黄金比" },
-    "fibonacci": { "message": "フィボナッチ螺旋" },
-    "triangle": { "message": "三角形" },
-    "fifths": { "message": "五分割法" },
-    "center": { "message": "中央" },
-    "spiralOrientation": { "message": "螺旋の向き" },
-    "toggleGrid": { "message": "構図グリッドを切り替え" },
-    "lineColor": { "message": "線の色" },
-    "dotColor": { "message": "ドットの色" },
-    "dotSize": { "message": "ドットのサイズ" },
-    "lineSize": { "message": "線の太さ" },
-    "lineStyle": { "message": "線のスタイル" },
-    "opacity": { "message": "不透明度" },
-    "solid": { "message": "実線" },
-    "dashed": { "message": "破線" },
-    "minImageSize": { "message": "小さい画像をスキップ" },
-    "resetSettings": { "message": "初期設定に戻す" },
-    "resetGridType": { "message": "グリッドの種類をリセット" },
-    "tabSiteRules": { "message": "許可サイト" },
-    "siteMode": { "message": "モード" },
-    "siteModeAll": { "message": "すべてのサイト" },
-    "siteModeBlock": { "message": "ブロックリスト" },
-    "siteModeAllow": { "message": "許可リスト" },
-    "siteModeAllDesc": { "message": "すべてのウェブサイトでグリッドを表示" },
-    "siteModeBlockDesc": { "message": "これらのサイト以外のすべてでグリッドを表示" },
-    "siteModeAllowDesc": { "message": "これらのサイトのみでグリッドを表示" },
-    "addSite": { "message": "追加" },
-    "siteInputPlaceholder": { "message": "例: facebook.com" },
-    "siteBlockedAlert": { "message": "このウェブサイトでは Composition Grid が無効になっています。" },
-    "noSites": { "message": "まだサイトが追加されていません" },
-    "language": { "message": "言語" },
-    "enabled": { "message": "オン" },
-    "disabled": { "message": "オフ" },
-    "version": { "message": "バージョン" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "提供" },
-    "theme": { "message": "テーマ" },
-    "dark": { "message": "ダーク" },
-    "light": { "message": "ライト" },
-    "quickColor": { "message": "クイックカラー" },
-    "quickColorHint": { "message": "線とドットに適用" },
-    "fileAccessNotice": { "message": "ローカルファイルで使用するには、拡張機能の設定で「ファイルの URL へのアクセスを許可する」を有効にしてください。" },
-    "fileAccessAction": { "message": "設定を開く" },
-    "buyMeCoffee": { "message": "コーヒーをおごる" },
-    "donateMessage": { "message": "この拡張機能が気に入りましたか？開発を応援してください！" },
-    "ariaToggleImage": { "message": "画像オーバーレイを切り替え" },
-    "ariaToggleVideo": { "message": "動画オーバーレイを切り替え" },
-    "ariaToggleDots": { "message": "ドットを切り替え" },
-    "close": { "message": "閉じる" },
-    "remove": { "message": "削除" },
-    "spiralTopLeft": { "message": "左上" },
-    "spiralTopRight": { "message": "右上" },
-    "spiralBottomRight": { "message": "右下" },
-    "spiralBottomLeft": { "message": "左下" },
-    "tourSkip": { "message": "スキップ" },
-    "tourPrev": { "message": "戻る" },
-    "tourNext": { "message": "次へ" },
-    "tourFinish": { "message": "完了！" },
-    "tourReplay": { "message": "ガイド" },
-    "tourStep1Title": { "message": "画像オーバーレイ" },
-    "tourStep1Desc": { "message": "ページ上のすべての画像にグリッドオーバーレイを切り替えます。Alt+I ですばやく切り替えできます。" },
-    "tourStep2Title": { "message": "動画オーバーレイ" },
-    "tourStep2Desc": { "message": "動画にもグリッドオーバーレイを表示できます。Alt+V で切り替えます。" },
-    "tourStep3Title": { "message": "グリッドを選択" },
-    "tourStep3Desc": { "message": "三分割法、黄金比、フィボナッチ螺旋など、1 つ以上の構図ガイドを選べます！" },
-    "tourStep4Title": { "message": "線の色" },
-    "tourStep4Desc": { "message": "画像の背景に合わせてグリッド線の色をカスタマイズできます。" },
-    "tourStep5Title": { "message": "線の太さ" },
-    "tourStep5Desc": { "message": "線の太さを調整します。Alt+L で実線と破線を切り替えできます。" },
-    "tourStep6Title": { "message": "不透明度" },
-    "tourStep6Desc": { "message": "画像上に表示されるグリッドオーバーレイの透明度を調整します。" },
-    "tourStep7Title": { "message": "クイックカラー切り替え" },
-    "tourStep7Desc": { "message": "2 色を設定し、Alt+C で瞬時に切り替えます。暗い画像・明るい画像に最適です！" },
-    "tourStep8Title": { "message": "サイトルール" },
-    "tourStep8Desc": { "message": "どのウェブサイトでグリッドを表示するかを管理します。特定のサイトをブロックまたは許可できます。" },
-    "cmdToggleImage": { "message": "画像オーバーレイを切り替え" },
-    "cmdToggleVideo": { "message": "動画オーバーレイを切り替え" },
-    "cmdToggleLineStyle": { "message": "実線と破線を切り替え" },
-    "cmdToggleColor": { "message": "2 つのクイックカラーを切り替え" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "あらゆる画像や動画に構図グリッドを重ねて表示：三分割法、黄金比、フィボナッチスパイラル、三角形ガイド。"
+    },
+    "appTagline": {
+        "message": "あらゆる撮影に構図ガイドを"
+    },
+    "enableGrid": {
+        "message": "画像オーバーレイ"
+    },
+    "videoEnabled": {
+        "message": "動画オーバーレイ"
+    },
+    "gridType": {
+        "message": "グリッドの種類"
+    },
+    "showDots": {
+        "message": "ドットを表示"
+    },
+    "thirds": {
+        "message": "三分割法"
+    },
+    "golden": {
+        "message": "黄金比"
+    },
+    "fibonacci": {
+        "message": "フィボナッチ螺旋"
+    },
+    "triangle": {
+        "message": "三角形"
+    },
+    "fifths": {
+        "message": "五分割法"
+    },
+    "center": {
+        "message": "中央"
+    },
+    "spiralOrientation": {
+        "message": "螺旋の向き"
+    },
+    "toggleGrid": {
+        "message": "構図グリッドを切り替え"
+    },
+    "lineColor": {
+        "message": "線の色"
+    },
+    "dotColor": {
+        "message": "ドットの色"
+    },
+    "dotSize": {
+        "message": "ドットのサイズ"
+    },
+    "lineSize": {
+        "message": "線の太さ"
+    },
+    "lineStyle": {
+        "message": "線のスタイル"
+    },
+    "opacity": {
+        "message": "不透明度"
+    },
+    "solid": {
+        "message": "実線"
+    },
+    "dashed": {
+        "message": "破線"
+    },
+    "minImageSize": {
+        "message": "小さい画像をスキップ"
+    },
+    "resetSettings": {
+        "message": "初期設定に戻す"
+    },
+    "resetGridType": {
+        "message": "グリッドの種類をリセット"
+    },
+    "tabSiteRules": {
+        "message": "許可サイト"
+    },
+    "siteMode": {
+        "message": "モード"
+    },
+    "siteModeAll": {
+        "message": "すべてのサイト"
+    },
+    "siteModeBlock": {
+        "message": "ブロックリスト"
+    },
+    "siteModeAllow": {
+        "message": "許可リスト"
+    },
+    "siteModeAllDesc": {
+        "message": "すべてのウェブサイトでグリッドを表示"
+    },
+    "siteModeBlockDesc": {
+        "message": "これらのサイト以外のすべてでグリッドを表示"
+    },
+    "siteModeAllowDesc": {
+        "message": "これらのサイトのみでグリッドを表示"
+    },
+    "addSite": {
+        "message": "追加"
+    },
+    "siteInputPlaceholder": {
+        "message": "例: facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "このウェブサイトでは Composition Grid が無効になっています。"
+    },
+    "noSites": {
+        "message": "まだサイトが追加されていません"
+    },
+    "language": {
+        "message": "言語"
+    },
+    "enabled": {
+        "message": "オン"
+    },
+    "disabled": {
+        "message": "オフ"
+    },
+    "version": {
+        "message": "バージョン"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "提供"
+    },
+    "theme": {
+        "message": "テーマ"
+    },
+    "dark": {
+        "message": "ダーク"
+    },
+    "light": {
+        "message": "ライト"
+    },
+    "quickColor": {
+        "message": "クイックカラー"
+    },
+    "quickColorHint": {
+        "message": "線とドットに適用"
+    },
+    "fileAccessNotice": {
+        "message": "ローカルファイルで使用するには、拡張機能の設定で「ファイルの URL へのアクセスを許可する」を有効にしてください。"
+    },
+    "fileAccessAction": {
+        "message": "設定を開く"
+    },
+    "buyMeCoffee": {
+        "message": "コーヒーをおごる"
+    },
+    "donateMessage": {
+        "message": "この拡張機能が気に入りましたか？開発を応援してください！"
+    },
+    "ariaToggleImage": {
+        "message": "画像オーバーレイを切り替え"
+    },
+    "ariaToggleVideo": {
+        "message": "動画オーバーレイを切り替え"
+    },
+    "ariaToggleDots": {
+        "message": "ドットを切り替え"
+    },
+    "close": {
+        "message": "閉じる"
+    },
+    "remove": {
+        "message": "削除"
+    },
+    "spiralTopLeft": {
+        "message": "左上"
+    },
+    "spiralTopRight": {
+        "message": "右上"
+    },
+    "spiralBottomRight": {
+        "message": "右下"
+    },
+    "spiralBottomLeft": {
+        "message": "左下"
+    },
+    "tourSkip": {
+        "message": "スキップ"
+    },
+    "tourPrev": {
+        "message": "戻る"
+    },
+    "tourNext": {
+        "message": "次へ"
+    },
+    "tourFinish": {
+        "message": "完了！"
+    },
+    "tourReplay": {
+        "message": "ガイド"
+    },
+    "tourStep1Title": {
+        "message": "画像オーバーレイ"
+    },
+    "tourStep1Desc": {
+        "message": "ページ上のすべての画像にグリッドオーバーレイを切り替えます。Alt+I ですばやく切り替えできます。"
+    },
+    "tourStep2Title": {
+        "message": "動画オーバーレイ"
+    },
+    "tourStep2Desc": {
+        "message": "動画にもグリッドオーバーレイを表示できます。Alt+V で切り替えます。"
+    },
+    "tourStep3Title": {
+        "message": "グリッドを選択"
+    },
+    "tourStep3Desc": {
+        "message": "三分割法、黄金比、フィボナッチ螺旋など、1 つ以上の構図ガイドを選べます！"
+    },
+    "tourStep4Title": {
+        "message": "線の色"
+    },
+    "tourStep4Desc": {
+        "message": "画像の背景に合わせてグリッド線の色をカスタマイズできます。"
+    },
+    "tourStep5Title": {
+        "message": "線の太さ"
+    },
+    "tourStep5Desc": {
+        "message": "線の太さを調整します。Alt+L で実線と破線を切り替えできます。"
+    },
+    "tourStep6Title": {
+        "message": "不透明度"
+    },
+    "tourStep6Desc": {
+        "message": "画像上に表示されるグリッドオーバーレイの透明度を調整します。"
+    },
+    "tourStep7Title": {
+        "message": "クイックカラー切り替え"
+    },
+    "tourStep7Desc": {
+        "message": "2 色を設定し、Alt+C で瞬時に切り替えます。暗い画像・明るい画像に最適です！"
+    },
+    "tourStep8Title": {
+        "message": "サイトルール"
+    },
+    "tourStep8Desc": {
+        "message": "どのウェブサイトでグリッドを表示するかを管理します。特定のサイトをブロックまたは許可できます。"
+    },
+    "cmdToggleImage": {
+        "message": "画像オーバーレイを切り替え"
+    },
+    "cmdToggleVideo": {
+        "message": "動画オーバーレイを切り替え"
+    },
+    "cmdToggleLineStyle": {
+        "message": "実線と破線を切り替え"
+    },
+    "cmdToggleColor": {
+        "message": "2 つのクイックカラーを切り替え"
+    }
 }

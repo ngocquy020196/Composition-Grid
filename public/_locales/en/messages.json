@@ -1,5 +1,6 @@
 {
     "appName": { "message": "Composition Grid" },
+    "appDesc": { "message": "Overlay composition grids on any image & video: Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle guides." },
     "appTagline": { "message": "Composition Guides for Every Shot" },
     "enableGrid": { "message": "Image Overlay" },
     "videoEnabled": { "message": "Video Overlay" },

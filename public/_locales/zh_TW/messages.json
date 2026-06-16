@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "構圖網格" },
-    "appTagline": { "message": "為每張照片提供構圖輔助線" },
-    "enableGrid": { "message": "圖片疊加" },
-    "videoEnabled": { "message": "影片疊加" },
-    "gridType": { "message": "網格類型" },
-    "showDots": { "message": "顯示交點" },
-    "thirds": { "message": "三分法" },
-    "golden": { "message": "黃金比例" },
-    "fibonacci": { "message": "費波那契螺旋" },
-    "triangle": { "message": "三角形" },
-    "fifths": { "message": "五分法" },
-    "center": { "message": "中心" },
-    "spiralOrientation": { "message": "螺旋方向" },
-    "toggleGrid": { "message": "切換構圖網格" },
-    "lineColor": { "message": "線條顏色" },
-    "dotColor": { "message": "交點顏色" },
-    "dotSize": { "message": "交點大小" },
-    "lineSize": { "message": "線條寬度" },
-    "lineStyle": { "message": "線條樣式" },
-    "opacity": { "message": "不透明度" },
-    "solid": { "message": "實線" },
-    "dashed": { "message": "虛線" },
-    "minImageSize": { "message": "略過小圖片" },
-    "resetSettings": { "message": "重設為預設值" },
-    "resetGridType": { "message": "重設網格類型" },
-    "tabSiteRules": { "message": "允許的網站" },
-    "siteMode": { "message": "模式" },
-    "siteModeAll": { "message": "所有網站" },
-    "siteModeBlock": { "message": "封鎖清單" },
-    "siteModeAllow": { "message": "允許清單" },
-    "siteModeAllDesc": { "message": "網格會顯示在所有網站上" },
-    "siteModeBlockDesc": { "message": "除這些網站外，網格會顯示在所有網站上" },
-    "siteModeAllowDesc": { "message": "網格只會顯示在這些網站上" },
-    "addSite": { "message": "新增" },
-    "siteInputPlaceholder": { "message": "例如 facebook.com" },
-    "siteBlockedAlert": { "message": "構圖網格已在此網站停用。" },
-    "noSites": { "message": "尚未新增任何網站" },
-    "language": { "message": "語言" },
-    "enabled": { "message": "開" },
-    "disabled": { "message": "關" },
-    "version": { "message": "版本" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "技術提供" },
-    "theme": { "message": "主題" },
-    "dark": { "message": "深色" },
-    "light": { "message": "淺色" },
-    "quickColor": { "message": "快速顏色" },
-    "quickColorHint": { "message": "套用至線條與交點" },
-    "fileAccessNotice": { "message": "請在擴充功能設定中啟用「允許存取檔案網址」，以便用於本機檔案。" },
-    "fileAccessAction": { "message": "開啟設定" },
-    "buyMeCoffee": { "message": "請我喝杯咖啡" },
-    "donateMessage": { "message": "喜歡這個擴充功能嗎？支持它的開發吧！" },
-    "ariaToggleImage": { "message": "切換圖片疊加" },
-    "ariaToggleVideo": { "message": "切換影片疊加" },
-    "ariaToggleDots": { "message": "切換交點" },
-    "close": { "message": "關閉" },
-    "remove": { "message": "移除" },
-    "spiralTopLeft": { "message": "左上" },
-    "spiralTopRight": { "message": "右上" },
-    "spiralBottomRight": { "message": "右下" },
-    "spiralBottomLeft": { "message": "左下" },
-    "tourSkip": { "message": "略過" },
-    "tourPrev": { "message": "上一步" },
-    "tourNext": { "message": "下一步" },
-    "tourFinish": { "message": "我知道了！" },
-    "tourReplay": { "message": "導覽" },
-    "tourStep1Title": { "message": "圖片疊加" },
-    "tourStep1Desc": { "message": "為頁面上的所有圖片切換網格疊加。使用 Alt+I 快速切換。" },
-    "tourStep2Title": { "message": "影片疊加" },
-    "tourStep2Desc": { "message": "也可在影片上啟用網格疊加。按 Alt+V 切換。" },
-    "tourStep3Title": { "message": "選擇你的網格" },
-    "tourStep3Desc": { "message": "挑選一種或多種構圖輔助線：三分法、黃金比例、費波那契螺旋等等！" },
-    "tourStep4Title": { "message": "線條顏色" },
-    "tourStep4Desc": { "message": "自訂網格線顏色，以搭配你的圖片背景。" },
-    "tourStep5Title": { "message": "線條寬度" },
-    "tourStep5Desc": { "message": "調整線條粗細。使用 Alt+L 在實線與虛線樣式間切換。" },
-    "tourStep6Title": { "message": "不透明度" },
-    "tourStep6Desc": { "message": "控制網格疊加在圖片上的透明程度。" },
-    "tourStep7Title": { "message": "快速切換顏色" },
-    "tourStep7Desc": { "message": "設定兩種顏色並按 Alt+C 立即切換。非常適合深色／淺色圖片！" },
-    "tourStep8Title": { "message": "網站規則" },
-    "tourStep8Desc": { "message": "控制哪些網站要顯示網格。可封鎖或允許特定網站。" },
-    "cmdToggleImage": { "message": "切換圖片疊加" },
-    "cmdToggleVideo": { "message": "切換影片疊加" },
-    "cmdToggleLineStyle": { "message": "在實線與虛線間切換" },
-    "cmdToggleColor": { "message": "在兩種快速顏色間切換" }
+    "appName": {
+        "message": "構圖網格"
+    },
+    "appDesc": {
+        "message": "在任何圖片和影片上疊加構圖網格：三分法、黃金比例、費波那契螺旋線和三角形參考線。"
+    },
+    "appTagline": {
+        "message": "為每張照片提供構圖輔助線"
+    },
+    "enableGrid": {
+        "message": "圖片疊加"
+    },
+    "videoEnabled": {
+        "message": "影片疊加"
+    },
+    "gridType": {
+        "message": "網格類型"
+    },
+    "showDots": {
+        "message": "顯示交點"
+    },
+    "thirds": {
+        "message": "三分法"
+    },
+    "golden": {
+        "message": "黃金比例"
+    },
+    "fibonacci": {
+        "message": "費波那契螺旋"
+    },
+    "triangle": {
+        "message": "三角形"
+    },
+    "fifths": {
+        "message": "五分法"
+    },
+    "center": {
+        "message": "中心"
+    },
+    "spiralOrientation": {
+        "message": "螺旋方向"
+    },
+    "toggleGrid": {
+        "message": "切換構圖網格"
+    },
+    "lineColor": {
+        "message": "線條顏色"
+    },
+    "dotColor": {
+        "message": "交點顏色"
+    },
+    "dotSize": {
+        "message": "交點大小"
+    },
+    "lineSize": {
+        "message": "線條寬度"
+    },
+    "lineStyle": {
+        "message": "線條樣式"
+    },
+    "opacity": {
+        "message": "不透明度"
+    },
+    "solid": {
+        "message": "實線"
+    },
+    "dashed": {
+        "message": "虛線"
+    },
+    "minImageSize": {
+        "message": "略過小圖片"
+    },
+    "resetSettings": {
+        "message": "重設為預設值"
+    },
+    "resetGridType": {
+        "message": "重設網格類型"
+    },
+    "tabSiteRules": {
+        "message": "允許的網站"
+    },
+    "siteMode": {
+        "message": "模式"
+    },
+    "siteModeAll": {
+        "message": "所有網站"
+    },
+    "siteModeBlock": {
+        "message": "封鎖清單"
+    },
+    "siteModeAllow": {
+        "message": "允許清單"
+    },
+    "siteModeAllDesc": {
+        "message": "網格會顯示在所有網站上"
+    },
+    "siteModeBlockDesc": {
+        "message": "除這些網站外，網格會顯示在所有網站上"
+    },
+    "siteModeAllowDesc": {
+        "message": "網格只會顯示在這些網站上"
+    },
+    "addSite": {
+        "message": "新增"
+    },
+    "siteInputPlaceholder": {
+        "message": "例如 facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "構圖網格已在此網站停用。"
+    },
+    "noSites": {
+        "message": "尚未新增任何網站"
+    },
+    "language": {
+        "message": "語言"
+    },
+    "enabled": {
+        "message": "開"
+    },
+    "disabled": {
+        "message": "關"
+    },
+    "version": {
+        "message": "版本"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "技術提供"
+    },
+    "theme": {
+        "message": "主題"
+    },
+    "dark": {
+        "message": "深色"
+    },
+    "light": {
+        "message": "淺色"
+    },
+    "quickColor": {
+        "message": "快速顏色"
+    },
+    "quickColorHint": {
+        "message": "套用至線條與交點"
+    },
+    "fileAccessNotice": {
+        "message": "請在擴充功能設定中啟用「允許存取檔案網址」，以便用於本機檔案。"
+    },
+    "fileAccessAction": {
+        "message": "開啟設定"
+    },
+    "buyMeCoffee": {
+        "message": "請我喝杯咖啡"
+    },
+    "donateMessage": {
+        "message": "喜歡這個擴充功能嗎？支持它的開發吧！"
+    },
+    "ariaToggleImage": {
+        "message": "切換圖片疊加"
+    },
+    "ariaToggleVideo": {
+        "message": "切換影片疊加"
+    },
+    "ariaToggleDots": {
+        "message": "切換交點"
+    },
+    "close": {
+        "message": "關閉"
+    },
+    "remove": {
+        "message": "移除"
+    },
+    "spiralTopLeft": {
+        "message": "左上"
+    },
+    "spiralTopRight": {
+        "message": "右上"
+    },
+    "spiralBottomRight": {
+        "message": "右下"
+    },
+    "spiralBottomLeft": {
+        "message": "左下"
+    },
+    "tourSkip": {
+        "message": "略過"
+    },
+    "tourPrev": {
+        "message": "上一步"
+    },
+    "tourNext": {
+        "message": "下一步"
+    },
+    "tourFinish": {
+        "message": "我知道了！"
+    },
+    "tourReplay": {
+        "message": "導覽"
+    },
+    "tourStep1Title": {
+        "message": "圖片疊加"
+    },
+    "tourStep1Desc": {
+        "message": "為頁面上的所有圖片切換網格疊加。使用 Alt+I 快速切換。"
+    },
+    "tourStep2Title": {
+        "message": "影片疊加"
+    },
+    "tourStep2Desc": {
+        "message": "也可在影片上啟用網格疊加。按 Alt+V 切換。"
+    },
+    "tourStep3Title": {
+        "message": "選擇你的網格"
+    },
+    "tourStep3Desc": {
+        "message": "挑選一種或多種構圖輔助線：三分法、黃金比例、費波那契螺旋等等！"
+    },
+    "tourStep4Title": {
+        "message": "線條顏色"
+    },
+    "tourStep4Desc": {
+        "message": "自訂網格線顏色，以搭配你的圖片背景。"
+    },
+    "tourStep5Title": {
+        "message": "線條寬度"
+    },
+    "tourStep5Desc": {
+        "message": "調整線條粗細。使用 Alt+L 在實線與虛線樣式間切換。"
+    },
+    "tourStep6Title": {
+        "message": "不透明度"
+    },
+    "tourStep6Desc": {
+        "message": "控制網格疊加在圖片上的透明程度。"
+    },
+    "tourStep7Title": {
+        "message": "快速切換顏色"
+    },
+    "tourStep7Desc": {
+        "message": "設定兩種顏色並按 Alt+C 立即切換。非常適合深色／淺色圖片！"
+    },
+    "tourStep8Title": {
+        "message": "網站規則"
+    },
+    "tourStep8Desc": {
+        "message": "控制哪些網站要顯示網格。可封鎖或允許特定網站。"
+    },
+    "cmdToggleImage": {
+        "message": "切換圖片疊加"
+    },
+    "cmdToggleVideo": {
+        "message": "切換影片疊加"
+    },
+    "cmdToggleLineStyle": {
+        "message": "在實線與虛線間切換"
+    },
+    "cmdToggleColor": {
+        "message": "在兩種快速顏色間切換"
+    }
 }

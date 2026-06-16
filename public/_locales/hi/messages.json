@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "हर शॉट के लिए कंपोज़िशन गाइड" },
-    "enableGrid": { "message": "इमेज ओवरले" },
-    "videoEnabled": { "message": "वीडियो ओवरले" },
-    "gridType": { "message": "ग्रिड प्रकार" },
-    "showDots": { "message": "डॉट्स दिखाएं" },
-    "thirds": { "message": "तिहाई का नियम" },
-    "golden": { "message": "स्वर्ण अनुपात" },
-    "fibonacci": { "message": "फिबोनैचि सर्पिल" },
-    "triangle": { "message": "त्रिभुज" },
-    "fifths": { "message": "पंचमांश" },
-    "center": { "message": "केंद्र" },
-    "spiralOrientation": { "message": "सर्पिल दिशा" },
-    "toggleGrid": { "message": "कंपोज़िशन ग्रिड टॉगल करें" },
-    "lineColor": { "message": "लाइन का रंग" },
-    "dotColor": { "message": "डॉट का रंग" },
-    "dotSize": { "message": "डॉट का आकार" },
-    "lineSize": { "message": "लाइन की चौड़ाई" },
-    "lineStyle": { "message": "लाइन शैली" },
-    "opacity": { "message": "अपारदर्शिता" },
-    "solid": { "message": "ठोस" },
-    "dashed": { "message": "डैश्ड" },
-    "minImageSize": { "message": "छोटी इमेज छोड़ें" },
-    "resetSettings": { "message": "डिफ़ॉल्ट पर रीसेट करें" },
-    "resetGridType": { "message": "ग्रिड प्रकार रीसेट करें" },
-    "tabSiteRules": { "message": "अनुमत साइटें" },
-    "siteMode": { "message": "मोड" },
-    "siteModeAll": { "message": "सभी साइटें" },
-    "siteModeBlock": { "message": "ब्लॉक सूची" },
-    "siteModeAllow": { "message": "अनुमति सूची" },
-    "siteModeAllDesc": { "message": "ग्रिड सभी वेबसाइटों पर दिखता है" },
-    "siteModeBlockDesc": { "message": "इन साइटों को छोड़कर ग्रिड हर जगह दिखता है" },
-    "siteModeAllowDesc": { "message": "ग्रिड केवल इन साइटों पर दिखता है" },
-    "addSite": { "message": "जोड़ें" },
-    "siteInputPlaceholder": { "message": "उदा. facebook.com" },
-    "siteBlockedAlert": { "message": "इस वेबसाइट पर Composition Grid अक्षम है।" },
-    "noSites": { "message": "अभी तक कोई साइट नहीं जोड़ी गई" },
-    "language": { "message": "भाषा" },
-    "enabled": { "message": "चालू" },
-    "disabled": { "message": "बंद" },
-    "version": { "message": "संस्करण" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "द्वारा संचालित" },
-    "theme": { "message": "थीम" },
-    "dark": { "message": "डार्क" },
-    "light": { "message": "लाइट" },
-    "quickColor": { "message": "त्वरित रंग" },
-    "quickColorHint": { "message": "लाइनों और डॉट्स पर लागू" },
-    "fileAccessNotice": { "message": "लोकल फ़ाइलों पर उपयोग के लिए एक्सटेंशन सेटिंग्स में \"Allow access to file URLs\" सक्षम करें।" },
-    "fileAccessAction": { "message": "सेटिंग्स खोलें" },
-    "buyMeCoffee": { "message": "मुझे एक कॉफ़ी पिलाएं" },
-    "donateMessage": { "message": "यह एक्सटेंशन पसंद आया? इसके विकास में सहयोग करें!" },
-    "ariaToggleImage": { "message": "इमेज ओवरले टॉगल करें" },
-    "ariaToggleVideo": { "message": "वीडियो ओवरले टॉगल करें" },
-    "ariaToggleDots": { "message": "डॉट्स टॉगल करें" },
-    "close": { "message": "बंद करें" },
-    "remove": { "message": "हटाएं" },
-    "spiralTopLeft": { "message": "ऊपर-बाएं" },
-    "spiralTopRight": { "message": "ऊपर-दाएं" },
-    "spiralBottomRight": { "message": "नीचे-दाएं" },
-    "spiralBottomLeft": { "message": "नीचे-बाएं" },
-    "tourSkip": { "message": "छोड़ें" },
-    "tourPrev": { "message": "पीछे" },
-    "tourNext": { "message": "आगे" },
-    "tourFinish": { "message": "समझ गया!" },
-    "tourReplay": { "message": "गाइड" },
-    "tourStep1Title": { "message": "इमेज ओवरले" },
-    "tourStep1Desc": { "message": "पेज की सभी इमेज पर ग्रिड ओवरले टॉगल करें। त्वरित टॉगल के लिए Alt+I का उपयोग करें।" },
-    "tourStep2Title": { "message": "वीडियो ओवरले" },
-    "tourStep2Desc": { "message": "वीडियो पर भी ग्रिड ओवरले सक्षम करें। टॉगल करने के लिए Alt+V दबाएं।" },
-    "tourStep3Title": { "message": "अपना ग्रिड चुनें" },
-    "tourStep3Desc": { "message": "एक या अधिक कंपोज़िशन गाइड चुनें: तिहाई का नियम, स्वर्ण अनुपात, फिबोनैचि सर्पिल और बहुत कुछ!" },
-    "tourStep4Title": { "message": "लाइन का रंग" },
-    "tourStep4Desc": { "message": "अपनी इमेज की पृष्ठभूमि के अनुसार ग्रिड लाइन का रंग अनुकूलित करें।" },
-    "tourStep5Title": { "message": "लाइन की चौड़ाई" },
-    "tourStep5Desc": { "message": "लाइन की मोटाई समायोजित करें। ठोस और डैश्ड शैलियों के बीच स्विच करने के लिए Alt+L का उपयोग करें।" },
-    "tourStep6Title": { "message": "अपारदर्शिता" },
-    "tourStep6Desc": { "message": "नियंत्रित करें कि आपकी इमेज पर ग्रिड ओवरले कितना पारदर्शी दिखाई दे।" },
-    "tourStep7Title": { "message": "त्वरित रंग स्विच" },
-    "tourStep7Desc": { "message": "दो रंग सेट करें और उनके बीच तुरंत बदलने के लिए Alt+C दबाएं। डार्क/लाइट इमेज के लिए बढ़िया!" },
-    "tourStep8Title": { "message": "साइट नियम" },
-    "tourStep8Desc": { "message": "नियंत्रित करें कि कौन-सी वेबसाइटें ग्रिड दिखाएं। विशिष्ट साइटों को ब्लॉक या अनुमति दें।" },
-    "cmdToggleImage": { "message": "इमेज ओवरले टॉगल करें" },
-    "cmdToggleVideo": { "message": "वीडियो ओवरले टॉगल करें" },
-    "cmdToggleLineStyle": { "message": "ठोस और डैश्ड लाइनों के बीच स्विच करें" },
-    "cmdToggleColor": { "message": "अपने दो त्वरित रंगों के बीच बदलें" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "किसी भी छवि और वीडियो पर कंपोज़िशन ग्रिड ओवरले करें: रूल ऑफ थर्ड्स, गोल्डन रेशियो, फिबोनाची स्पाइरल और ट्रायंगल गाइड।"
+    },
+    "appTagline": {
+        "message": "हर शॉट के लिए कंपोज़िशन गाइड"
+    },
+    "enableGrid": {
+        "message": "इमेज ओवरले"
+    },
+    "videoEnabled": {
+        "message": "वीडियो ओवरले"
+    },
+    "gridType": {
+        "message": "ग्रिड प्रकार"
+    },
+    "showDots": {
+        "message": "डॉट्स दिखाएं"
+    },
+    "thirds": {
+        "message": "तिहाई का नियम"
+    },
+    "golden": {
+        "message": "स्वर्ण अनुपात"
+    },
+    "fibonacci": {
+        "message": "फिबोनैचि सर्पिल"
+    },
+    "triangle": {
+        "message": "त्रिभुज"
+    },
+    "fifths": {
+        "message": "पंचमांश"
+    },
+    "center": {
+        "message": "केंद्र"
+    },
+    "spiralOrientation": {
+        "message": "सर्पिल दिशा"
+    },
+    "toggleGrid": {
+        "message": "कंपोज़िशन ग्रिड टॉगल करें"
+    },
+    "lineColor": {
+        "message": "लाइन का रंग"
+    },
+    "dotColor": {
+        "message": "डॉट का रंग"
+    },
+    "dotSize": {
+        "message": "डॉट का आकार"
+    },
+    "lineSize": {
+        "message": "लाइन की चौड़ाई"
+    },
+    "lineStyle": {
+        "message": "लाइन शैली"
+    },
+    "opacity": {
+        "message": "अपारदर्शिता"
+    },
+    "solid": {
+        "message": "ठोस"
+    },
+    "dashed": {
+        "message": "डैश्ड"
+    },
+    "minImageSize": {
+        "message": "छोटी इमेज छोड़ें"
+    },
+    "resetSettings": {
+        "message": "डिफ़ॉल्ट पर रीसेट करें"
+    },
+    "resetGridType": {
+        "message": "ग्रिड प्रकार रीसेट करें"
+    },
+    "tabSiteRules": {
+        "message": "अनुमत साइटें"
+    },
+    "siteMode": {
+        "message": "मोड"
+    },
+    "siteModeAll": {
+        "message": "सभी साइटें"
+    },
+    "siteModeBlock": {
+        "message": "ब्लॉक सूची"
+    },
+    "siteModeAllow": {
+        "message": "अनुमति सूची"
+    },
+    "siteModeAllDesc": {
+        "message": "ग्रिड सभी वेबसाइटों पर दिखता है"
+    },
+    "siteModeBlockDesc": {
+        "message": "इन साइटों को छोड़कर ग्रिड हर जगह दिखता है"
+    },
+    "siteModeAllowDesc": {
+        "message": "ग्रिड केवल इन साइटों पर दिखता है"
+    },
+    "addSite": {
+        "message": "जोड़ें"
+    },
+    "siteInputPlaceholder": {
+        "message": "उदा. facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "इस वेबसाइट पर Composition Grid अक्षम है।"
+    },
+    "noSites": {
+        "message": "अभी तक कोई साइट नहीं जोड़ी गई"
+    },
+    "language": {
+        "message": "भाषा"
+    },
+    "enabled": {
+        "message": "चालू"
+    },
+    "disabled": {
+        "message": "बंद"
+    },
+    "version": {
+        "message": "संस्करण"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "द्वारा संचालित"
+    },
+    "theme": {
+        "message": "थीम"
+    },
+    "dark": {
+        "message": "डार्क"
+    },
+    "light": {
+        "message": "लाइट"
+    },
+    "quickColor": {
+        "message": "त्वरित रंग"
+    },
+    "quickColorHint": {
+        "message": "लाइनों और डॉट्स पर लागू"
+    },
+    "fileAccessNotice": {
+        "message": "लोकल फ़ाइलों पर उपयोग के लिए एक्सटेंशन सेटिंग्स में \"Allow access to file URLs\" सक्षम करें।"
+    },
+    "fileAccessAction": {
+        "message": "सेटिंग्स खोलें"
+    },
+    "buyMeCoffee": {
+        "message": "मुझे एक कॉफ़ी पिलाएं"
+    },
+    "donateMessage": {
+        "message": "यह एक्सटेंशन पसंद आया? इसके विकास में सहयोग करें!"
+    },
+    "ariaToggleImage": {
+        "message": "इमेज ओवरले टॉगल करें"
+    },
+    "ariaToggleVideo": {
+        "message": "वीडियो ओवरले टॉगल करें"
+    },
+    "ariaToggleDots": {
+        "message": "डॉट्स टॉगल करें"
+    },
+    "close": {
+        "message": "बंद करें"
+    },
+    "remove": {
+        "message": "हटाएं"
+    },
+    "spiralTopLeft": {
+        "message": "ऊपर-बाएं"
+    },
+    "spiralTopRight": {
+        "message": "ऊपर-दाएं"
+    },
+    "spiralBottomRight": {
+        "message": "नीचे-दाएं"
+    },
+    "spiralBottomLeft": {
+        "message": "नीचे-बाएं"
+    },
+    "tourSkip": {
+        "message": "छोड़ें"
+    },
+    "tourPrev": {
+        "message": "पीछे"
+    },
+    "tourNext": {
+        "message": "आगे"
+    },
+    "tourFinish": {
+        "message": "समझ गया!"
+    },
+    "tourReplay": {
+        "message": "गाइड"
+    },
+    "tourStep1Title": {
+        "message": "इमेज ओवरले"
+    },
+    "tourStep1Desc": {
+        "message": "पेज की सभी इमेज पर ग्रिड ओवरले टॉगल करें। त्वरित टॉगल के लिए Alt+I का उपयोग करें।"
+    },
+    "tourStep2Title": {
+        "message": "वीडियो ओवरले"
+    },
+    "tourStep2Desc": {
+        "message": "वीडियो पर भी ग्रिड ओवरले सक्षम करें। टॉगल करने के लिए Alt+V दबाएं।"
+    },
+    "tourStep3Title": {
+        "message": "अपना ग्रिड चुनें"
+    },
+    "tourStep3Desc": {
+        "message": "एक या अधिक कंपोज़िशन गाइड चुनें: तिहाई का नियम, स्वर्ण अनुपात, फिबोनैचि सर्पिल और बहुत कुछ!"
+    },
+    "tourStep4Title": {
+        "message": "लाइन का रंग"
+    },
+    "tourStep4Desc": {
+        "message": "अपनी इमेज की पृष्ठभूमि के अनुसार ग्रिड लाइन का रंग अनुकूलित करें।"
+    },
+    "tourStep5Title": {
+        "message": "लाइन की चौड़ाई"
+    },
+    "tourStep5Desc": {
+        "message": "लाइन की मोटाई समायोजित करें। ठोस और डैश्ड शैलियों के बीच स्विच करने के लिए Alt+L का उपयोग करें।"
+    },
+    "tourStep6Title": {
+        "message": "अपारदर्शिता"
+    },
+    "tourStep6Desc": {
+        "message": "नियंत्रित करें कि आपकी इमेज पर ग्रिड ओवरले कितना पारदर्शी दिखाई दे।"
+    },
+    "tourStep7Title": {
+        "message": "त्वरित रंग स्विच"
+    },
+    "tourStep7Desc": {
+        "message": "दो रंग सेट करें और उनके बीच तुरंत बदलने के लिए Alt+C दबाएं। डार्क/लाइट इमेज के लिए बढ़िया!"
+    },
+    "tourStep8Title": {
+        "message": "साइट नियम"
+    },
+    "tourStep8Desc": {
+        "message": "नियंत्रित करें कि कौन-सी वेबसाइटें ग्रिड दिखाएं। विशिष्ट साइटों को ब्लॉक या अनुमति दें।"
+    },
+    "cmdToggleImage": {
+        "message": "इमेज ओवरले टॉगल करें"
+    },
+    "cmdToggleVideo": {
+        "message": "वीडियो ओवरले टॉगल करें"
+    },
+    "cmdToggleLineStyle": {
+        "message": "ठोस और डैश्ड लाइनों के बीच स्विच करें"
+    },
+    "cmdToggleColor": {
+        "message": "अपने दो त्वरित रंगों के बीच बदलें"
+    }
 }

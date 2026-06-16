@@ -1,89 +1,266 @@
 {
-    "appName": { "message": "Composition Grid" },
-    "appTagline": { "message": "Panduan Komposisi untuk Setiap Bidikan" },
-    "enableGrid": { "message": "Overlay Gambar" },
-    "videoEnabled": { "message": "Overlay Video" },
-    "gridType": { "message": "Tipe Grid" },
-    "showDots": { "message": "Tampilkan Titik" },
-    "thirds": { "message": "Rule of Thirds" },
-    "golden": { "message": "Rasio Emas" },
-    "fibonacci": { "message": "Spiral Fibonacci" },
-    "triangle": { "message": "Segitiga" },
-    "fifths": { "message": "Seperlima" },
-    "center": { "message": "Tengah" },
-    "spiralOrientation": { "message": "Arah Spiral" },
-    "toggleGrid": { "message": "Alihkan Composition Grid" },
-    "lineColor": { "message": "Warna Garis" },
-    "dotColor": { "message": "Warna Titik" },
-    "dotSize": { "message": "Ukuran Titik" },
-    "lineSize": { "message": "Lebar Garis" },
-    "lineStyle": { "message": "Gaya Garis" },
-    "opacity": { "message": "Opasitas" },
-    "solid": { "message": "Solid" },
-    "dashed": { "message": "Putus-putus" },
-    "minImageSize": { "message": "Lewati Gambar Kecil" },
-    "resetSettings": { "message": "Atur Ulang ke Bawaan" },
-    "resetGridType": { "message": "Atur ulang tipe grid" },
-    "tabSiteRules": { "message": "Situs yang Diizinkan" },
-    "siteMode": { "message": "Mode" },
-    "siteModeAll": { "message": "Semua Situs" },
-    "siteModeBlock": { "message": "Daftar Blokir" },
-    "siteModeAllow": { "message": "Daftar Izin" },
-    "siteModeAllDesc": { "message": "Grid muncul di semua situs web" },
-    "siteModeBlockDesc": { "message": "Grid muncul di mana saja kecuali situs ini" },
-    "siteModeAllowDesc": { "message": "Grid hanya muncul di situs ini" },
-    "addSite": { "message": "Tambah" },
-    "siteInputPlaceholder": { "message": "mis. facebook.com" },
-    "siteBlockedAlert": { "message": "Composition Grid dinonaktifkan di situs web ini." },
-    "noSites": { "message": "Belum ada situs ditambahkan" },
-    "language": { "message": "Bahasa" },
-    "enabled": { "message": "Aktif" },
-    "disabled": { "message": "Nonaktif" },
-    "version": { "message": "Versi" },
-    "authorName": { "message": "Quy Nguyen" },
-    "authorWebsite": { "message": "https://ngocquy.dev" },
-    "poweredBy": { "message": "Didukung oleh" },
-    "theme": { "message": "Tema" },
-    "dark": { "message": "Gelap" },
-    "light": { "message": "Terang" },
-    "quickColor": { "message": "Warna Cepat" },
-    "quickColorHint": { "message": "Diterapkan pada garis & titik" },
-    "fileAccessNotice": { "message": "Aktifkan \"Izinkan akses ke URL file\" di pengaturan ekstensi untuk menggunakan pada file lokal." },
-    "fileAccessAction": { "message": "Buka Pengaturan" },
-    "buyMeCoffee": { "message": "Belikan Saya Kopi" },
-    "donateMessage": { "message": "Menikmati ekstensi ini? Dukung pengembangannya!" },
-    "ariaToggleImage": { "message": "Alihkan overlay gambar" },
-    "ariaToggleVideo": { "message": "Alihkan overlay video" },
-    "ariaToggleDots": { "message": "Alihkan titik" },
-    "close": { "message": "Tutup" },
-    "remove": { "message": "Hapus" },
-    "spiralTopLeft": { "message": "Kiri Atas" },
-    "spiralTopRight": { "message": "Kanan Atas" },
-    "spiralBottomRight": { "message": "Kanan Bawah" },
-    "spiralBottomLeft": { "message": "Kiri Bawah" },
-    "tourSkip": { "message": "Lewati" },
-    "tourPrev": { "message": "Kembali" },
-    "tourNext": { "message": "Berikutnya" },
-    "tourFinish": { "message": "Mengerti!" },
-    "tourReplay": { "message": "Panduan" },
-    "tourStep1Title": { "message": "Overlay Gambar" },
-    "tourStep1Desc": { "message": "Alihkan overlay grid untuk semua gambar di halaman. Gunakan Alt+I untuk alih cepat." },
-    "tourStep2Title": { "message": "Overlay Video" },
-    "tourStep2Desc": { "message": "Aktifkan overlay grid pada video juga. Tekan Alt+V untuk mengalihkan." },
-    "tourStep3Title": { "message": "Pilih Grid Anda" },
-    "tourStep3Desc": { "message": "Pilih satu atau lebih panduan komposisi: Rule of Thirds, Rasio Emas, Spiral Fibonacci, dan lainnya!" },
-    "tourStep4Title": { "message": "Warna Garis" },
-    "tourStep4Desc": { "message": "Sesuaikan warna garis grid agar cocok dengan latar belakang gambar Anda." },
-    "tourStep5Title": { "message": "Lebar Garis" },
-    "tourStep5Desc": { "message": "Sesuaikan ketebalan garis. Gunakan Alt+L untuk beralih antara gaya solid dan putus-putus." },
-    "tourStep6Title": { "message": "Opasitas" },
-    "tourStep6Desc": { "message": "Atur seberapa transparan overlay grid tampil di atas gambar Anda." },
-    "tourStep7Title": { "message": "Alih Warna Cepat" },
-    "tourStep7Desc": { "message": "Atur dua warna dan tekan Alt+C untuk langsung menukar di antaranya. Cocok untuk gambar gelap/terang!" },
-    "tourStep8Title": { "message": "Aturan Situs" },
-    "tourStep8Desc": { "message": "Kontrol situs web mana yang menampilkan grid. Blokir atau izinkan situs tertentu." },
-    "cmdToggleImage": { "message": "Alihkan overlay gambar" },
-    "cmdToggleVideo": { "message": "Alihkan overlay video" },
-    "cmdToggleLineStyle": { "message": "Beralih antara garis solid dan putus-putus" },
-    "cmdToggleColor": { "message": "Tukar antara dua warna cepat Anda" }
+    "appName": {
+        "message": "Composition Grid"
+    },
+    "appDesc": {
+        "message": "Hamparkan kisi komposisi pada gambar & video apa pun: Rule of Thirds, Rasio Emas, Spiral Fibonacci & panduan Segitiga."
+    },
+    "appTagline": {
+        "message": "Panduan Komposisi untuk Setiap Bidikan"
+    },
+    "enableGrid": {
+        "message": "Overlay Gambar"
+    },
+    "videoEnabled": {
+        "message": "Overlay Video"
+    },
+    "gridType": {
+        "message": "Tipe Grid"
+    },
+    "showDots": {
+        "message": "Tampilkan Titik"
+    },
+    "thirds": {
+        "message": "Rule of Thirds"
+    },
+    "golden": {
+        "message": "Rasio Emas"
+    },
+    "fibonacci": {
+        "message": "Spiral Fibonacci"
+    },
+    "triangle": {
+        "message": "Segitiga"
+    },
+    "fifths": {
+        "message": "Seperlima"
+    },
+    "center": {
+        "message": "Tengah"
+    },
+    "spiralOrientation": {
+        "message": "Arah Spiral"
+    },
+    "toggleGrid": {
+        "message": "Alihkan Composition Grid"
+    },
+    "lineColor": {
+        "message": "Warna Garis"
+    },
+    "dotColor": {
+        "message": "Warna Titik"
+    },
+    "dotSize": {
+        "message": "Ukuran Titik"
+    },
+    "lineSize": {
+        "message": "Lebar Garis"
+    },
+    "lineStyle": {
+        "message": "Gaya Garis"
+    },
+    "opacity": {
+        "message": "Opasitas"
+    },
+    "solid": {
+        "message": "Solid"
+    },
+    "dashed": {
+        "message": "Putus-putus"
+    },
+    "minImageSize": {
+        "message": "Lewati Gambar Kecil"
+    },
+    "resetSettings": {
+        "message": "Atur Ulang ke Bawaan"
+    },
+    "resetGridType": {
+        "message": "Atur ulang tipe grid"
+    },
+    "tabSiteRules": {
+        "message": "Situs yang Diizinkan"
+    },
+    "siteMode": {
+        "message": "Mode"
+    },
+    "siteModeAll": {
+        "message": "Semua Situs"
+    },
+    "siteModeBlock": {
+        "message": "Daftar Blokir"
+    },
+    "siteModeAllow": {
+        "message": "Daftar Izin"
+    },
+    "siteModeAllDesc": {
+        "message": "Grid muncul di semua situs web"
+    },
+    "siteModeBlockDesc": {
+        "message": "Grid muncul di mana saja kecuali situs ini"
+    },
+    "siteModeAllowDesc": {
+        "message": "Grid hanya muncul di situs ini"
+    },
+    "addSite": {
+        "message": "Tambah"
+    },
+    "siteInputPlaceholder": {
+        "message": "mis. facebook.com"
+    },
+    "siteBlockedAlert": {
+        "message": "Composition Grid dinonaktifkan di situs web ini."
+    },
+    "noSites": {
+        "message": "Belum ada situs ditambahkan"
+    },
+    "language": {
+        "message": "Bahasa"
+    },
+    "enabled": {
+        "message": "Aktif"
+    },
+    "disabled": {
+        "message": "Nonaktif"
+    },
+    "version": {
+        "message": "Versi"
+    },
+    "authorName": {
+        "message": "Quy Nguyen"
+    },
+    "authorWebsite": {
+        "message": "https://ngocquy.dev"
+    },
+    "poweredBy": {
+        "message": "Didukung oleh"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "dark": {
+        "message": "Gelap"
+    },
+    "light": {
+        "message": "Terang"
+    },
+    "quickColor": {
+        "message": "Warna Cepat"
+    },
+    "quickColorHint": {
+        "message": "Diterapkan pada garis & titik"
+    },
+    "fileAccessNotice": {
+        "message": "Aktifkan \"Izinkan akses ke URL file\" di pengaturan ekstensi untuk menggunakan pada file lokal."
+    },
+    "fileAccessAction": {
+        "message": "Buka Pengaturan"
+    },
+    "buyMeCoffee": {
+        "message": "Belikan Saya Kopi"
+    },
+    "donateMessage": {
+        "message": "Menikmati ekstensi ini? Dukung pengembangannya!"
+    },
+    "ariaToggleImage": {
+        "message": "Alihkan overlay gambar"
+    },
+    "ariaToggleVideo": {
+        "message": "Alihkan overlay video"
+    },
+    "ariaToggleDots": {
+        "message": "Alihkan titik"
+    },
+    "close": {
+        "message": "Tutup"
+    },
+    "remove": {
+        "message": "Hapus"
+    },
+    "spiralTopLeft": {
+        "message": "Kiri Atas"
+    },
+    "spiralTopRight": {
+        "message": "Kanan Atas"
+    },
+    "spiralBottomRight": {
+        "message": "Kanan Bawah"
+    },
+    "spiralBottomLeft": {
+        "message": "Kiri Bawah"
+    },
+    "tourSkip": {
+        "message": "Lewati"
+    },
+    "tourPrev": {
+        "message": "Kembali"
+    },
+    "tourNext": {
+        "message": "Berikutnya"
+    },
+    "tourFinish": {
+        "message": "Mengerti!"
+    },
+    "tourReplay": {
+        "message": "Panduan"
+    },
+    "tourStep1Title": {
+        "message": "Overlay Gambar"
+    },
+    "tourStep1Desc": {
+        "message": "Alihkan overlay grid untuk semua gambar di halaman. Gunakan Alt+I untuk alih cepat."
+    },
+    "tourStep2Title": {
+        "message": "Overlay Video"
+    },
+    "tourStep2Desc": {
+        "message": "Aktifkan overlay grid pada video juga. Tekan Alt+V untuk mengalihkan."
+    },
+    "tourStep3Title": {
+        "message": "Pilih Grid Anda"
+    },
+    "tourStep3Desc": {
+        "message": "Pilih satu atau lebih panduan komposisi: Rule of Thirds, Rasio Emas, Spiral Fibonacci, dan lainnya!"
+    },
+    "tourStep4Title": {
+        "message": "Warna Garis"
+    },
+    "tourStep4Desc": {
+        "message": "Sesuaikan warna garis grid agar cocok dengan latar belakang gambar Anda."
+    },
+    "tourStep5Title": {
+        "message": "Lebar Garis"
+    },
+    "tourStep5Desc": {
+        "message": "Sesuaikan ketebalan garis. Gunakan Alt+L untuk beralih antara gaya solid dan putus-putus."
+    },
+    "tourStep6Title": {
+        "message": "Opasitas"
+    },
+    "tourStep6Desc": {
+        "message": "Atur seberapa transparan overlay grid tampil di atas gambar Anda."
+    },
+    "tourStep7Title": {
+        "message": "Alih Warna Cepat"
+    },
+    "tourStep7Desc": {
+        "message": "Atur dua warna dan tekan Alt+C untuk langsung menukar di antaranya. Cocok untuk gambar gelap/terang!"
+    },
+    "tourStep8Title": {
+        "message": "Aturan Situs"
+    },
+    "tourStep8Desc": {
+        "message": "Kontrol situs web mana yang menampilkan grid. Blokir atau izinkan situs tertentu."
+    },
+    "cmdToggleImage": {
+        "message": "Alihkan overlay gambar"
+    },
+    "cmdToggleVideo": {
+        "message": "Alihkan overlay video"
+    },
+    "cmdToggleLineStyle": {
+        "message": "Beralih antara garis solid dan putus-putus"
+    },
+    "cmdToggleColor": {
+        "message": "Tukar antara dua warna cepat Anda"
+    }
 }
