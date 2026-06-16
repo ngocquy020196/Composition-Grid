@@ -391,6 +391,8 @@ body {
     color: #f5b50a;
     letter-spacing: 2px;
     font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .hero-note {
@@ -732,19 +734,20 @@ body {
     }
 
     .hero-social {
+        flex-direction: column;
         margin-top: 24px;
-        padding: 12px 22px;
-        font-size: 15px;
+        padding: 12px 24px;
+        font-size: 14px;
         max-width: 92%;
         text-align: center;
-        line-height: 1.6;
-        flex-wrap: wrap;
+        line-height: 1.5;
         justify-content: center;
-        gap: 10px;
+        gap: 6px;
     }
 
     .hero-stars {
         font-size: 15px;
+        letter-spacing: 3px;
     }
 
     .nav-links a:not(.nav-cta):not(.lang-link) {
