@@ -3,12 +3,10 @@
     "pageDescription": "삼분할 법칙, 황금 비율, 피보나치 나선, 삼각형 구도 그리드를 모든 이미지 위에 오버레이하세요. 사진작가, 디자이너, 아티스트를 위한 무료 Chrome, Edge & Firefox 확장 프로그램입니다.",
     "ogTitle": "Composition Grid — Chrome, Edge & Firefox용 사진 구도 가이드",
     "ogDescription": "삼분할 법칙, 황금 비율, 피보나치 나선, 삼각형 그리드를 모든 이미지 위에 오버레이하세요. Chrome, Edge & Firefox용 무료 브라우저 확장 프로그램입니다.",
-
     "navFeatures": "기능",
     "navScreenshots": "스크린샷",
     "navChangelog": "변경 사항",
     "navInstall": "무료 설치",
-
     "heroBadgeFree": "무료 & 오픈 소스",
     "heroViewGithub": "GitHub에서 보기",
     "heroTitle": "모든 촬영을 위한<br /><span class=\"gradient-text\">구도 가이드</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Edge용 설치",
     "heroInstallFirefox": "Firefox용 설치",
     "heroNote": "Chrome, Edge, Firefox, Brave, Vivaldi 및 모든 Chromium 브라우저에서 작동합니다",
-
+    "heroSocial": "전 세계 <strong>2,000+</strong> 사용자가 신뢰합니다",
     "featuresTitle": "완벽한 구도를 위한<br /><span class=\"gradient-text\">모든 기능</span>",
     "f1Title": "6가지 그리드 유형",
     "f1Desc": "삼분할 법칙, 황금 비율, 피보나치 나선, 황금 삼각형, 오분할, 중앙 십자선 — 하나의 확장 프로그램에 모두 담았습니다.",
@@ -31,11 +29,9 @@
     "f5Desc": "원하는 색상을 선택하고, 선 두께와 점 크기를 조절하며, 교차점 점 표시를 켜고 끌 수 있습니다.",
     "f6Title": "사이트 제어",
     "f6Desc": "그리드가 표시될 위치를 선택하세요: 모든 사이트, 차단 목록, 또는 허용 목록 — 옵션 페이지에서 관리합니다.",
-
     "shotsTitle": "간단하면서도 강력하도록<br /><span class=\"gradient-text\">설계되었습니다</span>",
     "shot1Label": "확장 프로그램 팝업",
     "shot2Label": "마우스 오른쪽 클릭 컨텍스트 메뉴",
-
     "gridsTitle": "당신만의<br /><span class=\"gradient-text\">구도 가이드를 선택하세요</span>",
     "g1Title": "삼분할 법칙",
     "g1Desc": "프레임을 9등분하는 가장 기본적인 구도 가이드입니다.",
@@ -45,26 +41,22 @@
     "g3Desc": "황금 나선이 구도 전체에 걸쳐 시선을 자연스럽게 유도합니다.",
     "g4Title": "황금 삼각형",
     "g4Desc": "강한 선이 있는 역동적인 구도에 완벽한 대각선 가이드입니다.",
-
     "ctaTitle": "구도를 향상시킬 준비가 되셨나요?",
     "ctaDesc": "Composition Grid를 무료로 설치하고 웹의 모든 이미지와 영상을 분석해 보세요.",
     "ctaChrome": "Chrome 웹 스토어",
     "ctaEdge": "Edge 추가 기능",
     "ctaFirefox": "Firefox 부가 기능",
-
     "footPrivacy": "개인정보 보호",
     "footChangelog": "변경 사항",
     "footContact": "문의",
     "footCoffee": "커피 한 잔 사주기",
     "footPoweredBy": "제공",
     "footVersion": "버전",
-
     "clTitle": "변경 사항 — Composition Grid",
     "clDesc": "Composition Grid 브라우저 확장 프로그램의 릴리스 기록 및 버전 업데이트입니다.",
     "clHeading": "변경 사항",
     "clSubtitle": "릴리스 기록 및 버전 업데이트",
     "clLoading": "변경 사항을 불러오는 중...",
-
     "pvTitle": "개인정보 보호정책 — Composition Grid",
     "pvDesc": "Composition Grid 브라우저 확장 프로그램의 개인정보 보호정책입니다. 당사는 어떠한 개인 데이터도 수집, 저장 또는 전송하지 않습니다.",
     "pvHeading": "개인정보 보호정책",

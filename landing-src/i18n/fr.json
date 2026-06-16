@@ -3,12 +3,10 @@
     "pageDescription": "Superposez des grilles de composition Règle des tiers, Nombre d'or, Spirale de Fibonacci et Triangle sur n'importe quelle image. Extension gratuite Chrome, Edge et Firefox pour photographes, designers et artistes.",
     "ogTitle": "Composition Grid — Guides de composition photo pour Chrome, Edge et Firefox",
     "ogDescription": "Superposez des grilles Règle des tiers, Nombre d'or, Spirale de Fibonacci et Triangle sur n'importe quelle image. Extension de navigateur gratuite pour Chrome, Edge et Firefox.",
-
     "navFeatures": "Fonctionnalités",
     "navScreenshots": "Captures d'écran",
     "navChangelog": "Journal des modifications",
     "navInstall": "Installer gratuitement",
-
     "heroBadgeFree": "Gratuit et open source",
     "heroViewGithub": "Voir sur GitHub",
     "heroTitle": "Guides de composition<br /><span class=\"gradient-text\">pour chaque prise</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Installer pour Edge",
     "heroInstallFirefox": "Installer pour Firefox",
     "heroNote": "Fonctionne sur Chrome, Edge, Firefox, Brave, Vivaldi et tous les navigateurs Chromium",
-
+    "heroSocial": "Approuvé par <strong>2 000+</strong> utilisateurs dans le monde",
     "featuresTitle": "Tout ce qu'il vous faut pour<br /><span class=\"gradient-text\">une composition parfaite</span>",
     "f1Title": "6 types de grilles",
     "f1Desc": "Règle des tiers, Nombre d'or, Spirale de Fibonacci, Triangle d'or, Règle des cinquièmes et Croix centrale — le tout dans une seule extension.",
@@ -31,11 +29,9 @@
     "f5Desc": "Choisissez des couleurs personnalisées, ajustez l'épaisseur des lignes, la taille des points et activez les points d'intersection.",
     "f6Title": "Contrôle des sites",
     "f6Desc": "Choisissez où la grille apparaît : tous les sites, liste de blocage ou liste d'autorisation — géré depuis la page Options.",
-
     "shotsTitle": "Conçu pour être<br /><span class=\"gradient-text\">simple et puissant</span>",
     "shot1Label": "Fenêtre de l'extension",
     "shot2Label": "Menu contextuel (clic droit)",
-
     "gridsTitle": "Choisissez votre<br /><span class=\"gradient-text\">guide de composition</span>",
     "g1Title": "Règle des tiers",
     "g1Desc": "Le guide de composition classique qui divise le cadre en 9 parties égales.",
@@ -45,26 +41,22 @@
     "g3Desc": "La spirale d'or guide naturellement le regard à travers la composition.",
     "g4Title": "Triangle d'or",
     "g4Desc": "Des guides diagonaux parfaits pour des compositions dynamiques aux lignes marquées.",
-
     "ctaTitle": "Prêt à améliorer vos compositions ?",
     "ctaDesc": "Installez Composition Grid gratuitement et commencez à analyser n'importe quelle image et vidéo sur le web.",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "Confidentialité",
     "footChangelog": "Journal des modifications",
     "footContact": "Contact",
     "footCoffee": "Buy Me a Coffee",
     "footPoweredBy": "Propulsé par",
     "footVersion": "Version",
-
     "clTitle": "Journal des modifications — Composition Grid",
     "clDesc": "Historique des versions et mises à jour de l'extension de navigateur Composition Grid.",
     "clHeading": "Journal des modifications",
     "clSubtitle": "Historique des versions et mises à jour",
     "clLoading": "Chargement du journal des modifications...",
-
     "pvTitle": "Politique de confidentialité — Composition Grid",
     "pvDesc": "Politique de confidentialité de l'extension de navigateur Composition Grid. Nous ne collectons, ne stockons ni ne transmettons aucune donnée personnelle.",
     "pvHeading": "Politique de confidentialité",

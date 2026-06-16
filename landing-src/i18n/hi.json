@@ -3,12 +3,10 @@
     "pageDescription": "किसी भी इमेज पर तिहाई का नियम, स्वर्ण अनुपात, फिबोनैचि सर्पिल और त्रिभुज कंपोजीशन ग्रिड ओवरले करें। फोटोग्राफर, डिज़ाइनर और कलाकारों के लिए मुफ़्त Chrome, Edge और Firefox एक्सटेंशन।",
     "ogTitle": "Composition Grid — Chrome, Edge और Firefox के लिए फोटो कंपोजीशन गाइड",
     "ogDescription": "किसी भी इमेज पर तिहाई का नियम, स्वर्ण अनुपात, फिबोनैचि सर्पिल और त्रिभुज ग्रिड ओवरले करें। Chrome, Edge और Firefox के लिए मुफ़्त ब्राउज़र एक्सटेंशन।",
-
     "navFeatures": "विशेषताएं",
     "navScreenshots": "स्क्रीनशॉट",
     "navChangelog": "चेंजलॉग",
     "navInstall": "मुफ़्त इंस्टॉल करें",
-
     "heroBadgeFree": "मुफ़्त और ओपन सोर्स",
     "heroViewGithub": "GitHub पर देखें",
     "heroTitle": "हर शॉट के लिए<br /><span class=\"gradient-text\">कंपोजीशन गाइड</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Edge के लिए इंस्टॉल करें",
     "heroInstallFirefox": "Firefox के लिए इंस्टॉल करें",
     "heroNote": "Chrome, Edge, Firefox, Brave, Vivaldi और सभी Chromium ब्राउज़रों पर काम करता है",
-
+    "heroSocial": "दुनिया भर में <strong>2,000+</strong> उपयोगकर्ताओं का भरोसा",
     "featuresTitle": "परफेक्ट कंपोजीशन के लिए<br /><span class=\"gradient-text\">जो भी चाहिए</span>",
     "f1Title": "6 ग्रिड प्रकार",
     "f1Desc": "तिहाई का नियम, स्वर्ण अनुपात, फिबोनैचि सर्पिल, स्वर्ण त्रिभुज, पंचमांश और सेंटर क्रॉसहेयर — सब एक ही एक्सटेंशन में।",
@@ -31,11 +29,9 @@
     "f5Desc": "कस्टम रंग चुनें, लाइन की चौड़ाई और डॉट का आकार समायोजित करें, और इंटरसेक्शन डॉट्स टॉगल करें।",
     "f6Title": "साइट नियंत्रण",
     "f6Desc": "चुनें कि ग्रिड कहां दिखे: सभी साइट्स, ब्लॉक लिस्ट, या अलाउ लिस्ट — विकल्प पेज से प्रबंधित।",
-
     "shotsTitle": "इस तरह डिज़ाइन किया गया कि<br /><span class=\"gradient-text\">सरल और शक्तिशाली</span> हो",
     "shot1Label": "एक्सटेंशन पॉपअप",
     "shot2Label": "राइट-क्लिक कॉन्टेक्स्ट मेन्यू",
-
     "gridsTitle": "अपनी<br /><span class=\"gradient-text\">कंपोजीशन गाइड</span> चुनें",
     "g1Title": "तिहाई का नियम",
     "g1Desc": "क्लासिक कंपोजीशन गाइड जो फ्रेम को 9 बराबर हिस्सों में बांटता है।",
@@ -45,26 +41,22 @@
     "g3Desc": "स्वर्ण सर्पिल आंखों को कंपोजीशन के माध्यम से स्वाभाविक रूप से मार्गदर्शित करता है।",
     "g4Title": "स्वर्ण त्रिभुज",
     "g4Desc": "मजबूत रेखाओं वाली गतिशील कंपोजीशन के लिए परफेक्ट विकर्ण गाइड।",
-
     "ctaTitle": "अपनी कंपोजीशन बेहतर करने के लिए तैयार हैं?",
     "ctaDesc": "Composition Grid मुफ़्त इंस्टॉल करें और वेब पर किसी भी इमेज और वीडियो का विश्लेषण शुरू करें।",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "गोपनीयता",
     "footChangelog": "चेंजलॉग",
     "footContact": "संपर्क",
     "footCoffee": "मुझे एक कॉफी पिलाएं",
     "footPoweredBy": "द्वारा संचालित",
     "footVersion": "संस्करण",
-
     "clTitle": "चेंजलॉग — Composition Grid",
     "clDesc": "Composition Grid ब्राउज़र एक्सटेंशन के लिए रिलीज़ इतिहास और संस्करण अपडेट।",
     "clHeading": "चेंजलॉग",
     "clSubtitle": "रिलीज़ इतिहास और संस्करण अपडेट",
     "clLoading": "चेंजलॉग लोड हो रहा है...",
-
     "pvTitle": "गोपनीयता नीति — Composition Grid",
     "pvDesc": "Composition Grid ब्राउज़र एक्सटेंशन के लिए गोपनीयता नीति। हम कोई व्यक्तिगत डेटा एकत्र, संग्रहीत या प्रसारित नहीं करते।",
     "pvHeading": "गोपनीयता नीति",

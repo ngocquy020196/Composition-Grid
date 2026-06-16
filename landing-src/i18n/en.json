@@ -3,12 +3,10 @@
     "pageDescription": "Overlay Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle composition grids on any image. Free Chrome, Edge & Firefox extension for photographers, designers and artists.",
     "ogTitle": "Composition Grid — Photo Composition Guides for Chrome, Edge & Firefox",
     "ogDescription": "Overlay Rule of Thirds, Golden Ratio, Fibonacci Spiral & Triangle grids on any image. Free browser extension for Chrome, Edge & Firefox.",
-
     "navFeatures": "Features",
     "navScreenshots": "Screenshots",
     "navChangelog": "Changelog",
     "navInstall": "Install Free",
-
     "heroBadgeFree": "Free & Open Source",
     "heroViewGithub": "View on GitHub",
     "heroTitle": "Composition Guides<br /><span class=\"gradient-text\">for Every Shot</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Install for Edge",
     "heroInstallFirefox": "Install for Firefox",
     "heroNote": "Works on Chrome, Edge, Firefox, Brave, Vivaldi & all Chromium browsers",
-
+    "heroSocial": "Trusted by <strong>2,000+</strong> users worldwide",
     "featuresTitle": "Everything you need for<br /><span class=\"gradient-text\">perfect composition</span>",
     "f1Title": "6 Grid Types",
     "f1Desc": "Rule of Thirds, Golden Ratio, Fibonacci Spiral, Golden Triangle, Fifths & Center Crosshair — all in one extension.",
@@ -31,11 +29,9 @@
     "f5Desc": "Pick custom colors, adjust line width, dot size, and toggle intersection dots.",
     "f6Title": "Site Control",
     "f6Desc": "Choose where the grid appears: All Sites, Block List, or Allow List — managed via Options page.",
-
     "shotsTitle": "Designed to be<br /><span class=\"gradient-text\">simple & powerful</span>",
     "shot1Label": "Extension Popup",
     "shot2Label": "Right-Click Context Menu",
-
     "gridsTitle": "Choose your<br /><span class=\"gradient-text\">composition guide</span>",
     "g1Title": "Rule of Thirds",
     "g1Desc": "The classic composition guide dividing the frame into 9 equal parts.",
@@ -45,26 +41,22 @@
     "g3Desc": "The golden spiral guides the eye naturally through the composition.",
     "g4Title": "Golden Triangle",
     "g4Desc": "Diagonal guides perfect for dynamic compositions with strong lines.",
-
     "ctaTitle": "Ready to improve your compositions?",
     "ctaDesc": "Install Composition Grid for free and start analyzing any image & video on the web.",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "Privacy",
     "footChangelog": "Changelog",
     "footContact": "Contact",
     "footCoffee": "Buy Me a Coffee",
     "footPoweredBy": "Powered by",
     "footVersion": "Version",
-
     "clTitle": "Changelog — Composition Grid",
     "clDesc": "Release history and version updates for the Composition Grid browser extension.",
     "clHeading": "Changelog",
     "clSubtitle": "Release history and version updates",
     "clLoading": "Loading changelog...",
-
     "pvTitle": "Privacy Policy — Composition Grid",
     "pvDesc": "Privacy Policy for the Composition Grid browser extension. We do not collect, store, or transmit any personal data.",
     "pvHeading": "Privacy Policy",

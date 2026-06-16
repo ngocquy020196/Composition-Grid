@@ -3,12 +3,10 @@
     "pageDescription": "Drittelregel, Goldener Schnitt, Fibonacci-Spirale & Dreieck-Kompositionsraster auf jedes Bild legen. Kostenlose Chrome-, Edge- & Firefox-Erweiterung für Fotografen, Designer und Künstler.",
     "ogTitle": "Composition Grid — Bildkomposition-Hilfslinien für Chrome, Edge & Firefox",
     "ogDescription": "Drittelregel, Goldener Schnitt, Fibonacci-Spirale & Dreieck-Raster auf jedes Bild legen. Kostenlose Browser-Erweiterung für Chrome, Edge & Firefox.",
-
     "navFeatures": "Funktionen",
     "navScreenshots": "Screenshots",
     "navChangelog": "Änderungen",
     "navInstall": "Gratis holen",
-
     "heroBadgeFree": "Kostenlos & Open Source",
     "heroViewGithub": "Auf GitHub ansehen",
     "heroTitle": "Kompositions-Hilfslinien<br /><span class=\"gradient-text\">für jede Aufnahme</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Für Edge installieren",
     "heroInstallFirefox": "Für Firefox installieren",
     "heroNote": "Funktioniert mit Chrome, Edge, Firefox, Brave, Vivaldi & allen Chromium-Browsern",
-
+    "heroSocial": "Vertraut von <strong>2.000+</strong> Nutzern weltweit",
     "featuresTitle": "Alles für die<br /><span class=\"gradient-text\">perfekte Komposition</span>",
     "f1Title": "6 Rastertypen",
     "f1Desc": "Drittelregel, Goldener Schnitt, Fibonacci-Spirale, Goldenes Dreieck, Fünftel & zentriertes Fadenkreuz — alles in einer Erweiterung.",
@@ -31,11 +29,9 @@
     "f5Desc": "Wähle eigene Farben, passe Linienbreite und Punktgröße an und schalte Schnittpunkt-Punkte um.",
     "f6Title": "Seitensteuerung",
     "f6Desc": "Bestimme, wo das Raster erscheint: Alle Seiten, Sperrliste oder Zulassungsliste — verwaltet über die Optionsseite.",
-
     "shotsTitle": "Entwickelt, um<br /><span class=\"gradient-text\">einfach & leistungsstark</span> zu sein",
     "shot1Label": "Erweiterungs-Popup",
     "shot2Label": "Rechtsklick-Kontextmenü",
-
     "gridsTitle": "Wähle deine<br /><span class=\"gradient-text\">Kompositions-Hilfslinie</span>",
     "g1Title": "Drittelregel",
     "g1Desc": "Die klassische Kompositionshilfe, die das Bild in 9 gleiche Teile teilt.",
@@ -45,26 +41,22 @@
     "g3Desc": "Die goldene Spirale führt das Auge auf natürliche Weise durch die Komposition.",
     "g4Title": "Goldenes Dreieck",
     "g4Desc": "Diagonale Hilfslinien, ideal für dynamische Kompositionen mit starken Linien.",
-
     "ctaTitle": "Bereit, deine Kompositionen zu verbessern?",
     "ctaDesc": "Installiere Composition Grid kostenlos und analysiere jedes Bild & Video im Web.",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "Datenschutz",
     "footChangelog": "Änderungen",
     "footContact": "Kontakt",
     "footCoffee": "Spendier mir einen Kaffee",
     "footPoweredBy": "Bereitgestellt von",
     "footVersion": "Version",
-
     "clTitle": "Änderungsprotokoll — Composition Grid",
     "clDesc": "Versionsverlauf und Aktualisierungen der Composition Grid Browser-Erweiterung.",
     "clHeading": "Änderungsprotokoll",
     "clSubtitle": "Versionsverlauf und Aktualisierungen",
     "clLoading": "Änderungsprotokoll wird geladen...",
-
     "pvTitle": "Datenschutzerklärung — Composition Grid",
     "pvDesc": "Datenschutzerklärung für die Composition Grid Browser-Erweiterung. Wir erheben, speichern oder übertragen keinerlei personenbezogene Daten.",
     "pvHeading": "Datenschutzerklärung",

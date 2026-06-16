@@ -3,12 +3,10 @@
     "pageDescription": "三分割法、黄金比、フィボナッチ螺旋、三角構図のグリッドをあらゆる画像に重ねて表示。写真家・デザイナー・アーティストのための無料の Chrome・Edge・Firefox 拡張機能です。",
     "ogTitle": "Composition Grid — Chrome・Edge・Firefox 用の写真構図ガイド",
     "ogDescription": "三分割法、黄金比、フィボナッチ螺旋、三角構図のグリッドをあらゆる画像に重ねて表示。Chrome・Edge・Firefox 対応の無料ブラウザ拡張機能。",
-
     "navFeatures": "機能",
     "navScreenshots": "スクリーンショット",
     "navChangelog": "変更履歴",
     "navInstall": "無料でインストール",
-
     "heroBadgeFree": "無料・オープンソース",
     "heroViewGithub": "GitHub で見る",
     "heroTitle": "あらゆる撮影のための<br /><span class=\"gradient-text\">構図ガイド</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Edge にインストール",
     "heroInstallFirefox": "Firefox にインストール",
     "heroNote": "Chrome、Edge、Firefox、Brave、Vivaldi、すべての Chromium ブラウザに対応",
-
+    "heroSocial": "世界中の<strong>2,000+</strong> ユーザーに信頼されています",
     "featuresTitle": "完璧な構図に必要なものを<br /><span class=\"gradient-text\">すべて</span>",
     "f1Title": "6 種類のグリッド",
     "f1Desc": "三分割法、黄金比、フィボナッチ螺旋、黄金三角形、五分割、センタークロスヘア — すべてを 1 つの拡張機能に。",
@@ -31,11 +29,9 @@
     "f5Desc": "カスタムカラーの選択、線の太さやドットサイズの調整、交点ドットの切り替えが可能。",
     "f6Title": "サイトの制御",
     "f6Desc": "グリッドを表示する場所を選択：すべてのサイト、ブロックリスト、許可リスト — オプションページで管理。",
-
     "shotsTitle": "シンプルでパワフルに<br /><span class=\"gradient-text\">設計</span>",
     "shot1Label": "拡張機能のポップアップ",
     "shot2Label": "右クリックのコンテキストメニュー",
-
     "gridsTitle": "あなたの<br /><span class=\"gradient-text\">構図ガイドを選ぶ</span>",
     "g1Title": "三分割法",
     "g1Desc": "フレームを 9 等分する定番の構図ガイド。",
@@ -45,26 +41,22 @@
     "g3Desc": "黄金螺旋が視線を自然に構図の中へ導きます。",
     "g4Title": "黄金三角形",
     "g4Desc": "力強い対角線で、ダイナミックな構図に最適なガイド。",
-
     "ctaTitle": "構図をもっと良くしませんか？",
     "ctaDesc": "Composition Grid を無料でインストールして、Web 上のあらゆる画像・動画を分析しましょう。",
     "ctaChrome": "Chrome ウェブストア",
     "ctaEdge": "Edge アドオン",
     "ctaFirefox": "Firefox アドオン",
-
     "footPrivacy": "プライバシー",
     "footChangelog": "変更履歴",
     "footContact": "お問い合わせ",
     "footCoffee": "コーヒーをおごる",
     "footPoweredBy": "Powered by",
     "footVersion": "バージョン",
-
     "clTitle": "変更履歴 — Composition Grid",
     "clDesc": "Composition Grid ブラウザ拡張機能のリリース履歴とバージョン更新情報。",
     "clHeading": "変更履歴",
     "clSubtitle": "リリース履歴とバージョン更新情報",
     "clLoading": "変更履歴を読み込んでいます...",
-
     "pvTitle": "プライバシーポリシー — Composition Grid",
     "pvDesc": "Composition Grid ブラウザ拡張機能のプライバシーポリシー。当拡張機能は個人データを一切収集、保存、送信しません。",
     "pvHeading": "プライバシーポリシー",

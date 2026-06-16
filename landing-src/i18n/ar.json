@@ -3,12 +3,10 @@
     "pageDescription": "اعرض شبكات التكوين لقاعدة الأثلاث والنسبة الذهبية وحلزون فيبوناتشي والمثلث الذهبي فوق أي صورة. إضافة مجانية لمتصفحات Chrome وEdge وFirefox للمصورين والمصممين والفنانين.",
     "ogTitle": "Composition Grid — أدلة تكوين الصور لمتصفحات Chrome وEdge وFirefox",
     "ogDescription": "اعرض شبكات قاعدة الأثلاث والنسبة الذهبية وحلزون فيبوناتشي والمثلث فوق أي صورة. إضافة متصفح مجانية لـ Chrome وEdge وFirefox.",
-
     "navFeatures": "المميزات",
     "navScreenshots": "لقطات الشاشة",
     "navChangelog": "سجل التغييرات",
     "navInstall": "تثبيت مجاني",
-
     "heroBadgeFree": "مجاني ومفتوح المصدر",
     "heroViewGithub": "عرض على GitHub",
     "heroTitle": "أدلة التكوين<br /><span class=\"gradient-text\">لكل لقطة</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "تثبيت لمتصفح Edge",
     "heroInstallFirefox": "تثبيت لمتصفح Firefox",
     "heroNote": "يعمل على Chrome وEdge وFirefox وBrave وVivaldi وجميع متصفحات Chromium",
-
+    "heroSocial": "موثوق به من قبل <strong>2000+</strong> مستخدم حول العالم",
     "featuresTitle": "كل ما تحتاجه من أجل<br /><span class=\"gradient-text\">تكوين مثالي</span>",
     "f1Title": "6 أنواع من الشبكات",
     "f1Desc": "قاعدة الأثلاث والنسبة الذهبية وحلزون فيبوناتشي والمثلث الذهبي والأخماس وعلامة المركز التصالبية — كلها في إضافة واحدة.",
@@ -31,11 +29,9 @@
     "f5Desc": "اختر ألوانًا مخصصة، واضبط عرض الخط وحجم النقطة، وبدّل نقاط التقاطع.",
     "f6Title": "التحكم بالمواقع",
     "f6Desc": "حدّد أين تظهر الشبكة: جميع المواقع، أو قائمة الحظر، أو قائمة السماح — تُدار عبر صفحة الخيارات.",
-
     "shotsTitle": "مصمّم ليكون<br /><span class=\"gradient-text\">بسيطًا وقويًا</span>",
     "shot1Label": "نافذة الإضافة المنبثقة",
     "shot2Label": "قائمة السياق بالزر الأيمن",
-
     "gridsTitle": "اختر<br /><span class=\"gradient-text\">دليل التكوين الخاص بك</span>",
     "g1Title": "قاعدة الأثلاث",
     "g1Desc": "دليل التكوين الكلاسيكي الذي يقسّم الإطار إلى 9 أجزاء متساوية.",
@@ -45,26 +41,22 @@
     "g3Desc": "يوجّه الحلزون الذهبي العين بشكل طبيعي عبر التكوين.",
     "g4Title": "المثلث الذهبي",
     "g4Desc": "أدلة قُطرية مثالية للتكوينات الديناميكية ذات الخطوط القوية.",
-
     "ctaTitle": "هل أنت مستعد لتحسين تكويناتك؟",
     "ctaDesc": "ثبّت Composition Grid مجانًا وابدأ بتحليل أي صورة أو فيديو على الويب.",
     "ctaChrome": "متجر Chrome الإلكتروني",
     "ctaEdge": "إضافات Edge",
     "ctaFirefox": "إضافات Firefox",
-
     "footPrivacy": "الخصوصية",
     "footChangelog": "سجل التغييرات",
     "footContact": "اتصل بنا",
     "footCoffee": "اشترِ لي قهوة",
     "footPoweredBy": "مدعوم بواسطة",
     "footVersion": "الإصدار",
-
     "clTitle": "سجل التغييرات — Composition Grid",
     "clDesc": "سجل الإصدارات وتحديثات الإصدارات لإضافة المتصفح Composition Grid.",
     "clHeading": "سجل التغييرات",
     "clSubtitle": "سجل الإصدارات وتحديثات الإصدارات",
     "clLoading": "جارٍ تحميل سجل التغييرات...",
-
     "pvTitle": "سياسة الخصوصية — Composition Grid",
     "pvDesc": "سياسة الخصوصية لإضافة المتصفح Composition Grid. نحن لا نجمع أو نخزن أو ننقل أي بيانات شخصية.",
     "pvHeading": "سياسة الخصوصية",

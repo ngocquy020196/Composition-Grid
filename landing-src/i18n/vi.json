@@ -3,12 +3,10 @@
     "pageDescription": "Phủ lưới bố cục Quy tắc một phần ba, Tỷ lệ vàng, Xoắn ốc Fibonacci & Tam giác vàng lên mọi hình ảnh. Tiện ích Chrome, Edge & Firefox miễn phí dành cho nhiếp ảnh gia, nhà thiết kế và nghệ sĩ.",
     "ogTitle": "Composition Grid — Hướng dẫn bố cục ảnh cho Chrome, Edge & Firefox",
     "ogDescription": "Phủ lưới Quy tắc một phần ba, Tỷ lệ vàng, Xoắn ốc Fibonacci & Tam giác lên mọi hình ảnh. Tiện ích trình duyệt miễn phí cho Chrome, Edge & Firefox.",
-
     "navFeatures": "Tính năng",
     "navScreenshots": "Ảnh chụp màn hình",
     "navChangelog": "Nhật ký thay đổi",
     "navInstall": "Cài đặt miễn phí",
-
     "heroBadgeFree": "Miễn phí & Mã nguồn mở",
     "heroViewGithub": "Xem trên GitHub",
     "heroTitle": "Hướng dẫn bố cục<br /><span class=\"gradient-text\">cho mọi khung hình</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Cài cho Edge",
     "heroInstallFirefox": "Cài cho Firefox",
     "heroNote": "Hoạt động trên Chrome, Edge, Firefox, Brave, Vivaldi & mọi trình duyệt Chromium",
-
+    "heroSocial": "Được <strong>2.000+</strong> người dùng tin dùng trên toàn thế giới",
     "featuresTitle": "Mọi thứ bạn cần để có<br /><span class=\"gradient-text\">bố cục hoàn hảo</span>",
     "f1Title": "6 loại lưới",
     "f1Desc": "Quy tắc một phần ba, Tỷ lệ vàng, Xoắn ốc Fibonacci, Tam giác vàng, Một phần năm & Chữ thập trung tâm — tất cả trong một tiện ích.",
@@ -31,11 +29,9 @@
     "f5Desc": "Chọn màu tùy ý, điều chỉnh độ dày đường, kích thước chấm, và bật/tắt chấm giao điểm.",
     "f6Title": "Kiểm soát theo trang",
     "f6Desc": "Chọn nơi lưới xuất hiện: Tất cả trang, Danh sách chặn, hoặc Danh sách cho phép — quản lý qua trang Tùy chọn.",
-
     "shotsTitle": "Được thiết kế để<br /><span class=\"gradient-text\">đơn giản & mạnh mẽ</span>",
     "shot1Label": "Cửa sổ tiện ích",
     "shot2Label": "Menu chuột phải",
-
     "gridsTitle": "Chọn hướng dẫn<br /><span class=\"gradient-text\">bố cục của bạn</span>",
     "g1Title": "Quy tắc một phần ba",
     "g1Desc": "Hướng dẫn bố cục kinh điển chia khung hình thành 9 phần bằng nhau.",
@@ -45,26 +41,22 @@
     "g3Desc": "Đường xoắn ốc vàng dẫn dắt ánh nhìn một cách tự nhiên xuyên suốt bố cục.",
     "g4Title": "Tam giác vàng",
     "g4Desc": "Các đường chéo dẫn hướng hoàn hảo cho những bố cục năng động với đường nét mạnh mẽ.",
-
     "ctaTitle": "Sẵn sàng nâng tầm bố cục của bạn?",
     "ctaDesc": "Cài đặt Composition Grid miễn phí và bắt đầu phân tích mọi hình ảnh & video trên web.",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "Quyền riêng tư",
     "footChangelog": "Nhật ký thay đổi",
     "footContact": "Liên hệ",
     "footCoffee": "Mời tôi ly cà phê",
     "footPoweredBy": "Được hỗ trợ bởi",
     "footVersion": "Phiên bản",
-
     "clTitle": "Nhật ký thay đổi — Composition Grid",
     "clDesc": "Lịch sử phát hành và các bản cập nhật phiên bản của tiện ích trình duyệt Composition Grid.",
     "clHeading": "Nhật ký thay đổi",
     "clSubtitle": "Lịch sử phát hành và các bản cập nhật phiên bản",
     "clLoading": "Đang tải nhật ký thay đổi...",
-
     "pvTitle": "Chính sách quyền riêng tư — Composition Grid",
     "pvDesc": "Chính sách quyền riêng tư của tiện ích trình duyệt Composition Grid. Chúng tôi không thu thập, lưu trữ hoặc truyền bất kỳ dữ liệu cá nhân nào.",
     "pvHeading": "Chính sách quyền riêng tư",

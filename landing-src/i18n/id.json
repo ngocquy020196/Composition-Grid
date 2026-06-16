@@ -3,12 +3,10 @@
     "pageDescription": "Tampilkan grid komposisi Aturan Sepertiga, Rasio Emas, Spiral Fibonacci & Segitiga di atas gambar apa pun. Ekstensi Chrome, Edge & Firefox gratis untuk fotografer, desainer, dan seniman.",
     "ogTitle": "Composition Grid — Panduan Komposisi Foto untuk Chrome, Edge & Firefox",
     "ogDescription": "Tampilkan grid Aturan Sepertiga, Rasio Emas, Spiral Fibonacci & Segitiga di atas gambar apa pun. Ekstensi browser gratis untuk Chrome, Edge & Firefox.",
-
     "navFeatures": "Fitur",
     "navScreenshots": "Tangkapan Layar",
     "navChangelog": "Riwayat Perubahan",
     "navInstall": "Pasang Gratis",
-
     "heroBadgeFree": "Gratis & Sumber Terbuka",
     "heroViewGithub": "Lihat di GitHub",
     "heroTitle": "Panduan Komposisi<br /><span class=\"gradient-text\">untuk Setiap Bidikan</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Pasang untuk Edge",
     "heroInstallFirefox": "Pasang untuk Firefox",
     "heroNote": "Berfungsi di Chrome, Edge, Firefox, Brave, Vivaldi & semua browser Chromium",
-
+    "heroSocial": "Dipercaya oleh <strong>2.000+</strong> pengguna di seluruh dunia",
     "featuresTitle": "Semua yang Anda butuhkan untuk<br /><span class=\"gradient-text\">komposisi sempurna</span>",
     "f1Title": "6 Jenis Grid",
     "f1Desc": "Aturan Sepertiga, Rasio Emas, Spiral Fibonacci, Segitiga Emas, Seperlima & Garis Bidik Tengah — semuanya dalam satu ekstensi.",
@@ -31,11 +29,9 @@
     "f5Desc": "Pilih warna khusus, atur ketebalan garis, ukuran titik, dan aktifkan titik perpotongan.",
     "f6Title": "Kontrol Situs",
     "f6Desc": "Pilih di mana grid muncul: Semua Situs, Daftar Blokir, atau Daftar Izin — dikelola melalui halaman Opsi.",
-
     "shotsTitle": "Dirancang untuk<br /><span class=\"gradient-text\">sederhana & andal</span>",
     "shot1Label": "Popup Ekstensi",
     "shot2Label": "Menu Konteks Klik Kanan",
-
     "gridsTitle": "Pilih<br /><span class=\"gradient-text\">panduan komposisi Anda</span>",
     "g1Title": "Aturan Sepertiga",
     "g1Desc": "Panduan komposisi klasik yang membagi bingkai menjadi 9 bagian sama besar.",
@@ -45,26 +41,22 @@
     "g3Desc": "Spiral emas menuntun mata secara alami melintasi komposisi.",
     "g4Title": "Segitiga Emas",
     "g4Desc": "Panduan diagonal yang sempurna untuk komposisi dinamis dengan garis yang kuat.",
-
     "ctaTitle": "Siap menyempurnakan komposisi Anda?",
     "ctaDesc": "Pasang Composition Grid secara gratis dan mulai menganalisis gambar & video apa pun di web.",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "Privasi",
     "footChangelog": "Riwayat Perubahan",
     "footContact": "Kontak",
     "footCoffee": "Traktir Saya Kopi",
     "footPoweredBy": "Didukung oleh",
     "footVersion": "Versi",
-
     "clTitle": "Riwayat Perubahan — Composition Grid",
     "clDesc": "Riwayat rilis dan pembaruan versi untuk ekstensi browser Composition Grid.",
     "clHeading": "Riwayat Perubahan",
     "clSubtitle": "Riwayat rilis dan pembaruan versi",
     "clLoading": "Memuat riwayat perubahan...",
-
     "pvTitle": "Kebijakan Privasi — Composition Grid",
     "pvDesc": "Kebijakan Privasi untuk ekstensi browser Composition Grid. Kami tidak mengumpulkan, menyimpan, atau mengirimkan data pribadi apa pun.",
     "pvHeading": "Kebijakan Privasi",

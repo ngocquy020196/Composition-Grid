@@ -3,12 +3,10 @@
     "pageDescription": "Sobreponha grades de composição de Regra dos Terços, Proporção Áurea, Espiral de Fibonacci e Triângulo em qualquer imagem. Extensão gratuita para Chrome, Edge e Firefox para fotógrafos, designers e artistas.",
     "ogTitle": "Composition Grid — Guias de Composição Fotográfica para Chrome, Edge e Firefox",
     "ogDescription": "Sobreponha grades de Regra dos Terços, Proporção Áurea, Espiral de Fibonacci e Triângulo em qualquer imagem. Extensão de navegador gratuita para Chrome, Edge e Firefox.",
-
     "navFeatures": "Recursos",
     "navScreenshots": "Capturas de tela",
     "navChangelog": "Novidades",
     "navInstall": "Instalar grátis",
-
     "heroBadgeFree": "Gratuito e de código aberto",
     "heroViewGithub": "Ver no GitHub",
     "heroTitle": "Guias de composição<br /><span class=\"gradient-text\">para cada foto</span>",
@@ -17,7 +15,7 @@
     "heroInstallEdge": "Instalar no Edge",
     "heroInstallFirefox": "Instalar no Firefox",
     "heroNote": "Funciona no Chrome, Edge, Firefox, Brave, Vivaldi e em todos os navegadores Chromium",
-
+    "heroSocial": "Com a confiança de <strong>2.000+</strong> usuários no mundo todo",
     "featuresTitle": "Tudo o que você precisa para<br /><span class=\"gradient-text\">uma composição perfeita</span>",
     "f1Title": "6 tipos de grade",
     "f1Desc": "Regra dos Terços, Proporção Áurea, Espiral de Fibonacci, Triângulo Áureo, Quintos e Mira Central — tudo em uma só extensão.",
@@ -31,11 +29,9 @@
     "f5Desc": "Escolha cores personalizadas, ajuste a espessura da linha, o tamanho dos pontos e ative os pontos de interseção.",
     "f6Title": "Controle por site",
     "f6Desc": "Escolha onde a grade aparece: Todos os sites, Lista de bloqueio ou Lista de permissões — gerenciado pela página de Opções.",
-
     "shotsTitle": "Projetada para ser<br /><span class=\"gradient-text\">simples e poderosa</span>",
     "shot1Label": "Popup da extensão",
     "shot2Label": "Menu de contexto do botão direito",
-
     "gridsTitle": "Escolha seu<br /><span class=\"gradient-text\">guia de composição</span>",
     "g1Title": "Regra dos Terços",
     "g1Desc": "O guia de composição clássico que divide o quadro em 9 partes iguais.",
@@ -45,26 +41,22 @@
     "g3Desc": "A espiral áurea guia o olhar naturalmente pela composição.",
     "g4Title": "Triângulo Áureo",
     "g4Desc": "Guias diagonais perfeitas para composições dinâmicas com linhas marcantes.",
-
     "ctaTitle": "Pronto para melhorar suas composições?",
     "ctaDesc": "Instale o Composition Grid gratuitamente e comece a analisar qualquer imagem e vídeo na web.",
     "ctaChrome": "Chrome Web Store",
     "ctaEdge": "Edge Add-ons",
     "ctaFirefox": "Firefox Add-ons",
-
     "footPrivacy": "Privacidade",
     "footChangelog": "Novidades",
     "footContact": "Contato",
     "footCoffee": "Pague-me um café",
     "footPoweredBy": "Desenvolvido com",
     "footVersion": "Versão",
-
     "clTitle": "Novidades — Composition Grid",
     "clDesc": "Histórico de versões e atualizações da extensão de navegador Composition Grid.",
     "clHeading": "Novidades",
     "clSubtitle": "Histórico de versões e atualizações",
     "clLoading": "Carregando novidades...",
-
     "pvTitle": "Política de Privacidade — Composition Grid",
     "pvDesc": "Política de Privacidade da extensão de navegador Composition Grid. Não coletamos, armazenamos nem transmitimos nenhum dado pessoal.",
     "pvHeading": "Política de Privacidade",
