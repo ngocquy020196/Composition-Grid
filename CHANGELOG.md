@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.1.5 — 2026-06-16
+
+### Changed
+
+- **Localized store/extension description** — The manifest `description` now resolves via `__MSG_appDesc__`, so each browser locale shows the store description in its own language (14 languages) instead of a hardcoded English string.
+
+### Technical
+
+- **Added `appDesc` message** to all 14 `_locales/<lang>/messages.json` files, sourced from the per-language Short description.
+- **Trimmed long descriptions** — Shortened the Spanish, French, Russian, and Portuguese (Brazil) descriptions to stay within Chrome's 132-character manifest limit while keeping the full meaning.
+
+---
+
 ## v1.1.4 — 2026-06-10
 
 ### New Features

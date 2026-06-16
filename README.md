@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/manifest-v3-blue" alt="Manifest V3" />
-  <img src="https://img.shields.io/badge/version-1.1.4-green" alt="Version" />
+  <img src="https://img.shields.io/badge/version-1.1.5-green" alt="Version" />
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="License" />
   <img src="https://img.shields.io/badge/lang-14%20languages-blueviolet" alt="Languages" />
   <img src="https://img.shields.io/badge/users-2000%2B-brightgreen" alt="Users" />
