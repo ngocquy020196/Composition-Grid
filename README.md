@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/version-1.1.6-green" alt="Version" />
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="License" />
   <img src="https://img.shields.io/badge/lang-14%20languages-blueviolet" alt="Languages" />
-  <img src="https://img.shields.io/badge/users-2000%2B-brightgreen" alt="Users" />
+  <img src="https://img.shields.io/badge/users-3425%2B-brightgreen" alt="Users" />
   <a href="https://app.netlify.com/projects/verdant-dolphin-649972/deploys"><img src="https://api.netlify.com/api/v1/badges/8b28cbe6-2074-485d-ab8a-dc2d6e9a527a/deploy-status" alt="Netlify Status" /></a>
 </p>
 
